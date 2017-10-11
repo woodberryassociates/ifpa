@@ -43,7 +43,7 @@
 					<!-- nav -->
 					<nav class="nav" role="navigation">
 						<!--?php html5blank_nav(); ?-->
-						POLICY PAPERS / INFOGRAPHICS / BLOG / REPORT CARDS / STUDIES / ANALYSIS / SUMMITS
+						POLICY PAPERS / INFOGRAPHICS / BLOG / REPORT CARDS / STUDIES / ANALYSIS / SUMMITS / SEARCH BAR
 					</nav>
 					<!-- /nav -->
 
