@@ -86,14 +86,20 @@ input:focus {
 }
 /* logo */
 .logo {
-
+	float:left;
 }
 .logo-img {
 
 }
 /* nav */
 .nav {
-
+	height: 85px;
+	line-height: 80px;
+	position: center;
+	float: left;
+	font-size: 20px;
+	color: #FFFFFF;
+	background: #1E2A5E;
 }
 /* sidebar */
 .sidebar {
