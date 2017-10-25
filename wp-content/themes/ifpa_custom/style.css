@@ -32,6 +32,7 @@ html {
 body {
 	font:300 11px/1.4 'Helvetica Neue', Helvetica, Arial, sans-serif;
 	color:#444;
+	background-color: #1E2A5E;
 }
 /* clear */
 .clear:before,
@@ -75,7 +76,7 @@ input:focus {
 
 /* wrapper */
 .wrapper {
-	max-width:1280px;
+	max-width:1440px;
 	width:95%;
 	margin:0 auto;
 	position:relative;
@@ -98,13 +99,59 @@ input:focus {
 	position: center;
 	float: left;
 	font-size: 20px;
-	color: #FFFFFF;
+	color: #818181;
 	background: #1E2A5E;
+	transition: 0.3s;
 }
+
+.nav:hover {
+	color: #f1f1f1;
+}
+
+.nav a {
+	color: #818181;
+}
+
+.nav a:hover {
+    color: #f1f1f1;
+}
+
 /* sidebar */
 .sidebar {
-
+	height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: #111;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
 }
+
+/* sidebar links & behavior */
+.sidebar a {
+	padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #818181;
+    display: block;
+    transition: 0.3s;
+}
+
+.sidebar a:hover {
+    color: #f1f1f1;
+}
+
+.sidebar .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+}
+
 /* footer */
 .footer {
 
@@ -114,7 +161,17 @@ input:focus {
     PAGES
 \*------------------------------------*/
 
+/* push all content to right w/ sidebar */
+#main {
+    transition: margin-left .5s;
+    padding: 16px;
+}
 
+/* modify sidebar for smaller screens */
+@media screen and (max-height: 450px) {
+  .sidebar {padding-top: 15px;}
+  .sidebar a {font-size: 18px;}
+}
 
 /*------------------------------------*\
     IMAGES
