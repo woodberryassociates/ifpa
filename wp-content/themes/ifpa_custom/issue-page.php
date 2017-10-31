@@ -1,6 +1,7 @@
+<?php /*Template Name: Issue Page*/ ?>
 <?php get_header(); ?>
 
-	<main class="home-page" role="main">
+	<main role="main">
 		<!-- section -->
 		<section>
 
@@ -13,7 +14,7 @@
 
 				<?php the_content(); ?>
 
-				<!--?php comments_template( '', true ); // Remove if you don't want comments ?-->
+				<?php comments_template( '', true ); // Remove if you don't want comments ?>
 
 				<br class="clear">
 

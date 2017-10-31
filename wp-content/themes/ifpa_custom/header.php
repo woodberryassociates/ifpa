@@ -13,7 +13,8 @@
 	<meta name="description" content="<?php bloginfo('description'); ?>">
 
 	<?php wp_head(); ?>
-	<script>
+	<script type="text/javascript">
+		var opened = false;
         // conditionizr.com
         // configure environment tests
         conditionizr.config({
@@ -22,17 +23,51 @@
         });
 
         //sidebar animation
+        function animNav() {
+        	var sidebar = document.getElementById("mySidebar");
+        	if (!opened) {
+        		openNav();
+        	} else {
+        		closeNav();
+        	}
+        }
+
         function openNav() {
         	document.getElementById("mySidebar").style.width = "250px";
         	document.getElementById("main").style.marginLeft = "250px";
-        	document.body.style.backgroundColor = "rgba(0,0,0,0.4)";
+        	opened = true;
+        	//document.getElementsByClassName("wrapper").style.width="95%";
+        	//document.body.style.backgroundColor = "rgba(30,42,94,0.4)";
         }
 
         function closeNav() {
         	document.getElementById("mySidebar").style.width = "0";
-        	document.getElementById("main").style.marginLeft= "0";
-        	document.body.style.backgroundColor = "white";
+        	document.getElementById("main").style.marginLeft = "0";
+        	opened = false;
+        	//document.getElementsByClassName("wrapper").style.margin="0 auto"; //TODO: margin property doesn't update correctly
+        	//document.body.style.backgroundColor = "rgba(30,42,94,0)";
         }
+
+        //highlight nav boxes when mousing over nav menu text
+        function mouseoverNavText(id)	{
+        	//var myPara = document.getElementById(id);
+    		//myPara.style.transitionDuration = '0.3s';
+    		document.getElementById(id).style.backgroundColor = 'white';
+    	}
+
+    	function mouseoutNavText(id){
+    		//var myPara = document.getElementById(id);
+    		document.getElementById(id).style.backgroundColor = '';
+    	}
+
+    	$(document).ready(function(){
+    		$("a.nav").click(function () {
+			    // switch all tabs off
+			    $(".active").removeClass("active");
+			    // switch this tab on
+			    $(this).addClass("active");
+			});
+    	});
     </script>
 </head>
 
@@ -47,10 +82,9 @@
 			<!--sidebar menu-->
 			<div id="mySidebar" class="sidebar">
 				<a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-				<a href="#">About</a>
-				<a href="#">Services</a>
-				<a href="#">Clients</a>
-				<a href="#">Contact</a>
+				<a href="./cost-sharing">Cost Sharing</a>
+				<a href="./coverage-design">Coverage Design</a>
+				<a href="./value-propositions">Value Propositions</a>
 			</div>
 
 			<!-- logo -->
@@ -63,18 +97,18 @@
 			<!-- /logo -->
 
 			<!-- nav -->
-			<nav class="nav" role="navigation">
-				<!--?php html5blank_nav(); ?-->
-				<!--sidebar button-->
-				<span style="font-size: 20px; cursor: pointer" onclick="openNav()">&#8644; BY ISSUE</span>
-				<a href="#">POLICY PAPERS<a/>
-				<a href="#">INFOGRAPHICS</a>
-				<a href="#">BLOG</a>
-				<a href="#">REPORT CARDS</a>
-				<a href="#">STUDIES</a>
-				<a href="#">ANALYSIS</a>
-				<a href="#">SUMMITS</a>
-				TODO: SEARCH BAR
+			<!--?php html5blank_nav(); ?-->
+			<!--sidebar button-->
+			<nav class="nav-container">
+				<nav class="nav" role="navigation" id="by-issue"><a onmouseover="mouseoverNavText('by-issue')" onmouseout="mouseoutNavText('by-issue')" onclick="animNav()">&#8644; BY ISSUE</a></nav>
+				<nav class="nav" role="navigation" id="policy-papers"><a href="./policy-papers" onmouseover="mouseoverNavText('policy-papers')" onmouseout="mouseoutNavText('policy-papers')">POLICY PAPERS</a></nav>
+				<nav class="nav" role="navigation" id="infographics"><a href="./infographics" onmouseover="mouseoverNavText('infographics')" onmouseout="mouseoutNavText('infographics')">INFOGRAPHICS</a></nav>
+				<nav class="nav" role="navigation" id="blog"><a href="./blog" onmouseover="mouseoverNavText('blog')"onmouseout="mouseoutNavText('blog')">BLOG</a></nav>
+				<nav class="nav" role="navigation" id="report-cards"><a href="./report-cards" onmouseover="mouseoverNavText('report-cards')" onmouseout="mouseoutNavText('report-cards')">REPORT CARDS</a></nav>
+				<nav class="nav" role="navigation" id="studies"><a href="./studies" onmouseover="mouseoverNavText('studies')" onmouseout="mouseoutNavText('studies')">STUDIES</a></nav>
+				<nav class="nav" role="navigation" id="analysis"><a href="./analysis" onmouseover="mouseoverNavText('analysis')" onmouseout="mouseoutNavText('analysis')">ANALYSIS</a></nav>
+				<nav class="nav" role="navigation" id="summits"><a href="./summits" onmouseover="mouseoverNavText('summits')" onmouseout="mouseoutNavText('summits')">SUMMITS</a></nav>
+				<nav class="nav" role="navigation" style="float: right">TODO: SEARCH BAR</nav>
 			</nav>
 			<!-- /nav -->
 

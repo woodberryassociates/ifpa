@@ -31,7 +31,7 @@ html {
 }
 body {
 	font:300 11px/1.4 'Helvetica Neue', Helvetica, Arial, sans-serif;
-	color:#444;
+	color:#FFF;
 	background-color: #1E2A5E;
 }
 /* clear */
@@ -52,17 +52,16 @@ img {
 	vertical-align:bottom;
 }
 a {
-	color:#444;
+	color:#FFF;
 	text-decoration:none;
 }
 a:hover {
-	color:#444;
+	color:#f1f1f1;
 }
 a:focus {
 	outline:0;
 }
-a:hover,
-a:active {
+a:hover, a:active {
 	outline:0;
 }
 input:focus {
@@ -74,11 +73,14 @@ input:focus {
     STRUCTURE
 \*------------------------------------*/
 
+h1 {
+	margin: 0;
+}
 /* wrapper */
 .wrapper {
-	max-width:1440px;
-	width:95%;
-	margin:0 auto;
+	/*max-width:1440px;
+	width:95%; 
+	margin:0 0; /*should be 0 auto, but JS is screwing this up*/
 	position:relative;
 }
 /* header */
@@ -87,33 +89,50 @@ input:focus {
 }
 /* logo */
 .logo {
+	display: block;
 	float:left;
+	padding-left: 0px;
 }
 .logo-img {
 
 }
 /* nav */
 .nav {
+	display: inline-flex;
+	flex-wrap: nowrap;
 	height: 85px;
-	line-height: 80px;
+	padding: 0px 5px 0px 5px;
+	line-height: 85px;
 	position: center;
-	float: left;
-	font-size: 20px;
-	color: #818181;
-	background: #1E2A5E;
+	/*float: left;*/
+	color: #ACD9BB;
+	font-size: 15px;
+	/*background: #1E2A5E;*/
 	transition: 0.3s;
 }
 
-.nav:hover {
-	color: #f1f1f1;
-}
+/*functionality implemented in the JS functions in header.php*/
+/*.nav:hover {
+	/*for the text in nav (not <a>)*/
+	/*color: #1E2A5E;
+	background-color: #FFF;
+}*/
 
 .nav a {
-	color: #818181;
+	color: #ACD9BB;
+	transition: 0.1s;
 }
 
 .nav a:hover {
-    color: #f1f1f1;
+    color: #1E2A5E;
+}
+
+.active {
+	background-color: #FFF;
+}
+
+.active a {
+	color: #1E2A5E;
 }
 
 /* sidebar */
@@ -124,9 +143,9 @@ input:focus {
     z-index: 1;
     top: 0;
     left: 0;
-    background-color: #111;
+    background-color: #2292BB;
     overflow-x: hidden;
-    transition: 0.5s;
+    transition: 0.3s;
     padding-top: 60px;
 }
 
@@ -135,7 +154,7 @@ input:focus {
 	padding: 8px 8px 8px 32px;
     text-decoration: none;
     font-size: 25px;
-    color: #818181;
+    color: #ACD9BB;
     display: block;
     transition: 0.3s;
 }
@@ -154,7 +173,12 @@ input:focus {
 
 /* footer */
 .footer {
+	float: right;
+	color: #ACD9BB;
+}
 
+.footer a {
+	color: #ACD9BB;
 }
 
 /*------------------------------------*\
@@ -163,14 +187,24 @@ input:focus {
 
 /* push all content to right w/ sidebar */
 #main {
-    transition: margin-left .5s;
-    padding: 16px;
+    transition: .3s;
+    padding: 0px;
 }
 
 /* modify sidebar for smaller screens */
 @media screen and (max-height: 450px) {
   .sidebar {padding-top: 15px;}
   .sidebar a {font-size: 18px;}
+}
+
+.home-page {
+
+}
+
+*[role="main"] {
+	padding-left: 22px;
+	background-color: #FFF;
+	color: #1E2A5E;
 }
 
 /*------------------------------------*\
