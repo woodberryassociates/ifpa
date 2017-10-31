@@ -13,7 +13,7 @@
 	<meta name="description" content="<?php bloginfo('description'); ?>">
 
 	<?php wp_head(); ?>
-	<script type="text/javascript">
+	<script>
 		var opened = false;
         // conditionizr.com
         // configure environment tests
@@ -49,7 +49,7 @@
         }
 
         //highlight nav boxes when mousing over nav menu text
-        function mouseoverNavText(id)	{
+        function mouseoverNavText(id){
         	//var myPara = document.getElementById(id);
     		//myPara.style.transitionDuration = '0.3s';
     		document.getElementById(id).style.backgroundColor = 'white';
@@ -60,14 +60,12 @@
     		document.getElementById(id).style.backgroundColor = '';
     	}
 
-    	$(document).ready(function(){
-    		$("a.nav").click(function () {
-			    // switch all tabs off
-			    $(".active").removeClass("active");
-			    // switch this tab on
-			    $(this).addClass("active");
-			});
-    	});
+    	//TODO: keep the nav box for the current page highlighted
+    	/*function highlightPage(){
+    		alert(this.href);
+    		alert(this.href.substr(this.href.lastIndexOf('/') + 1));
+    		//document.getElementById("btn1").classList.toggle("red”,  “italics");
+    	}*/
     </script>
 </head>
 
