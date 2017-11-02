@@ -408,6 +408,8 @@ a img.aligncenter {
 	}
 	h2,
 	h3 {
+		/*margin screws up the JS highlighting of the menu items*/
+		margin: 0;
 		page-break-after:avoid;
 	}
 }
