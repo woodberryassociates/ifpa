@@ -33,8 +33,8 @@
         }
 
         function openNav() {
-        	document.getElementById("mySidebar").style.width = "250px";
-        	document.getElementById("main").style.marginLeft = "250px";
+        	document.getElementById("mySidebar").style.width = "75px";
+        	document.getElementById("main").style.marginLeft = "75px";
         	opened = true;
         	//document.getElementsByClassName("wrapper").style.width="95%";
         	//document.body.style.backgroundColor = "rgba(30,42,94,0.4)";
@@ -79,10 +79,10 @@
 			
 			<!--sidebar menu-->
 			<div id="mySidebar" class="sidebar">
-				<a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-				<a href="./cost-sharing">Cost Sharing</a>
-				<a href="./coverage-design">Coverage Design</a>
-				<a href="./value-propositions">Value Propositions</a>
+				<!--a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a-->
+				<a title="Cost Sharing" href="./cost-sharing"><img src="./wp-content/themes/ifpa_custom/img/icons/wallet.png"></a>
+				<a title="Coverage Design" href="./coverage-design"><img src="./wp-content/themes/ifpa_custom/img/icons/checklist.png"></a>
+				<a title="Value Propositions" href="./value-propositions"><img src="./wp-content/themes/ifpa_custom/img/icons/arrow.png"></a>
 			</div>
 
 			<!-- logo -->
@@ -104,7 +104,7 @@
 				<nav class="nav" role="navigation" id="blog"><a href="./blog" onmouseover="mouseoverNavText('blog')"onmouseout="mouseoutNavText('blog')">BLOG</a></nav>
 				<nav class="nav" role="navigation" id="report-cards"><a href="./report-cards" onmouseover="mouseoverNavText('report-cards')" onmouseout="mouseoutNavText('report-cards')">REPORT CARDS</a></nav>
 				<nav class="nav" role="navigation" id="studies"><a href="./studies" onmouseover="mouseoverNavText('studies')" onmouseout="mouseoutNavText('studies')">STUDIES</a></nav>
-				<nav class="nav" role="navigation" id="analysis"><a href="./analysis" onmouseover="mouseoverNavText('analysis')" onmouseout="mouseoutNavText('analysis')">ANALYSIS</a></nav>
+				<!--nav class="nav" role="navigation" id="analysis"><a href="./analysis" onmouseover="mouseoverNavText('analysis')" onmouseout="mouseoutNavText('analysis')">ANALYSIS</a></nav-->
 				<nav class="nav" role="navigation" id="summits"><a href="./summits" onmouseover="mouseoverNavText('summits')" onmouseout="mouseoutNavText('summits')">SUMMITS</a></nav>
 				<nav class="nav" role="navigation" style="float: right;"><?php wp_nav_menu(array('theme_location' => 'header-menu')); ?></nav>
 			</nav>

@@ -127,8 +127,29 @@ h1 {
     color: #1E2A5E;
 }
 
+/* Search Bar */
+
 #menu-search-bar {
 	margin: 0px !important;
+}
+
+button[role=button] {
+	background-color: #2292BB;
+	padding: 15px;
+	border: none;
+	border-radius: 5px;
+	font-size: 15px;
+}
+
+.search-input {
+	padding: 15px;
+	border: none;
+	border-radius: 5px;
+	transition: 0.3s;
+}
+
+.search-input:focus {
+	/*width: 400px;*/
 }
 
 .active {
@@ -150,12 +171,12 @@ h1 {
     background-color: #2292BB;
     overflow-x: hidden;
     transition: 0.3s;
-    padding-top: 60px;
+    padding-top: 10px;
 }
 
 /* sidebar links & behavior */
 .sidebar a {
-	padding: 8px 8px 8px 32px;
+	padding: 30px 10px;
     text-decoration: none;
     font-size: 25px;
     color: #ACD9BB;
@@ -170,9 +191,9 @@ h1 {
 .sidebar .closebtn {
     position: absolute;
     top: 0;
-    right: 25px;
+    left: 15px;
     font-size: 36px;
-    margin-left: 50px;
+    margin: auto;
 }
 
 /* footer */
