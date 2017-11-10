@@ -127,6 +127,10 @@ h1 {
     color: #1E2A5E;
 }
 
+#menu-search-bar {
+	margin: 0px !important;
+}
+
 .active {
 	background-color: #FFF;
 }
@@ -403,13 +407,13 @@ a img.aligncenter {
 	p,
 	h2,
 	h3 {
+		/*margins screw up the JS highlighting*/
+		margin-top: 0px !important;
 		orphans:3;
 		widows:3;
 	}
 	h2,
 	h3 {
-		/*margin screws up the JS highlighting of the menu items*/
-		margin: 0;
 		page-break-after:avoid;
 	}
 }

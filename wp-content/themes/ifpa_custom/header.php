@@ -106,7 +106,7 @@
 				<nav class="nav" role="navigation" id="studies"><a href="./studies" onmouseover="mouseoverNavText('studies')" onmouseout="mouseoutNavText('studies')">STUDIES</a></nav>
 				<nav class="nav" role="navigation" id="analysis"><a href="./analysis" onmouseover="mouseoverNavText('analysis')" onmouseout="mouseoutNavText('analysis')">ANALYSIS</a></nav>
 				<nav class="nav" role="navigation" id="summits"><a href="./summits" onmouseover="mouseoverNavText('summits')" onmouseout="mouseoutNavText('summits')">SUMMITS</a></nav>
-				<nav class="nav" role="navigation" style="float: right">TODO: SEARCH BAR</nav>
+				<nav class="nav" role="navigation" style="float: right;"><?php wp_nav_menu(array('theme_location' => 'header-menu')); ?></nav>
 			</nav>
 			<!-- /nav -->
 
