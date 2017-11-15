@@ -68,6 +68,9 @@ input:focus {
 	outline:0;
 	border:1px solid #04A4CC;
 }
+ul {
+	padding: 0px;
+}
 
 /*------------------------------------*\
     STRUCTURE
@@ -85,7 +88,7 @@ h1 {
 }
 /* header */
 .header {
-
+	padding-right: 10px;
 }
 /* logo */
 .logo {
@@ -99,38 +102,41 @@ h1 {
 /* nav */
 .nav {
 	display: inline-flex;
+	justify-content: 
 	flex-wrap: nowrap;
-	height: 85px;
-	padding: 0px 5px 0px 5px;
 	line-height: 85px;
 	position: center;
-	/*float: left;*/
+	float: left;
 	color: #ACD9BB;
 	font-size: 15px;
-	/*background: #1E2A5E;*/
+	text-transform: uppercase;
 	transition: 0.3s;
 }
 
-/*functionality implemented in the JS functions in header.php*/
-/*.nav:hover {
-	/*for the text in nav (not <a>)*/
-	/*color: #1E2A5E;
-	background-color: #FFF;
-}*/
-
 .nav a {
+	padding: 0px 10px;
 	color: #ACD9BB;
-	transition: 0.1s;
+	transition: 0.3s;
 }
 
 .nav a:hover {
     color: #1E2A5E;
+    background-color: #FFF;
 }
 
 /* Search Bar */
 
-#menu-search-bar {
-	margin: 0px !important;
+.search-menu {
+	float: right;
+}
+
+/*avoids styling the search menu "a" element, keep equi-distant from the final menu link*/
+.search-menu a {
+	padding: 0px 5px;
+}
+
+.search-menu a:hover {
+	background-color: #1E2A5E;
 }
 
 button[role=button] {
@@ -145,12 +151,12 @@ button[role=button] {
 	padding: 15px;
 	border: none;
 	border-radius: 5px;
-	transition: 0.3s;
 }
 
-.search-input:focus {
-	/*width: 400px;*/
-}
+/*TODO: expand searchbar when focused on*/
+/*.search-input:focus {
+	width: 400px;
+}*/
 
 .active {
 	background-color: #FFF;
