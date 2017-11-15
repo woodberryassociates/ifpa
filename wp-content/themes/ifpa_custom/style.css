@@ -69,6 +69,7 @@ input:focus {
 	border:1px solid #04A4CC;
 }
 ul {
+	margin: 0px;
 	padding: 0px;
 }
 
