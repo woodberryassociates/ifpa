@@ -436,13 +436,12 @@ a img.aligncenter {
 	h2,
 	h3 {
 		/*margins screw up the JS highlighting*/
-		margin-top: 0px !important;
+		margin-top:0;
 		orphans:3;
 		widows:3;
 	}
 	h2,
 	h3 {
-		margin: 0px;
 		page-break-after:avoid;
 	}
 }
