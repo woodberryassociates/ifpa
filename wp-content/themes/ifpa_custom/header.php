@@ -1,6 +1,7 @@
 <!doctype html>
 <html <?php language_attributes(); ?> class="no-js">
 <head>
+	<link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
 	<meta charset="<?php bloginfo('charset'); ?>">
 	<title><?php wp_title(''); ?><?php if(wp_title('', false)) { echo ' :'; } ?> <?php bloginfo('name'); ?></title>
 
@@ -21,45 +22,8 @@
         	assets: '<?php echo get_template_directory_uri(); ?>',
         	tests: {}
         });
-
-        //sidebar animation
-        function animNav() {
-        	var sidebar = document.getElementById("mySidebar");
-        	if (!opened) {
-        		openNav();
-        	} else {
-        		closeNav();
-        	}
-        }
-
-        function openNav() {
-        	document.getElementById("mySidebar").style.width = "75px";
-        	document.getElementById("main").style.marginLeft = "75px";
-        	opened = true;
-        }
-
-        function closeNav() {
-        	document.getElementById("mySidebar").style.width = "0";
-        	document.getElementById("main").style.marginLeft = "0";
-        	opened = false;
-        }
-
-        //highlight "BY ISSUE" when mousing over text
-        function mouseoverNavText(id){
-    		document.getElementById(id).style.backgroundColor = 'white';
-    	}
-
-    	function mouseoutNavText(id){
-    		document.getElementById(id).style.backgroundColor = '';
-    	}
-
-    	//TODO: keep the nav box for the current page highlighted
-    	/*function highlightPage(){
-    		alert(this.href);
-    		alert(this.href.substr(this.href.lastIndexOf('/') + 1));
-    		//document.getElementById("btn1").classList.toggle("red”,  “italics");
-    	}*/
     </script>
+    <script src="<?php echo get_template_directory_uri(); ?>/js/nav.js"></script>
 </head>
 
 <body <?php body_class(); ?>>
@@ -72,9 +36,9 @@
 			
 			<!--sidebar menu-->
 			<div id="mySidebar" class="sidebar">
-				<a title="Cost Sharing" href="./cost-sharing"><img src="//localhost/ifpa/wp-content/themes/ifpa_custom/img/icons/wallet.png"></a>
-				<a title="Coverage Design" href="./coverage-design"><img src="//localhost/ifpa/wp-content/themes/ifpa_custom/img/icons/checklist.png"></a>
-				<a title="Value Propositions" href="./value-propositions"><img src="//localhost/ifpa/wp-content/themes/ifpa_custom/img/icons/arrow.png"></a>
+				<a title="Cost Sharing" href="./cost-sharing"><img src="<?php echo get_stylesheet_directory_uri(); ?>/img/icons/wallet.png"></a>
+				<a title="Coverage Design" href="./coverage-design"><img src="<?php echo get_stylesheet_directory_uri(); ?>/img/icons/checklist.png"></a>
+				<a title="Value Propositions" href="./value-propositions"><img src="<?php echo get_stylesheet_directory_uri(); ?>/img/icons/arrow.png"></a>
 			</div>
 
 			<!-- logo -->
@@ -87,7 +51,7 @@
 			<!-- /logo -->
 
 			<!-- nav -->
-			<nav class="nav" role="navigation" id="by-issue"><a onmouseover="mouseoverNavText('by-issue')" onmouseout="mouseoutNavText('by-issue')" onclick="animNav()">&#8644; BY ISSUE</a></nav>
+			<nav class="nav" role="navigation" id="by-issue"><a onclick="animNav()">&#8644; BY ISSUE</a></nav>
 			<nav role="navigation"><?php wp_nav_menu(array('theme_location' => 'header-menu')); ?></nav>
 			<!-- /nav -->
 

@@ -14,6 +14,7 @@
 /*------------------------------------*\
     MAIN
 \*------------------------------------*/
+p.
 
 /* global box-sizing */
 *,
@@ -30,8 +31,7 @@ html {
 	font-size:62.5%;
 }
 body {
-	font:300 11px/1.4 'Helvetica Neue', Helvetica, Arial, sans-serif;
-	color:#FFF;
+	font:300 11px/1.4 'Montserrat', 'Helvetica Neue', Helvetica, Arial, sans-serif;
 	background-color: #1E2A5E;
 }
 /* clear */
@@ -48,11 +48,10 @@ body {
     *zoom:1;
 }
 img {
-	max-width:100%;
+	max-width: 100%;
 	vertical-align:bottom;
 }
 a {
-	color:#FFF;
 	text-decoration:none;
 }
 a:hover {
@@ -75,7 +74,7 @@ ul {
 
 h2 {
 	/*margins screw up the JS highlighting*/
-	margin-top:0;
+	display: none;
 }
 
 /*------------------------------------*\
@@ -107,14 +106,14 @@ h1 {
 }
 /* nav */
 .nav {
-	display: inline-flex;
-	justify-content: 
+	display: inline-flex; 
 	flex-wrap: nowrap;
 	line-height: 85px;
 	position: center;
 	float: left;
 	color: #ACD9BB;
-	font-size: 15px;
+	font-size: 10px;
+	font-weight: bold;
 	text-transform: uppercase;
 	transition: 0.3s;
 }
@@ -150,13 +149,15 @@ button[role=button] {
 	padding: 15px;
 	border: none;
 	border-radius: 5px;
-	font-size: 15px;
+	font-size: 10px;
+	font-weight: bold;
 }
 
 .search-input {
 	padding: 15px;
 	border: none;
 	border-radius: 5px;
+	font-weight: bold;
 }
 
 /*TODO: expand searchbar when focused on*/
@@ -190,7 +191,6 @@ button[role=button] {
 .sidebar a {
 	padding: 30px 10px;
     text-decoration: none;
-    font-size: 25px;
     color: #ACD9BB;
     display: block;
     transition: 0.3s;
@@ -231,7 +231,6 @@ button[role=button] {
 /* modify sidebar for smaller screens */
 @media screen and (max-height: 450px) {
   .sidebar {padding-top: 15px;}
-  .sidebar a {font-size: 18px;}
 }
 
 .home-page {
@@ -281,11 +280,21 @@ button[role=button] {
 @media only screen and (min-width:1024px) {
 
 }
-@media only screen and (min-width:1140px) {
-
+@media only screen and (min-width:1220px) {
+	nav a,
+	.search-input,
+	button[role=button] {
+		font-size: 12px;
+		font-weight: normal;
+	}
 }
-@media only screen and (min-width:1280px) {
-
+@media only screen and (min-width:1400px) {
+	nav a,
+	.search-input,
+	button[role=button] {
+		font-size: 15px;
+		font-weight: normal;
+	}
 }
 @media only screen and (-webkit-min-device-pixel-ratio:1.5),
 	   only screen and (min-resolution:144dpi) {
