@@ -73,6 +73,11 @@ ul {
 	padding: 0px;
 }
 
+h2 {
+	/*margins screw up the JS highlighting*/
+	margin-top:0;
+}
+
 /*------------------------------------*\
     STRUCTURE
 \*------------------------------------*/
@@ -435,8 +440,6 @@ a img.aligncenter {
 	p,
 	h2,
 	h3 {
-		/*margins screw up the JS highlighting*/
-		margin-top:0;
 		orphans:3;
 		widows:3;
 	}
