@@ -1,6 +1,7 @@
 <!doctype html>
 <html <?php language_attributes(); ?> class="no-js">
 <head>
+	<link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
 	<meta charset="<?php bloginfo('charset'); ?>">
 	<title><?php wp_title(''); ?><?php if(wp_title('', false)) { echo ' :'; } ?> <?php bloginfo('name'); ?></title>
 
@@ -21,52 +22,8 @@
         	assets: '<?php echo get_template_directory_uri(); ?>',
         	tests: {}
         });
-
-        //sidebar animation
-        function animNav() {
-        	var sidebar = document.getElementById("mySidebar");
-        	if (!opened) {
-        		openNav();
-        	} else {
-        		closeNav();
-        	}
-        }
-
-        function openNav() {
-        	document.getElementById("mySidebar").style.width = "75px";
-        	document.getElementById("main").style.marginLeft = "75px";
-        	opened = true;
-        	//document.getElementsByClassName("wrapper").style.width="95%";
-        	//document.body.style.backgroundColor = "rgba(30,42,94,0.4)";
-        }
-
-        function closeNav() {
-        	document.getElementById("mySidebar").style.width = "0";
-        	document.getElementById("main").style.marginLeft = "0";
-        	opened = false;
-        	//document.getElementsByClassName("wrapper").style.margin="0 auto"; //TODO: margin property doesn't update correctly
-        	//document.body.style.backgroundColor = "rgba(30,42,94,0)";
-        }
-
-        //highlight nav boxes when mousing over nav menu text
-        function mouseoverNavText(id){
-        	//var myPara = document.getElementById(id);
-    		//myPara.style.transitionDuration = '0.3s';
-    		document.getElementById(id).style.backgroundColor = 'white';
-    	}
-
-    	function mouseoutNavText(id){
-    		//var myPara = document.getElementById(id);
-    		document.getElementById(id).style.backgroundColor = '';
-    	}
-
-    	//TODO: keep the nav box for the current page highlighted
-    	/*function highlightPage(){
-    		alert(this.href);
-    		alert(this.href.substr(this.href.lastIndexOf('/') + 1));
-    		//document.getElementById("btn1").classList.toggle("red”,  “italics");
-    	}*/
     </script>
+    <script src="<?php echo get_template_directory_uri(); ?>/js/nav.js"></script>
 </head>
 
 <body <?php body_class(); ?>>
@@ -79,10 +36,9 @@
 			
 			<!--sidebar menu-->
 			<div id="mySidebar" class="sidebar">
-				<!--a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a-->
-				<a title="Cost Sharing" href="./cost-sharing"><img src="./wp-content/themes/ifpa_custom/img/icons/wallet.png"></a>
-				<a title="Coverage Design" href="./coverage-design"><img src="./wp-content/themes/ifpa_custom/img/icons/checklist.png"></a>
-				<a title="Value Propositions" href="./value-propositions"><img src="./wp-content/themes/ifpa_custom/img/icons/arrow.png"></a>
+				<a title="Cost Sharing" href="./cost-sharing"><img src="<?php echo get_stylesheet_directory_uri(); ?>/img/icons/wallet.png"></a>
+				<a title="Coverage Design" href="./coverage-design"><img src="<?php echo get_stylesheet_directory_uri(); ?>/img/icons/checklist.png"></a>
+				<a title="Value Propositions" href="./value-propositions"><img src="<?php echo get_stylesheet_directory_uri(); ?>/img/icons/arrow.png"></a>
 			</div>
 
 			<!-- logo -->
@@ -95,19 +51,8 @@
 			<!-- /logo -->
 
 			<!-- nav -->
-			<!--?php html5blank_nav(); ?-->
-			<!--sidebar button-->
-			<nav class="nav-container">
-				<nav class="nav" role="navigation" id="by-issue"><a onmouseover="mouseoverNavText('by-issue')" onmouseout="mouseoutNavText('by-issue')" onclick="animNav()">&#8644; BY ISSUE</a></nav>
-				<nav class="nav" role="navigation" id="policy-papers"><a href="./policy-papers" onmouseover="mouseoverNavText('policy-papers')" onmouseout="mouseoutNavText('policy-papers')">POLICY PAPERS</a></nav>
-				<nav class="nav" role="navigation" id="infographics"><a href="./infographics" onmouseover="mouseoverNavText('infographics')" onmouseout="mouseoutNavText('infographics')">INFOGRAPHICS</a></nav>
-				<nav class="nav" role="navigation" id="blog"><a href="./blog" onmouseover="mouseoverNavText('blog')"onmouseout="mouseoutNavText('blog')">BLOG</a></nav>
-				<nav class="nav" role="navigation" id="report-cards"><a href="./report-cards" onmouseover="mouseoverNavText('report-cards')" onmouseout="mouseoutNavText('report-cards')">REPORT CARDS</a></nav>
-				<nav class="nav" role="navigation" id="studies"><a href="./studies" onmouseover="mouseoverNavText('studies')" onmouseout="mouseoutNavText('studies')">STUDIES</a></nav>
-				<!--nav class="nav" role="navigation" id="analysis"><a href="./analysis" onmouseover="mouseoverNavText('analysis')" onmouseout="mouseoutNavText('analysis')">ANALYSIS</a></nav-->
-				<nav class="nav" role="navigation" id="summits"><a href="./summits" onmouseover="mouseoverNavText('summits')" onmouseout="mouseoutNavText('summits')">SUMMITS</a></nav>
-				<nav class="nav" role="navigation" style="float: right;"><?php wp_nav_menu(array('theme_location' => 'header-menu')); ?></nav>
-			</nav>
+			<nav class="nav" role="navigation" id="by-issue"><a onclick="animNav()">&#8644; BY ISSUE</a></nav>
+			<nav role="navigation"><?php wp_nav_menu(array('theme_location' => 'header-menu')); ?></nav>
 			<!-- /nav -->
 
 		</header>
