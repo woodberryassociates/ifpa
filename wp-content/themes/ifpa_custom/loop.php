@@ -25,7 +25,7 @@
 
 		<?php echo "<p style='display: flex; padding: 5px 10px;'"; // dumb hack to correctly style the excerpt ?>
 		<?php html5wp_excerpt('html5wp_index'); // Build your custom callback length in functions.php ?>
-		<?php echo "</p><a style='display: flex; padding: 5px ;'"; ?>
+		<?php echo "</p><a style='display: flex; padding: 0px 5px;'"; ?>
 		<?php edit_post_link(); ?>
 		<?php echo "</a>"; ?>
 
