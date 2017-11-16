@@ -1,7 +1,7 @@
 <?php if (have_posts()): while (have_posts()) : the_post(); ?>
 
 	<!-- article -->
-	<article style="height: 220px;" id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
+	<article style="padding-left: 15%; display: block; height: 220px;" id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
 
 		<!-- post thumbnail -->
 		<?php if ( has_post_thumbnail()) : // Check if thumbnail exists ?>
@@ -25,7 +25,7 @@
 
 		<?php echo "<p style='display: flex; padding: 5px 10px;'"; // dumb hack to correctly style the excerpt ?>
 		<?php html5wp_excerpt('html5wp_index'); // Build your custom callback length in functions.php ?>
-		<?php echo "<a style='display: flex; padding: 5px 10px;'"; ?>
+		<?php echo "</p>"; ?>
 		<?php edit_post_link(); ?>
 
 	</article>
