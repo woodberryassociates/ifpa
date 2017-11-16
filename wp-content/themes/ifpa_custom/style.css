@@ -86,8 +86,8 @@ h1,h2,h3,p {
 }
 /* wrapper */
 .wrapper {
-	/*max-width:1440px;
-	width:95%; 
+	/*max-width:1440px;*/
+	width:100%; 
 	margin:0 0; /*should be 0 auto, but JS is screwing this up*/
 	position:relative;
 }
