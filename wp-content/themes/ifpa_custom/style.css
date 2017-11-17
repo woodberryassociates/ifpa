@@ -32,7 +32,7 @@ html {
 }
 body {
 	font:300 11px/1.4 'Montserrat', 'Helvetica Neue', Helvetica, Arial, sans-serif;
-	background-color: #1E2A5E;
+	background-color: #FFF;
 }
 /* clear */
 .clear:before,
@@ -53,9 +53,10 @@ img {
 }
 a {
 	text-decoration:none;
+	color: #2AAD69;
 }
 a:hover {
-	color:#f1f1f1;
+	color:#B0D8BC;
 }
 a:focus {
 	outline:0;
@@ -99,10 +100,11 @@ h1,h2,h3,p {
 .logo {
 	display: block;
 	float:left;
-	padding-left: 0px;
+	padding: 10px 5px 0px 5px;
 }
-.logo-img {
 
+.logo-img {
+	height: 65px;
 }
 /* nav */
 .nav {
@@ -111,7 +113,7 @@ h1,h2,h3,p {
 	line-height: 85px;
 	position: center;
 	float: left;
-	color: #ACD9BB;
+	color: #2AAD69;
 	font-size: 10px;
 	font-weight: bold;
 	text-transform: uppercase;
@@ -120,13 +122,13 @@ h1,h2,h3,p {
 
 .nav a {
 	padding: 0px 10px;
-	color: #ACD9BB;
+	color: #2AAD69;
 	transition: 0.3s;
 }
 
 .nav a:hover {
-    color: #1E2A5E;
-    background-color: #FFF;
+    color: #B0D8BC;
+    background-color: #2AAD69;
 }
 
 /* Search Bar */
@@ -140,12 +142,13 @@ h1,h2,h3,p {
 	padding: 0px 5px;
 }
 
+/*avoids animating the padding*/
 .search-menu a:hover {
-	background-color: #1E2A5E;
+	background-color: #FFF;
 }
 
 button[role=button] {
-	background-color: #2292BB;
+	background-color: #2AAD69;
 	padding: 15px;
 	border: none;
 	border-radius: 5px;
@@ -158,6 +161,20 @@ button[role=button] {
 	border: none;
 	border-radius: 5px;
 	font-weight: bold;
+	background-color: #B0D8BC;
+}
+
+.search-input::placeholder {
+	color: #2AAD69;
+}
+
+.search-input:focus {
+	border-color: #2AAD69;
+}
+
+.search-submit {
+	color: #B0D8BC;
+    background-color: #1C72B7;
 }
 
 /*TODO: expand searchbar when focused on*/
@@ -240,7 +257,7 @@ button[role=button] {
 *[role="main"] {
 	padding-left: 22px;
 	background-color: #FFF;
-	color: #1E2A5E;
+	color: #2AAD69;
 }
 
 /* Home Page formating */
@@ -249,6 +266,18 @@ button[role=button] {
 	display: inline;
 }
 
+.copyright {
+	padding-right: 10px;
+	color: #2AAD69;
+}
+
+.copyright a {
+	color: #2AAD69;
+}
+
+.copyright a:hover {
+	color: #B0D8BC;
+}
 /*------------------------------------*\
     IMAGES
 \*------------------------------------*/
