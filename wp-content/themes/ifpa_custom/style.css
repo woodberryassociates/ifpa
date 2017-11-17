@@ -243,6 +243,12 @@ button[role=button] {
 	color: #1E2A5E;
 }
 
+/* Home Page formating */
+
+.home-block {
+	display: inline;
+}
+
 /*------------------------------------*\
     IMAGES
 \*------------------------------------*/
