@@ -23,6 +23,7 @@
         	tests: {}
         });
     </script>
+    <!-- custom JS scripts -->
     <script src="<?php echo get_template_directory_uri(); ?>/js/nav.js"></script>
 </head>
 
