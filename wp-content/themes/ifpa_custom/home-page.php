@@ -17,6 +17,7 @@
 
 	<section class="home-block">
 		<section class="home-block-article">
+			<!--dynamically generate category ID-->
 			<?php
 				$catObj = get_category_by_slug('value-propositions'); 
 				$catId = $catObj->term_id;
