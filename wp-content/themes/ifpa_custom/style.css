@@ -284,6 +284,7 @@ button[role=button] {
 }
 
 .home-block-article {
+	max-width: 300px;
 	display: flex;
 	flex-direction: column;
 	align-items: center;
