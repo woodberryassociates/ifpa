@@ -17,7 +17,12 @@
 
 	<section class="home-block">
 		<section class="home-block-article">
-			<?php $catquery = new WP_Query( 'cat=5&posts_per_page=1' ); ?>
+			<!--dynamically generate category ID-->
+			<?php
+				$catObj = get_category_by_slug('value-propositions'); 
+				$catId = $catObj->term_id;
+			?>
+			<?php $catquery = new WP_Query( 'cat='.$catId.'&posts_per_page=1' ); ?>
 			<?php while($catquery->have_posts()) : $catquery->the_post(); ?>
 				<a href="<?php the_permalink() ?>" rel="bookmark"><?php the_title(); ?></a>
 				<a href="<?php the_permalink() ?>" rel="bookmark"><?php the_post_thumbnail(); ?></a>
@@ -27,7 +32,11 @@
 		</section>
 
 		<section class="home-block-article">
-			<?php $catquery = new WP_Query( 'cat=6&posts_per_page=1' ); ?>
+			<?php
+				$catObj = get_category_by_slug('cost-sharing'); 
+				$catId = $catObj->term_id;
+			?>
+			<?php $catquery = new WP_Query( 'cat='.$catId.'&posts_per_page=1' ); ?>
 			<?php while($catquery->have_posts()) : $catquery->the_post(); ?>
 				<a href="<?php the_permalink() ?>" rel="bookmark"><?php the_title(); ?></a>
 				<a href="<?php the_permalink() ?>" rel="bookmark"><?php the_post_thumbnail(); ?></a>
@@ -37,7 +46,11 @@
 		</section>
 
 		<section class="home-block-article">
-			<?php $catquery = new WP_Query( 'cat=7&posts_per_page=1' ); ?>
+			<?php
+				$catObj = get_category_by_slug('coverage-design'); 
+				$catId = $catObj->term_id;
+			?>
+			<?php $catquery = new WP_Query( 'cat='.$catId.'&posts_per_page=1' ); ?>
 			<?php while($catquery->have_posts()) : $catquery->the_post(); ?>
 				<a href="<?php the_permalink() ?>" rel="bookmark"><?php the_title(); ?></a>
 				<a href="<?php the_permalink() ?>" rel="bookmark"><?php the_post_thumbnail(); ?></a>
