@@ -28,18 +28,13 @@
 		<?php echo "</p><a style='display: flex; padding: 0px 10px;'"; ?>
 		<?php edit_post_link(); ?>
 		<?php echo "</a>"; ?>
-
 	</article>
 	<!-- /article -->
-
 <?php endwhile; ?>
-
 <?php else: ?>
-
 	<!-- article -->
 	<article>
 		<h2><?php _e( 'Sorry, nothing to display.', 'html5blank' ); ?></h2>
 	</article>
 	<!-- /article -->
-
 <?php endif; ?>
