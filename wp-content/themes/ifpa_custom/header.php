@@ -36,11 +36,11 @@
 		<header class="header clear" role="banner">
 			
 			<!--sidebar menu-->
-			<div id="mySidebar" class="sidebar">
+			<!--div id="mySidebar" class="sidebar">
 				<a title="Cost Sharing" href="./cost-sharing"><img src="<?php echo get_stylesheet_directory_uri(); ?>/img/icons/wallet.png"></a>
 				<a title="Coverage Design" href="./coverage-design"><img src="<?php echo get_stylesheet_directory_uri(); ?>/img/icons/checklist.png"></a>
 				<a title="Value Propositions" href="./value-propositions"><img src="<?php echo get_stylesheet_directory_uri(); ?>/img/icons/arrow.png"></a>
-			</div>
+			</div-->
 
 			<!-- logo -->
 			<div class="logo">
@@ -52,7 +52,7 @@
 			<!-- /logo -->
 
 			<!-- nav -->
-			<nav class="nav" role="navigation" id="by-issue"><a onclick="animNav()">&#8644; BY ISSUE</a></nav>
+			<!--nav class="nav" role="navigation" id="by-issue"><a onclick="animNav()">&#8644; BY ISSUE</a></nav-->
 			<nav role="navigation"><?php wp_nav_menu(array('theme_location' => 'header-menu')); ?></nav>
 			<!-- /nav -->
 

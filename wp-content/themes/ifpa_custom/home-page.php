@@ -12,8 +12,19 @@
 			<br class="clear">
 		</article>
 		<!-- /article -->
-
 	</section>
+
+	<hr>
+	<br>
+
+	<section class="issue-nav">
+		<a title="Cost Sharing" href="./cost-sharing"><img src="<?php echo get_stylesheet_directory_uri(); ?>/img/icons/wallet.png"></a>
+		<a title="Coverage Design" href="./coverage-design"><img src="<?php echo get_stylesheet_directory_uri(); ?>/img/icons/checklist.png"></a>
+		<a title="Value Propositions" href="./value-propositions"><img src="<?php echo get_stylesheet_directory_uri(); ?>/img/icons/arrow.png"></a>
+	</section>
+
+	<hr>
+	<br>
 
 	<section class="home-block">
 		<section class="home-block-article">
