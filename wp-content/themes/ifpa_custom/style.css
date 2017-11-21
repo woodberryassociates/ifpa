@@ -290,6 +290,7 @@ button[role=button] {
 	align-items: center;
 	justify-content: flex-end;
 	text-align: center;
+	font-weight: bold;
 	font-size: 20px;
 	box-shadow: 0 0 10px 2px;
 	transition: .2s;

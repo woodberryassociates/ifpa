@@ -1,4 +1,3 @@
-<?php /*Template Name: Home Page*/ ?>
 <?php get_header(); ?>
 
 <main role="main">
@@ -16,7 +15,6 @@
 
 	<hr style="border: 1px solid #B0D8BC">
 	<br>
-
 	<section class="issue-nav">
 		<a title="Cost Sharing" href="./cost-sharing"><img src="<?php echo get_stylesheet_directory_uri(); ?>/img/icons/wallet.png"></a>
 		<a title="Coverage Design" href="./coverage-design"><img src="<?php echo get_stylesheet_directory_uri(); ?>/img/icons/checklist.png"></a>
@@ -32,13 +30,14 @@
 			<?php
 				$catObj = get_category_by_slug('value-propositions'); 
 				$catId = $catObj->term_id;
+				$catquery = new WP_Query( 'cat='.$catId.'&posts_per_page=1' );
 			?>
-			<?php $catquery = new WP_Query( 'cat='.$catId.'&posts_per_page=1' ); ?>
 			<?php while($catquery->have_posts()) : $catquery->the_post(); ?>
 				<a href="<?php the_permalink() ?>" rel="bookmark"><?php the_title(); ?></a>
 				<a href="<?php the_permalink() ?>" rel="bookmark"><?php the_post_thumbnail(); ?></a>
-			<?php endwhile;
-			wp_reset_postdata();
+			<?php
+				endwhile;
+				wp_reset_postdata();
 			?>
 		</section>
 
@@ -46,13 +45,14 @@
 			<?php
 				$catObj = get_category_by_slug('cost-sharing'); 
 				$catId = $catObj->term_id;
+				$catquery = new WP_Query( 'cat='.$catId.'&posts_per_page=1' );
 			?>
-			<?php $catquery = new WP_Query( 'cat='.$catId.'&posts_per_page=1' ); ?>
 			<?php while($catquery->have_posts()) : $catquery->the_post(); ?>
 				<a href="<?php the_permalink() ?>" rel="bookmark"><?php the_title(); ?></a>
 				<a href="<?php the_permalink() ?>" rel="bookmark"><?php the_post_thumbnail(); ?></a>
-			<?php endwhile;
-			wp_reset_postdata();
+			<?php
+				endwhile;
+				wp_reset_postdata();
 			?>
 		</section>
 
@@ -60,17 +60,16 @@
 			<?php
 				$catObj = get_category_by_slug('coverage-design'); 
 				$catId = $catObj->term_id;
+				$catquery = new WP_Query( 'cat='.$catId.'&posts_per_page=1' );
 			?>
-			<?php $catquery = new WP_Query( 'cat='.$catId.'&posts_per_page=1' ); ?>
 			<?php while($catquery->have_posts()) : $catquery->the_post(); ?>
 				<a href="<?php the_permalink() ?>" rel="bookmark"><?php the_title(); ?></a>
 				<a href="<?php the_permalink() ?>" rel="bookmark"><?php the_post_thumbnail(); ?></a>
-			<?php endwhile;
-			wp_reset_postdata();
+			<?php
+				endwhile;
+				wp_reset_postdata();
 			?>
 		</section>
 	</section>
 </main>
-
-<?php get_sidebar(); ?>
 <?php get_footer(); ?>

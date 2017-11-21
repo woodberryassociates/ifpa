@@ -8,6 +8,7 @@ function animNav() {
   }
 }
 
+/*
 function openNav() {
    document.getElementById("mySidebar").style.width = "75px";
    document.getElementById("main").style.marginLeft = "75px";
