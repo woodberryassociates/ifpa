@@ -14,7 +14,7 @@
 		<!-- /article -->
 	</section>
 
-	<hr>
+	<hr style="border: 1px solid #B0D8BC">
 	<br>
 
 	<section class="issue-nav">
@@ -23,7 +23,7 @@
 		<a title="Value Propositions" href="./value-propositions"><img src="<?php echo get_stylesheet_directory_uri(); ?>/img/icons/arrow.png"></a>
 	</section>
 
-	<hr>
+	<hr style="border: 1px solid #B0D8BC">
 	<br>
 
 	<section class="home-block">
