@@ -273,7 +273,7 @@ button[role=button] {
 	color: #2AAD69;
 }
 
-/* Home Page formating */
+/* Home Page formatting */
 
 .home-block {
 	display: flex;
@@ -325,8 +325,14 @@ button[role=button] {
 /*------------------------------------*\
     IMAGES
 \*------------------------------------*/
+[id^="post-"] > a {
+	margin: auto;
+}
 
-
+[id^="post-"] > a > img {
+	width: 80%;
+	margin: auto;
+}
 
 /*------------------------------------*\
 	TYPOGRAPHY

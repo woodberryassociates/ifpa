@@ -2,8 +2,7 @@
 
 	<main role="main">
 	<!-- section -->
-	<section>
-	&nbsp;
+	<section class="single">
 	<?php if (have_posts()): while (have_posts()) : the_post(); ?>
 
 		<!-- article -->
@@ -11,7 +10,7 @@
 
 			<!-- post thumbnail -->
 			<?php if ( has_post_thumbnail()) : // Check if Thumbnail exists ?>
-				<a href="<?php the_permalink(); ?>" title="<?php the_title(); ?>">
+				<a class="thumbnail" href="<?php the_permalink(); ?>" title="<?php the_title(); ?>">
 					<?php the_post_thumbnail(); // Fullsize image for the single post ?>
 				</a>
 			<?php endif; ?>
@@ -35,7 +34,8 @@
 
 			<p><?php _e( 'Categorised in: ', 'html5blank' ); the_category(', '); // Separated by commas ?></p>
 
-			<p><?php _e( 'This post was written by ', 'html5blank' ); the_author(); ?></p>
+			<!--p><?php _e( 'This post was written by ', 'html5blank' ); the_author(); ?></p--
+			>
 
 			<?php edit_post_link(); // Always handy to have Edit Post Links available ?>
 
@@ -61,7 +61,5 @@
 	</section>
 	<!-- /section -->
 	</main>
-
-<?php get_sidebar(); ?>
 
 <?php get_footer(); ?>
