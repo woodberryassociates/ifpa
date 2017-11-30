@@ -319,7 +319,7 @@ button[role=button] {
 	align-items: center;
 }
 .issue-nav a {
-	max-width: 60px;
+	max-width: 130px;
 	transition-duration: .1s;
 }
 
