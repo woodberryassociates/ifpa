@@ -302,6 +302,10 @@ button[role=button] {
 	transition: .2s;
 }
 
+.home-block-article a:hover {
+	color: #2AAD69; /*avoid changing color*/
+}
+
 .home-block-article:hover {
 	transform: translateY(-5px);
 }
