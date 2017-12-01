@@ -381,6 +381,10 @@ article > .footer { /*because articles in single.php are removed from the docume
     IMAGES
 \*------------------------------------*/
 
+.tiled-gallery-caption {
+	white-space: normal;
+}
+
 /*------------------------------------*\
 	TYPOGRAPHY
 \*------------------------------------*/
