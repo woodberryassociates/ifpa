@@ -84,6 +84,7 @@ h2 {
 
 h1,h2,h3,p {
 	margin: 0;
+	font-weight: normal;
 }
 /* wrapper */
 .wrapper {
@@ -292,7 +293,7 @@ button[role=button] {
 	justify-content: flex-end;
 
 	text-align: center;
-	font-weight: bold;
+	font-weight: normal;
 	font-size: 20px;
 
 	box-shadow: 0 0 10px 2px;
