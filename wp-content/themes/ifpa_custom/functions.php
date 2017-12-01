@@ -17,7 +17,7 @@
 
 if (!isset($content_width))
 {
-    $content_width = 1200;
+    $content_width = 1000;
 }
 
 if (function_exists('add_theme_support'))
