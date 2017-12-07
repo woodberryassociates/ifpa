@@ -1,5 +1,5 @@
 <?php if (have_posts()): while (have_posts()) : the_post(); ?>
-	<!--if the post title contains no spaces (i.e. not content), hide it (hack to display media)-->
+	<!--if the post title contains no spaces (i.e. not content), skip it (hack to display content media)-->
 	<?php if (!strpos(the_title('','',false),' ')) {
 		continue;
 	} ?>
