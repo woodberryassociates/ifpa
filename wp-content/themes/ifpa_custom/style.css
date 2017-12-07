@@ -352,7 +352,7 @@ button[role=button] {
 #article-overlay {
 	width: 100%;
 	position: absolute;
-	margin-top: 30%;
+	margin-top: 20%;
 
 	display: flex;
 	flex-direction: column;
@@ -390,17 +390,23 @@ article > .footer { /*because articles in single.php are removed from the docume
 /*------------------------------------*\
     IMAGES
 \*------------------------------------*/
-
-<<<<<<< HEAD
 /*for infographics gallery*/
+.infographic-img {
+	border-width: 10px;
+	border-style: solid;
+	border-color: #2AAD69;
+}
 
 /*for attachments/imgs that are reached through the searchbar*/
 p.attachment {
 	text-align: center;
-=======
+}
+
 .tiled-gallery-caption {
 	white-space: normal;
->>>>>>> 6247bb0ebb2b2385a3119e06edc3683c09090f68
+	font-size: 35px !important;
+	color: #2AAD69 !important;
+	white-space: normal !important;
 }
 
 /*------------------------------------*\
