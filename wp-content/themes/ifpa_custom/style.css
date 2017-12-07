@@ -391,17 +391,17 @@ article > .footer { /*because articles in single.php are removed from the docume
     IMAGES
 \*------------------------------------*/
 /*for infographics gallery*/
-.tiled-gallery-item {
+.infographic-item {
 	margin: 0px !important;
 
-	border-width: 1px;
+	border-width: 2px;
 	border-style: solid;
 	border-color: #2AAD69;
 
 	transition-duration: .1s;
 }
 
-.tiled-gallery-item:hover {
+.infographic-item:hover {
 	transform: scale(1.05);
 }
 
@@ -410,6 +410,7 @@ p.attachment {
 	text-align: center;
 }
 
+/*captions used on homepage*/
 .tiled-gallery-caption {
 	white-space: normal;
 	font-size: 35px !important;
