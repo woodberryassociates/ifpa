@@ -391,11 +391,16 @@ article > .footer { /*because articles in single.php are removed from the docume
     IMAGES
 \*------------------------------------*/
 
+<<<<<<< HEAD
 /*for infographics gallery*/
 
 /*for attachments/imgs that are reached through the searchbar*/
 p.attachment {
 	text-align: center;
+=======
+.tiled-gallery-caption {
+	white-space: normal;
+>>>>>>> 6247bb0ebb2b2385a3119e06edc3683c09090f68
 }
 
 /*------------------------------------*\

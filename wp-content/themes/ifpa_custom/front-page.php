@@ -28,21 +28,6 @@
 		<section class="home-block-article">
 			<!--dynamically generate category ID-->
 			<?php
-				$catObj = get_category_by_slug('value-propositions'); 
-				$catId = $catObj->term_id;
-				$catquery = new WP_Query( 'cat='.$catId.'&posts_per_page=1' );
-			?>
-			<?php while($catquery->have_posts()) : $catquery->the_post(); ?>
-				<a href="<?php the_permalink() ?>" rel="bookmark"><?php the_title(); ?></a>
-				<a href="<?php the_permalink() ?>" rel="bookmark"><?php the_post_thumbnail(); ?></a>
-			<?php
-				endwhile;
-				wp_reset_postdata();
-			?>
-		</section>
-
-		<section class="home-block-article">
-			<?php
 				$catObj = get_category_by_slug('cost-sharing'); 
 				$catId = $catObj->term_id;
 				$catquery = new WP_Query( 'cat='.$catId.'&posts_per_page=1' );
@@ -59,6 +44,21 @@
 		<section class="home-block-article">
 			<?php
 				$catObj = get_category_by_slug('coverage-design'); 
+				$catId = $catObj->term_id;
+				$catquery = new WP_Query( 'cat='.$catId.'&posts_per_page=1' );
+			?>
+			<?php while($catquery->have_posts()) : $catquery->the_post(); ?>
+				<a href="<?php the_permalink() ?>" rel="bookmark"><?php the_title(); ?></a>
+				<a href="<?php the_permalink() ?>" rel="bookmark"><?php the_post_thumbnail(); ?></a>
+			<?php
+				endwhile;
+				wp_reset_postdata();
+			?>
+		</section>
+
+		<section class="home-block-article">
+			<?php
+				$catObj = get_category_by_slug('value-propositions'); 
 				$catId = $catObj->term_id;
 				$catquery = new WP_Query( 'cat='.$catId.'&posts_per_page=1' );
 			?>
