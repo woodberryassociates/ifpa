@@ -178,6 +178,11 @@ button[role=button] {
     background-color: #1C72B7;
 }
 
+/*center the pagination for blog/search results*/
+.pagination {
+	text-align: center;
+}
+
 /*TODO: expand searchbar when focused on*/
 /*.search-input:focus {
 	width: 400px;
@@ -369,6 +374,11 @@ button[role=button] {
 	margin-bottom: 20px;
 }
 
+/*remove hover behavior on post titles on post pages*/
+h1 > a:hover {
+	color: #2AAD69;
+}
+
 article > .footer { /*because articles in single.php are removed from the document flow (position: absolute)*/
 	padding: 0;
 
@@ -380,6 +390,13 @@ article > .footer { /*because articles in single.php are removed from the docume
 /*------------------------------------*\
     IMAGES
 \*------------------------------------*/
+
+/*for infographics gallery*/
+
+/*for attachments/imgs that are reached through the searchbar*/
+p.attachment {
+	text-align: center;
+}
 
 /*------------------------------------*\
 	TYPOGRAPHY

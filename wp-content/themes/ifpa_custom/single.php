@@ -1,3 +1,7 @@
+<script type="text/javascript">
+	//remove margin-top from article overlay if there is no bg img
+</script>
+
 <?php get_header(); ?>
 
 	<main role="main">

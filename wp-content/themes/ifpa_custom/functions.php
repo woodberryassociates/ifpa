@@ -449,4 +449,20 @@ function html5_shortcode_demo_2($atts, $content = null) // Demo Heading H2 short
     return '<h2>' . $content . '</h2>';
 }
 
+/*------------------------------------*\
+    Custom
+\*------------------------------------*/
+
+// Add attachment search to searchbar
+function attachment_search( $query ) {
+    if ( $query->is_search ) {
+       $query->set( 'post_type', array( 'post', 'attachment' ) );
+       $query->set( 'post_status', array( 'publish', 'inherit' ) );
+    }
+ 
+   return $query;
+}
+
+add_filter( 'pre_get_posts', 'attachment_search' );
+
 ?>
