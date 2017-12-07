@@ -391,18 +391,14 @@ article > .footer { /*because articles in single.php are removed from the docume
     IMAGES
 \*------------------------------------*/
 /*for infographics gallery*/
-article ~ .tiled-gallery-item {
+#post-8 img {
 	margin: 0px !important;
-
-	border-width: 2px;
-	border-style: solid;
-	border-color: #2AAD69;
 
 	transform: scale(.95);
 	transition-duration: .1s;
 }
 
-article ~ .gallery-tiled-item:hover {
+#post-8 img:hover {
 	transform: scale(1);
 }
 
