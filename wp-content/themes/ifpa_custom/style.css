@@ -392,7 +392,7 @@ article > .footer { /*because articles in single.php are removed from the docume
 \*------------------------------------*/
 /*for infographics gallery*/
 .tiled-gallery-item {
-	border-width: 10px;
+	border-width: 2px;
 	border-style: solid;
 	border-color: #2AAD69;
 }
