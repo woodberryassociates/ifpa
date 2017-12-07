@@ -391,7 +391,7 @@ article > .footer { /*because articles in single.php are removed from the docume
     IMAGES
 \*------------------------------------*/
 /*for infographics gallery*/
-.infographic-img {
+.tiled-gallery {
 	border-width: 10px;
 	border-style: solid;
 	border-color: #2AAD69;
