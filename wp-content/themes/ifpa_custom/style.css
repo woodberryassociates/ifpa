@@ -391,7 +391,7 @@ article > .footer { /*because articles in single.php are removed from the docume
     IMAGES
 \*------------------------------------*/
 /*for infographics gallery*/
-.infographic-item {
+#post-8 ~ .tiled-gallery-item {
 	margin: 0px !important;
 
 	border-width: 2px;
@@ -401,7 +401,7 @@ article > .footer { /*because articles in single.php are removed from the docume
 	transition-duration: .1s;
 }
 
-.infographic-item:hover {
+#post-8 ~ .gallery-tiled-item:hover {
 	transform: scale(1.05);
 }
 
