@@ -406,7 +406,7 @@ article > .footer { /*because articles in single.php are removed from the docume
 	transform: scale(1);
 }
 
-#post-8 .tiled-galler-caption {
+#post-8 .tiled-gallery-caption {
 	font-size: 10px !important;
 	color: #2AAD69 !important;
 	white-space: normal !important;
@@ -420,12 +420,6 @@ p.attachment {
 /*captions used on homepage*/
 .tiled-gallery-caption {
 	font-size: 35px !important;
-	color: #2AAD69 !important;
-	white-space: normal !important;
-}
-
-#post-8 .tiled-galler-caption {
-	font-size: 10px !important;
 	color: #2AAD69 !important;
 	white-space: normal !important;
 }
