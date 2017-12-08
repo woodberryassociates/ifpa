@@ -392,6 +392,10 @@ article > .footer { /*because articles in single.php are removed from the docume
 \*------------------------------------*/
 /*for infographics gallery*/
 #post-8 img {
+	border-style: solid;
+    border-width: 2px;
+    border-color: #2AAD69;
+
 	margin: 0px !important;
 
 	transform: scale(.95);
