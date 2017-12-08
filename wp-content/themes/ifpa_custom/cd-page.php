@@ -9,7 +9,7 @@
 		<?php endwhile; ?>
 	<?php endif; ?>
 	</section>
-	
+	&nbsp;
 	<section>
 		<?php
 			$catObj = get_category_by_slug('coverage-design'); 
