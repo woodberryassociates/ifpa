@@ -424,6 +424,11 @@ p.attachment {
 	white-space: normal !important;
 }
 
+#post-8 .tiled-galler-caption {
+	font-size: 10px !important;
+	color: #2AAD69 !important;
+	white-space: normal !important;
+}
 /*------------------------------------*\
 	TYPOGRAPHY
 \*------------------------------------*/
