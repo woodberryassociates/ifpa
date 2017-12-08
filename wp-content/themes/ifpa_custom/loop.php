@@ -1,8 +1,9 @@
 <?php if (have_posts()): while (have_posts()) : the_post(); ?>
-	<!--if the post title contains no spaces (i.e. not content), skip it (hack to display content media)-->
-	<?php if (!strpos(the_title('','',false),' ')) {
+	<!--if the post title contains an underscore OR a dash w/ no spaces (i.e. not content), skip it (hack to display content media)-->
+	<?php if (!strpos(the_title('','',false),' ') && !strpos(the_title('','',false),'Infographic')) {
 		continue;
 	} ?>
+
 		<!-- article -->
 		<article style="padding-left: 15%; display: block; height: 220px;" id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
 
