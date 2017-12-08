@@ -394,7 +394,7 @@ article > .footer { /*because articles in single.php are removed from the docume
 #post-8 img {
 	border-style: solid;
     border-width: 2px;
-    border-color: #2AAD69;
+    border-color: rgb(200, 200, 200);
 
 	margin: 0px !important;
 
