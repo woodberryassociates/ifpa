@@ -407,7 +407,7 @@ article > .footer { /*because articles in single.php are removed from the docume
 }
 
 #post-8 .tiled-gallery-caption {
-	font-size: 10px !important;
+	font-size: 15px !important;
 	color: #2AAD69 !important;
 	white-space: normal !important;
 }
