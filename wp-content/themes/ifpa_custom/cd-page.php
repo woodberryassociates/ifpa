@@ -3,6 +3,13 @@
 <?php get_header(); ?>
 
 <main role="main">
+	<section class="single">
+		<?php if (have_posts()): while (have_posts()) : the_post(); ?>
+			<?php the_content() ?>
+		<?php endwhile; ?>
+	<?php endif; ?>
+	</section>
+	
 	<section>
 		<?php
 			$catObj = get_category_by_slug('coverage-design'); 
