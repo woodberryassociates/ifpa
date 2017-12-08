@@ -394,7 +394,7 @@ article > .footer { /*because articles in single.php are removed from the docume
 #post-8 img {
 	border-style: solid;
     border-width: 2px;
-    border-color: rgb(200, 200, 200);
+    border-color: #C6C6C6;
 
 	margin: 0px !important;
 
@@ -406,6 +406,12 @@ article > .footer { /*because articles in single.php are removed from the docume
 	transform: scale(1);
 }
 
+#post-8 .tiled-galler-caption {
+	font-size: 10px !important;
+	color: #2AAD69 !important;
+	white-space: normal !important;
+}
+
 /*for attachments/imgs that are reached through the searchbar*/
 p.attachment {
 	text-align: center;
@@ -413,7 +419,6 @@ p.attachment {
 
 /*captions used on homepage*/
 .tiled-gallery-caption {
-	white-space: normal;
 	font-size: 35px !important;
 	color: #2AAD69 !important;
 	white-space: normal !important;
