@@ -1,5 +1,5 @@
 <script type="text/javascript">
-	//remove margin-top from article overlay if there is no bg img
+	//TODO: reduce margin-top from article overlay if there is no bg img
 </script>
 
 <?php get_header(); ?>
