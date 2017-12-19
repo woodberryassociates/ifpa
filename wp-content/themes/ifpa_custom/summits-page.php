@@ -1,4 +1,4 @@
-<?php /*Template Name: Coverage Design*/ ?>
+<?php /*Template Name: Summits*/ ?>
 
 <?php get_header(); ?>
 
