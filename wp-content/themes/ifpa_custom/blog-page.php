@@ -10,8 +10,7 @@
 	<?php endif; ?>
 	</section>
 
-	<section>
-		<p style="font-size: 35px; padding: 10px 0px 10px 230px">Blog Posts</p> 
+	<section> 
 		<?php
 			$catObj = get_category_by_slug('blog'); 
 			$catId = $catObj->term_id;
