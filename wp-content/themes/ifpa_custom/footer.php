@@ -1,7 +1,8 @@
 			<?php echo "</a>"; //for some reason this is necessary on the remote site ?>
 			<!-- footer -->
 			<footer class="footer" role="contentinfo">
-
+				<?php if ( !function_exists('dynamic_sidebar') || !dynamic_sidebar("footer_widget") ) : ?>
+				<?php endif;?>
 				<!-- copyright -->
 				<p class="copyright">
 					&copy; <?php echo date('Y'); ?> Copyright Institute for Patient Access<!--?php bloginfo('name'); ?-->. <?php _e('Powered by', 'html5blank'); ?>

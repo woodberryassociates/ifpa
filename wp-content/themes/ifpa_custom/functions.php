@@ -475,4 +475,14 @@ function tweakjp_rm_comments_att( $open, $post_id ) {
 }
 add_filter( 'comments_open', 'tweakjp_rm_comments_att', 10 , 2 );
 
+//add widget to footer
+if ( function_exists('register_sidebar') )
+  register_sidebar(array(
+    'name' => 'footer_widget',
+    'before_widget' => '<div class = "footer_widget">',
+    'after_widget' => '</div>',
+    'before_title' => '<h3>',
+    'after_title' => '</h3>',
+  )
+);
 ?>
