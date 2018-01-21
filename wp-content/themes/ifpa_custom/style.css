@@ -124,15 +124,20 @@ h1,h2,h3,p {
 
 .nav a {
 	padding: 0px 10px;
-
 	color: #2AAD69;
-
 	transition: 0.3s;
 }
 
 .nav a:hover {
     color: #B0D8BC;
     background-color: #2AAD69;
+}
+
+#menu-icon {
+	display: none;
+	padding-left: 10px;
+
+	font-size: 30px;
 }
 
 /* Search Bar */
@@ -156,7 +161,7 @@ button[role=button] {
 	padding: 15px;
 	border: none;
 	border-radius: 5px;
-	font-size: 10px;
+	font-size: 15px;
 	font-weight: bold;
 }
 
@@ -465,11 +470,25 @@ p.attachment {
 @media only screen and (min-width:768px) {
 
 }
-@media only screen and (min-width:1024px) {
+@media only screen and (max-width:1200px) {
+	#menu-icon {
+		display: inline-block;
+		font-size: 30px;
+	}
 
+	.nav a,
+	.logo {
+		display: none;
+	}
+
+	.search-input,
+	button[role=button] {
+		font-size: 12px;
+		font-weight: normal;
+	}
 }
-@media only screen and (max-width:1300px) {
-	nav a,
+@media only screen and (min-width: 1200px) and (max-width:1350px) {
+	.nav a,
 	.search-input,
 	button[role=button] {
 		font-size: 12px;

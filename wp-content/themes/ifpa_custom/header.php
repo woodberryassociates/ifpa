@@ -56,5 +56,8 @@
 			<nav role="navigation"><?php wp_nav_menu(array('theme_location' => 'header-menu')); ?></nav>
 			<!-- /nav -->
 
+			<!--menu icon, for small screens-->
+			<nav class="nav" id="menu-icon">&#9776;</nav>
+
 		</header>
 		<!-- /header -->
