@@ -236,7 +236,7 @@ button[role=button] {
 	display: inline-block;
 	width: 100%;
 	margin-top: 15px;
-	padding: 20px 10px 0px 0px;
+	padding-top: 20px;
 	background-color: #2AAD69;
 
 	font-size: 16px;
@@ -253,10 +253,10 @@ button[role=button] {
 
 .column {
 	display: inline-block;
-	width: 33%;
-	
+	width: 10%;
+	padding-left: 5%;
+
 	vertical-align: top;
-	text-align: center;
 	list-style-type: none;
 }
 
