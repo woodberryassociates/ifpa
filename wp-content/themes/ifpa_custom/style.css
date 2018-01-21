@@ -234,9 +234,10 @@ button[role=button] {
 /* footer & copyright*/
 .footer {
 	padding: 20px 10px 0px 0px;
-	
+	background-color: #2AAD69;
+
 	font-size: 16px;
-	color: #2AAD69;
+	color: #FFF;
 }
 
 .copyright {
