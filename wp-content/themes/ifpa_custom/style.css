@@ -466,10 +466,7 @@ p.attachment {
 
 }
 @media only screen and (min-width:1220px) {
-	nav a {
-		display: none;
-	}
-
+	nav a,
 	.search-input,
 	button[role=button] {
 		font-size: 12px;
