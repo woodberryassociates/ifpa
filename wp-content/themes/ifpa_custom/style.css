@@ -114,16 +114,19 @@ h1,h2,h3,p {
 	line-height: 85px;
 	position: center;
 	float: left;
+
 	color: #2AAD69;
-	font-size: 10px;
-	font-weight: bold;
+	font-size: 15px;
 	text-transform: uppercase;
+
 	transition: 0.3s;
 }
 
 .nav a {
 	padding: 0px 10px;
+
 	color: #2AAD69;
+
 	transition: 0.3s;
 }
 
@@ -465,7 +468,7 @@ p.attachment {
 @media only screen and (min-width:1024px) {
 
 }
-@media only screen and (min-width:1220px) {
+@media only screen and (max-width:1220px) {
 	nav a,
 	.search-input,
 	button[role=button] {
@@ -473,13 +476,8 @@ p.attachment {
 		font-weight: normal;
 	}
 }
-@media only screen and (min-width:1400px) {
-	nav a,
-	.search-input,
-	button[role=button] {
-		font-size: 15px;
-		font-weight: normal;
-	}
+@media only screen and (max-width:1400px) {
+	
 }
 @media only screen and (-webkit-min-device-pixel-ratio:1.5),
 	   only screen and (min-resolution:144dpi) {
