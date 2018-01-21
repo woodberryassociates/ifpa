@@ -251,6 +251,12 @@ button[role=button] {
 	color: #B0D8BC;
 }
 
+.column {
+	width: 33%;
+	text-align: center;
+	list-style-type: none;
+}
+
 .copyright {
 	float: right;
 	font-size: 10px;
