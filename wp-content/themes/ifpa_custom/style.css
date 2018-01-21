@@ -254,6 +254,8 @@ button[role=button] {
 .column {
 	display: inline-block;
 	width: 33%;
+
+	vertical-align: top;
 	text-align: center;
 	list-style-type: none;
 }
@@ -278,8 +280,8 @@ button[role=button] {
   .sidebar {padding-top: 15px;}
 }*/
 
-.home-page {
-
+.page {
+	text-align: center;
 }
 
 *[role="main"] {
