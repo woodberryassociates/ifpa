@@ -234,12 +234,15 @@ button[role=button] {
 /* footer & copyright*/
 .footer {
 	padding: 20px 10px 0px 0px;
-	/*float: right;*/
+	
+	font-size: 16px;
 	color: #2AAD69;
 }
 
 .copyright {
 	float: right;
+
+	font-size: 10px;
 }
 
 .copyright a:hover {
