@@ -233,6 +233,9 @@ button[role=button] {
 
 /* footer & copyright*/
 .footer {
+	display: inline-block;
+	width: 100%;
+	margin-top: 15px;
 	padding: 20px 10px 0px 0px;
 	background-color: #2AAD69;
 
@@ -240,14 +243,17 @@ button[role=button] {
 	color: #FFF;
 }
 
-.copyright {
-	float: right;
-
-	font-size: 10px;
+.footer a {
+	color: #FFF;
 }
 
-.copyright a:hover {
+.footer a:hover {
 	color: #B0D8BC;
+}
+
+.copyright {
+	float: right;
+	font-size: 10px;
 }
 
 /*------------------------------------*\
