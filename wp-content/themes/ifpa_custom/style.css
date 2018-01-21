@@ -252,6 +252,7 @@ button[role=button] {
 }
 
 .column {
+	display: inline-block;
 	width: 33%;
 	text-align: center;
 	list-style-type: none;
