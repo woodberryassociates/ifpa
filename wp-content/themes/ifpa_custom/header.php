@@ -15,13 +15,24 @@
 
 	<?php wp_head(); ?>
 	<script>
-		var opened = false;
+		var opened = false; // for dropdown menu
         // conditionizr.com
         // configure environment tests
         conditionizr.config({
         	assets: '<?php echo get_template_directory_uri(); ?>',
         	tests: {}
         });
+
+        // Activates the dropdown menu
+        function dropdown() {
+        	if(!opened) {
+    			document.getElementById("menu-sidebar").style.display = "flex";
+    			opened = true;
+        	} else {
+    			document.getElementById("menu-sidebar").style.display = "none";
+    			opened = false;
+    		}
+		}
     </script>
     <!-- custom JS scripts -->
     <script src="<?php echo get_template_directory_uri(); ?>/js/nav.js"></script>
@@ -57,7 +68,10 @@
 			<!-- /nav -->
 
 			<!--menu icon, for small screens-->
-			<nav class="nav" id="menu-icon">&#9776;</nav>
+			<nav class="nav" id="menu-icon" onclick="dropdown()">&#9776;</nav>
+			<!--div id="dropdown-menu"-->
+				<?php wp_nav_menu(array('theme_location' => 'sidebar-menu')); ?>
+			<!--/div-->
 
 		</header>
 		<!-- /header -->
