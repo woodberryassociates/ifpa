@@ -286,6 +286,8 @@ button[role=button] {
 /* footer & copyright*/
 .footer {
 	display: inline-block;
+	position: absolute;
+	bottom: 0;
 	width: 100%;
 	padding-top: 20px;
 	background-color: #2AAD69;
