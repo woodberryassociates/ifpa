@@ -286,8 +286,6 @@ button[role=button] {
 /* footer & copyright*/
 .footer {
 	display: inline-block;
-	position: absolute;
-	bottom: 0;
 	width: 100%;
 	padding-top: 20px;
 	background-color: #2AAD69;
@@ -396,6 +394,7 @@ button[role=button] {
 .thumbnail {
 	position: absolute;
 	width: 100%;
+	max-height: 
 	z-index: -1;
 	top: 85px;
 }
@@ -408,6 +407,7 @@ button[role=button] {
 
 .single > [id^="post-"] > a > img {
 	width: 100%;
+	max-height: 500px;
 }
 
 #article-overlay {
