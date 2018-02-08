@@ -408,6 +408,7 @@ button[role=button] {
 .single > [id^="post-"] > a > img {
 	width: 100%;
 	max-height: 500px;
+	overflow: hidden;
 }
 
 #article-overlay {
