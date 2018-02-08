@@ -34,7 +34,7 @@
 					<p style="text-align: right;"><?php _e( 'Categorized in: ', 'html5blank' ); the_category(', '); ?></p>
 					<p style="text-align: right;"><?php edit_post_link(); ?></p>
 
-					<?php get_footer(); ?>
+					
 				</article>
 			</article>
 		</article>
@@ -58,5 +58,5 @@
 	<!-- /section -->
 
 	</main>
-
+	
 <?php get_footer(); ?>

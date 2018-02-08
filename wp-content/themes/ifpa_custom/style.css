@@ -287,7 +287,6 @@ button[role=button] {
 .footer {
 	display: inline-block;
 	width: 100%;
-	margin-top: 15px;
 	padding-top: 20px;
 	background-color: #2AAD69;
 
@@ -331,16 +330,6 @@ button[role=button] {
 /* @media screen and (max-height: 450px) {
   .sidebar {padding-top: 15px;}
 }*/
-
-.home-page {
-
-}
-
-*[role="main"] {
-	/*padding-left: 22px;*/
-	background-color: #FFF;
-	color: #2AAD69;
-}
 
 /* Home Page formatting */
 
@@ -402,6 +391,13 @@ button[role=button] {
 
 /*Blog Post Formatting*/
 
+.thumbnail {
+	position: absolute;
+	width: 100%;
+	z-index: -1;
+	top: 85px;
+}
+
 .single > [id^="post-"] > a {
 	position: absolute;
 	width: 100%;
@@ -414,13 +410,14 @@ button[role=button] {
 
 #article-overlay {
 	width: 100%;
-	position: absolute;
+	position: static;
 	margin-top: 20%;
 
 	display: flex;
 	flex-direction: column;
 	align-items: center;
 
+	color: transparent;
 }
 
 #content {
@@ -442,13 +439,13 @@ h1 > a:hover {
 	color: #2AAD69;
 }
 
-article > .footer { /*because articles in single.php are removed from the document flow (position: absolute)*/
-	padding: 0;
+/*article > .footer { /*because articles in single.php are removed from the document flow (position: absolute)*/
+/*	padding: 0;
 
 	position: relative;
 	top: 40px;
 	font-size: 11px;
-}
+}*/
 
 /*------------------------------------*\
     IMAGES
