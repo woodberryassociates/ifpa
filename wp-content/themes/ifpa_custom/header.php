@@ -26,10 +26,10 @@
         // Activates the dropdown menu
         function dropdown() {
         	if(!opened) {
-    			document.getElementById("menu-sidebar").style.display = "flex";
+    			document.getElementById("menu-collapsible").style.display = "flex";
     			opened = true;
         	} else {
-    			document.getElementById("menu-sidebar").style.display = "none";
+    			document.getElementById("menu-collapsible").style.display = "none";
     			opened = false;
     		}
 		}

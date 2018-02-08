@@ -140,7 +140,7 @@ h1,h2,h3,p {
 	font-size: 30px;
 }
 
-#menu-sidebar {
+#menu-collapsible {
 	display: none;
 	flex-direction: column;
 	width: 100%;
