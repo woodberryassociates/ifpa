@@ -96,6 +96,7 @@ h1,h2,h3,p {
 /* header */
 .header {
 	padding-right: 10px;
+	margin-bottom: 10px;
 }
 /* logo */
 .logo {
