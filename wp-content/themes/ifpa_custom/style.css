@@ -358,7 +358,7 @@ button[role=button] {
 	font-weight: normal;
 	font-size: 20px;
 
-	box-shadow: 0 0 10px 2px;
+	box-shadow: 0 0 10px #555;
 	border-radius: 3px;
 
 	transition: .2s;
