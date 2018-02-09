@@ -412,6 +412,8 @@ button[role=button] {
 	width: 100%;
 	max-height: 35vw;
 	object-fit: cover;
+
+	-webkit-mask-image:-webkit-gradient(linear, left top, left bottom, from(rgba(0,0,0,1)), to(rgba(0,0,0,0)));
 }
 
 #article-overlay {
@@ -424,6 +426,7 @@ button[role=button] {
 	align-items: center;
 
 	color: transparent;
+	background: linear-gradient(transparent, #2AAD69);
 }
 
 #content {
