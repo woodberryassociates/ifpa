@@ -31,7 +31,7 @@ html {
 	font-size:62.5%;
 }
 body {
-	font:300 11px/1.4 'Montserrat', 'Helvetica Neue', Helvetica, Arial, sans-serif !important;
+	font:300 11px/1.4 'Montserrat', 'Helvetica Neue', Helvetica, Arial, sans-serif;
 	background-color: #FFF;
 }
 /* clear */
@@ -450,6 +450,16 @@ button[role=button] {
 	background-color: #FFF;
 
 	margin-bottom: 20px;
+}
+
+/*Jetpack sharing section*/
+.sd-title {
+	font:300 11px/1.4 'Montserrat', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+	font-size: .8em;
+}
+
+.sd-title::before {
+	display: none;
 }
 
 /*remove hover behavior on post titles on post pages*/
