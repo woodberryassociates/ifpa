@@ -2,8 +2,9 @@
 	$(function () {
 		'use strict';
 		
-		$("#menu-icon").click(function(){
-        $("#fwdr3dcovDiv0").hide();
+		//Hide coverflow (broken)
+		/*$("#menu-icon").click(function(){
+        $("#fwdr3dcovDiv0").hide();*/
     });
 
 	});
