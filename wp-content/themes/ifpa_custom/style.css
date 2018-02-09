@@ -141,13 +141,18 @@ h1,h2,h3,p {
 }
 
 #menu-collapsible {
-	display: none;
+	display: flex;
 	flex-direction: column;
 	width: 100%;
+
+	visibility: hidden;
+	opacity: 0;
 
 	position: absolute;
 	top: 85px;
 	z-index: 1;
+
+	transition: 0.3s;
 }
 
 #dropdown-menu {
@@ -288,7 +293,7 @@ button[role=button] {
 	display: inline-block;
 	width: 100%;
 
-	padding-top: 20px;
+	/*padding-top: 20px;*/
 	background-color: #2AAD69;
 
 	font-size: 16px;

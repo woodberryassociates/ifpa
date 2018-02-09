@@ -25,11 +25,15 @@
 
         // Activates the dropdown menu
         function dropdown() {
+        	element = document.getElementById("menu-collapsible");
+
         	if(!opened) {
-    			document.getElementById("menu-collapsible").style.display = "flex";
+    			element.style.visibility = "visible";
+    			element.style.opacity = "1";
     			opened = true;
         	} else {
-    			document.getElementById("menu-collapsible").style.display = "none";
+    			element.style.visibility = "hidden";
+    			element.style.opacity = "0";
     			opened = false;
     		}
 		}
