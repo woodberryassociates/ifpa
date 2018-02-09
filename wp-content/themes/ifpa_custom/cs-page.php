@@ -11,7 +11,7 @@
 	</section>
 
 	<section>
-		<p style="font-size: 35px; padding: 10px 0px 10px 230px">Blog Posts</p>
+		<p style="font-size: 35px; color: #2AAD69; padding: 10px 0px 10px 2vw">Posts</p>
 		<?php
 			$catObj = get_category_by_slug('cost-sharing'); 
 			$catId = $catObj->term_id;

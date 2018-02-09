@@ -5,16 +5,16 @@
 	} ?>
 
 		<!-- article -->
-		<article style="padding-left: 15%; display: block; height: 220px;" id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
+		<article style="padding: 0 15vw 0 15vw; display: block; height: 220px;" id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
 
 			<?php if (has_post_thumbnail()): // Check if thumbnail exists ?>
 				<!-- post thumbnail -->
-				<a style="float: left; height: 200px; width: 300px; text-align: center;" href="<?php the_permalink(); ?>" title="<?php the_title(); ?>">
+				<a class="loop-thumbnail" style="float: left; height: 200px; width: 300px; text-align: center;" href="<?php the_permalink(); ?>" title="<?php the_title(); ?>">
 					<?php the_post_thumbnail(array(300,200)); // Declare pixel size you need inside the array ?>
 				</a>
 				<!-- /post thumbnail -->
 				<!-- post title -->
-				<h2 style="display: inline; padding: 10px;">
+				<h2 style="display: flex; padding-left: 10px;">
 					<a href="<?php the_permalink(); ?>" title="<?php the_title(); ?>"><?php the_title(); ?></a>
 				</h2>
 				<!-- /post title -->

@@ -11,7 +11,6 @@
 	</section>
 	
 	<section>
-		<!--p style="font-size: 35px; padding: 10px 0px 10px 230px">Blog Posts</p--> 
 		<?php
 			$catObj = get_category_by_slug('summits'); 
 			$catId = $catObj->term_id;
