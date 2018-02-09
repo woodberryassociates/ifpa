@@ -54,7 +54,7 @@
 
 			<!-- nav -->
 			<!--nav class="nav" role="navigation" id="by-issue"><a onclick="animNav()">&#8644; BY ISSUE</a></nav-->
-			<nav role="navigation"><?php wp_nav_menu(array('theme_location' => 'header-menu')); ?></nav>
+			<nav role="navigation" style="margin-bottom: 10px"><?php wp_nav_menu(array('theme_location' => 'header-menu')); ?></nav>
 			<!-- /nav -->
 
 			<!--menu icon, for small screens-->
