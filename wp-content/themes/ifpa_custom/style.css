@@ -454,6 +454,8 @@ button[role=button] {
 
 /*Jetpack sharing section*/
 .sd-title {
+	margin: 1em 0 !important;
+
 	font:300 11px/1.4 'Montserrat', 'Helvetica Neue', Helvetica, Arial, sans-serif !important;
 	font-size: .8em !important;
 }
