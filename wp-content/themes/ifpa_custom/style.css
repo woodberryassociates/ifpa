@@ -454,12 +454,12 @@ button[role=button] {
 
 /*Jetpack sharing section*/
 .sd-title {
-	font:300 11px/1.4 'Montserrat', 'Helvetica Neue', Helvetica, Arial, sans-serif;
-	font-size: .8em;
+	font:300 11px/1.4 'Montserrat', 'Helvetica Neue', Helvetica, Arial, sans-serif !important;
+	font-size: .8em !important;
 }
 
 .sd-title::before {
-	display: none;
+	display: none !important;
 }
 
 /*remove hover behavior on post titles on post pages*/
