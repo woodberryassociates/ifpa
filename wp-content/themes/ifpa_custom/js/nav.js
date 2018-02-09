@@ -1,17 +1,15 @@
+var opened = false; // for dropdown menu
+
 // Activates the dropdown menu
 function dropdown() {
-  var opened = false; // for dropdown menu
-  element = document.getElementById("menu-collapsible");
-  coverflow = document.getElementById("fwdr3dcovDiv0"); // b/c the coverflow draws over the menu
+  var element = document.getElementById("menu-collapsible");
 
   if(!opened) {
     element.style.visibility = "visible";
-    coverflow.style.visibility = "hidden";
     element.style.opacity = "1";
     opened = true;
   } else {
     element.style.visibility = "hidden";
-    coverflow.style.visibility = "visible";
     element.style.opacity = "0";
     opened = false;
   }
@@ -26,7 +24,6 @@ function dropdown() {
       closeNav();
   }
 }
-
 
 function openNav() {
    document.getElementById("mySidebar").style.width = "75px";
