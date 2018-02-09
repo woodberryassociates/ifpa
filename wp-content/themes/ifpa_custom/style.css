@@ -536,6 +536,10 @@ p.attachment {
 	}
 }
 @media only screen and (max-width:1200px) {
+	.header {
+		margin-bottom: 0px;
+	}
+
 	#menu-icon {
 		display: inline-block;
 		font-size: 30px;
