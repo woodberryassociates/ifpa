@@ -1,5 +1,24 @@
-//sidebar animation
-function animNav() {
+// Activates the dropdown menu
+function dropdown() {
+  var opened = false; // for dropdown menu
+  element = document.getElementById("menu-collapsible");
+  coverflow = document.getElementById("fwdr3dcovDiv0"); // b/c the coverflow draws over the menu
+
+  if(!opened) {
+    element.style.visibility = "visible";
+    coverflow.style.visibility = "hidden";
+    element.style.opacity = "1";
+    opened = true;
+  } else {
+    element.style.visibility = "hidden";
+    coverflow.style.visibility = "visible";
+    element.style.opacity = "0";
+    opened = false;
+  }
+}
+
+//sidebar animation (REMOVED)
+/*function animNav() {
    var sidebar = document.getElementById("mySidebar");
    if (!opened) {
       openNav();
@@ -8,7 +27,7 @@ function animNav() {
   }
 }
 
-/*
+
 function openNav() {
    document.getElementById("mySidebar").style.width = "75px";
    document.getElementById("main").style.marginLeft = "75px";

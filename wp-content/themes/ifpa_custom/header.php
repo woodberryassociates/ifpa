@@ -15,28 +15,12 @@
 
 	<?php wp_head(); ?>
 	<script>
-		var opened = false; // for dropdown menu
         // conditionizr.com
         // configure environment tests
         conditionizr.config({
         	assets: '<?php echo get_template_directory_uri(); ?>',
         	tests: {}
         });
-
-        // Activates the dropdown menu
-        function dropdown() {
-        	element = document.getElementById("menu-collapsible");
-
-        	if(!opened) {
-    			element.style.visibility = "visible";
-    			element.style.opacity = "1";
-    			opened = true;
-        	} else {
-    			element.style.visibility = "hidden";
-    			element.style.opacity = "0";
-    			opened = false;
-    		}
-		}
     </script>
     <!-- custom JS scripts -->
     <script src="<?php echo get_template_directory_uri(); ?>/js/nav.js"></script>
