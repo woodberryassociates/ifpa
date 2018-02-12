@@ -35,13 +35,6 @@
 
 		<!-- header -->
 		<header class="header clear" role="banner">
-			
-			<!--sidebar menu-->
-			<!--div id="mySidebar" class="sidebar">
-				<a title="Cost Sharing" href="./cost-sharing"><img src="<?php echo get_stylesheet_directory_uri(); ?>/img/icons/wallet.png"></a>
-				<a title="Coverage Design" href="./coverage-design"><img src="<?php echo get_stylesheet_directory_uri(); ?>/img/icons/checklist.png"></a>
-				<a title="Value Propositions" href="./value-propositions"><img src="<?php echo get_stylesheet_directory_uri(); ?>/img/icons/arrow.png"></a>
-			</div-->
 
 			<!-- logo -->
 			<div class="logo">
@@ -53,15 +46,12 @@
 			<!-- /logo -->
 
 			<!-- nav -->
-			<!--nav class="nav" role="navigation" id="by-issue"><a onclick="animNav()">&#8644; BY ISSUE</a></nav-->
 			<nav role="navigation"><?php wp_nav_menu(array('theme_location' => 'header-menu')); ?></nav>
-			<!-- /nav -->
 
-			<!--menu icon, for small screens-->
+			<!--menu icon, for dropdown menu-->
 			<nav class="nav" id="menu-icon" onclick="dropdown()">&#9776;</nav>
-			<!--div id="dropdown-menu"-->
-				<?php wp_nav_menu(array('theme_location' => 'sidebar-menu')); ?>
-			<!--/div-->
-
+			<?php wp_nav_menu(array('theme_location' => 'sidebar-menu')); ?>
+			<!-- /nav -->
+			
 		</header>
 		<!-- /header -->

@@ -556,12 +556,10 @@ p.attachment {
 /*------------------------------------*\
     RESPONSIVE
 \*------------------------------------*/
-
-@media only screen and (min-width:320px) {
-
-}
-@media only screen and (min-width:480px) {
-
+@media only screen and (max-width:570px) {
+	.logo {
+		display: none;
+	}
 }
 @media only screen and (max-width:650px) {
 	.loop-thumbnail {
@@ -582,8 +580,7 @@ p.attachment {
 		font-size: 30px;
 	}
 
-	.nav a,
-	.logo {
+	.nav a {
 		display: none;
 	}
 
@@ -600,9 +597,6 @@ p.attachment {
 		font-size: 12px;
 		font-weight: normal;
 	}
-}
-@media only screen and (max-width:1400px) {
-	
 }
 @media only screen and (-webkit-min-device-pixel-ratio:1.5),
 	   only screen and (min-resolution:144dpi) {
