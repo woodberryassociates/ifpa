@@ -529,6 +529,15 @@ p.attachment {
 	color: #2AAD69 !important;
 	white-space: normal !important;
 }
+
+/* FOR ACCESS BARRIERS FOOGALLERY */
+.fg-caption-title {
+	color: #2AAD69 !important;
+	font-size: 15px !important;
+	text-transform: uppercase !important;
+	text-align: center !important;
+}
+
 /*------------------------------------*\
 	TYPOGRAPHY
 \*------------------------------------*/
