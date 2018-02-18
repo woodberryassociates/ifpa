@@ -25,51 +25,17 @@
 	<br>
 
 	<section class="home-block">
-		<section class="home-block-article">
-			<!--dynamically generate category ID-->
-			<?php
-				$catObj = get_category_by_slug('cost-sharing'); 
-				$catId = $catObj->term_id;
-				$catquery = new WP_Query( 'cat='.$catId.'&posts_per_page=1' );
-			?>
-			<?php while($catquery->have_posts()) : $catquery->the_post(); ?>
-				<a href="<?php the_permalink() ?>" rel="bookmark"><?php the_title(); ?></a>
-				<a href="<?php the_permalink() ?>" rel="bookmark"><?php the_post_thumbnail(); ?></a>
-			<?php
-				endwhile;
-				wp_reset_postdata();
-			?>
-		</section>
-
-		<section class="home-block-article">
-			<?php
-				$catObj = get_category_by_slug('coverage-design'); 
-				$catId = $catObj->term_id;
-				$catquery = new WP_Query( 'cat='.$catId.'&posts_per_page=1' );
-			?>
-			<?php while($catquery->have_posts()) : $catquery->the_post(); ?>
-				<a href="<?php the_permalink() ?>" rel="bookmark"><?php the_title(); ?></a>
-				<a href="<?php the_permalink() ?>" rel="bookmark"><?php the_post_thumbnail(); ?></a>
-			<?php
-				endwhile;
-				wp_reset_postdata();
-			?>
-		</section>
-
-		<section class="home-block-article">
-			<?php
-				$catObj = get_category_by_slug('value-propositions'); 
-				$catId = $catObj->term_id;
-				$catquery = new WP_Query( 'cat='.$catId.'&posts_per_page=1' );
-			?>
-			<?php while($catquery->have_posts()) : $catquery->the_post(); ?>
-				<a href="<?php the_permalink() ?>" rel="bookmark"><?php the_title(); ?></a>
-				<a href="<?php the_permalink() ?>" rel="bookmark"><?php the_post_thumbnail(); ?></a>
-			<?php
-				endwhile;
-				wp_reset_postdata();
-			?>
-		</section>
+		<?php
+			$recent_posts = new WP_Query('posts_per_page=6'); /*this number determines how many recent posts display on the home page*/
+			while($recent_posts->have_posts()) : $recent_posts->the_post(); ?>
+				<section class="home-block-article">
+					<a href="<?php the_permalink(); ?>"><?php the_title(); ?></a>
+					<a href="<?php the_permalink(); ?>"><?php the_post_thumbnail(); ?></a>
+				</section>';
+		<?php
+			endwhile;
+			wp_reset_postdata();	
+		?>
 	</section>
 </main>
 <?php get_footer(); ?>

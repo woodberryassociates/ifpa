@@ -352,7 +352,8 @@ button[role=button] {
 }
 
 .home-block-article {
-	max-width: 300px;
+	max-width: 300px; /*fixed thumbnail sizes for home page*/
+	min-height: 200px;
 	margin-bottom: 20px;
 
 	display: flex;
@@ -368,6 +369,11 @@ button[role=button] {
 	border-radius: 3px;
 
 	transition: .2s;
+}
+
+.home-block-article img {
+	width: 300px;
+	height: 200px;
 }
 
 .home-block-article a:hover {
