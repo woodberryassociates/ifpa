@@ -17,7 +17,7 @@
 			$catId = $catObj->term_id;
 			//$catquery = new WP_Query('cat='.$catId);
 			query_posts('cat='.$catId);
-			get_template_part('loop');
+			get_template_part('loop-mod');
 		?>
 	</section>
 </main>

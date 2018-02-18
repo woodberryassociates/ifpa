@@ -5,6 +5,11 @@
 <main role="main">
 	<section class="single">
 		<?php if (have_posts()): while (have_posts()) : the_post(); ?>
+		<?php
+			$attachment_id = attachment_url_to_postid( $image_url );
+			echo $attachment_id;
+ 	        echo wp_generate_attachment_metadata( $attachment_id );
+ 	    ?>
 			<?php the_content() ?>
 		<?php endwhile; ?>
 	<?php endif; ?>
