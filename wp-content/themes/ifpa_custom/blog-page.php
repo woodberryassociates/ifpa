@@ -8,7 +8,7 @@
 		<?php
 			$attachment_id = attachment_url_to_postid( $image_url );
 			echo $attachment_id;
- 	        echo wp_generate_attachment_metadata( $attachment_id );
+ 	        //echo wp_generate_attachment_metadata( $attachment_id );
  	    ?>
 			<?php the_content() ?>
 		<?php endwhile; ?>
