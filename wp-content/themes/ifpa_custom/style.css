@@ -385,13 +385,18 @@ button[role=button] {
 }
 
 /*Access Barriers carousel on home page*/
+.ab-carousel {
+	max-width: 500px;
+	margin: auto;
+}
+
 .ab-carousel .caption-wrap {
 	background: none !important;
 	color: #2AAD69 !important;
 	opacity: 1 !important;
 }
 
-.metaslider .caption {
+.ab-carousel .caption {
 	position: relative;
 }
 
