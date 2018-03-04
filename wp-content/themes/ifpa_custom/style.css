@@ -102,7 +102,7 @@ h1,h2,h3,p {
 .logo {
 	display: block;
 	float:left;
-	padding: 10px 5px 0px 5px;
+	padding: 10px 5px 0px 20px;
 }
 
 .logo-img {
