@@ -20,7 +20,7 @@
 				<section class="home-block-article">
 					<a href="<?php the_permalink(); ?>"><?php the_title(); ?></a>
 					<a href="<?php the_permalink(); ?>"><?php the_post_thumbnail(); ?></a>
-				</section>';
+				</section>
 		<?php
 			endwhile;
 			wp_reset_postdata();	

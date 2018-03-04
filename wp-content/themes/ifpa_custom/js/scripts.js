@@ -6,6 +6,4 @@
 		/*$("#menu-icon").click(function(){
         $("#fwdr3dcovDiv0").hide();*/
     });
-
-	});
 }(jQuery, this);
