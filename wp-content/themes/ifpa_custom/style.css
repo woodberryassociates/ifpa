@@ -391,13 +391,14 @@ button[role=button] {
 }
 
 .ab-carousel .caption-wrap {
+	position: inherit;
 	background: none !important;
 	color: #2AAD69 !important;
 	opacity: 1 !important;
 }
 
 .ab-carousel .caption {
-	position: relative;
+	
 }
 
 .issue-nav {
