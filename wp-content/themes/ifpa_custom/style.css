@@ -386,19 +386,21 @@ button[role=button] {
 
 /*Access Barriers carousel on home page*/
 .ab-carousel {
-	max-width: 500px;
+	max-width: 800px;
 	margin: auto;
 }
 
 .ab-carousel .caption-wrap {
-	position: inherit;
+	position: inherit !important;
 	background: none !important;
 	color: #2AAD69 !important;
 	opacity: 1 !important;
+	text-transform: uppercase;
+	text-align: center;
 }
 
 .ab-carousel .caption {
-	
+	text-transform: uppercase;
 }
 
 .issue-nav {
