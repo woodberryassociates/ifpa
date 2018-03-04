@@ -16,9 +16,10 @@
 	<hr style="border: 1px solid #B0D8BC">
 	<br>
 	<section class="issue-nav">
-		<a title="Cost Sharing" href="./cost-sharing"><img src="<?php echo get_stylesheet_directory_uri(); ?>/img/icons/wallet.png"></a>
+		<?php echo do_shortcode('[metaslider id="166"]'); ?>
+		<!--a title="Cost Sharing" href="./cost-sharing"><img src="<?php echo get_stylesheet_directory_uri(); ?>/img/icons/wallet.png"></a>
 		<a title="Coverage Design" href="./coverage-design"><img src="<?php echo get_stylesheet_directory_uri(); ?>/img/icons/checklist.png"></a>
-		<a title="Value Propositions" href="./value-propositions"><img src="<?php echo get_stylesheet_directory_uri(); ?>/img/icons/arrow.png"></a>
+		<a title="Value Propositions" href="./value-propositions"><img src="<?php echo get_stylesheet_directory_uri(); ?>/img/icons/arrow.png"></a-->
 	</section>
 
 	<hr style="border: 1px solid #B0D8BC">
