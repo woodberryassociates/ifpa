@@ -385,14 +385,14 @@ button[role=button] {
 }
 
 /*Access Barriers carousel on home page*/
-.ab-carousel .metaslider .caption-wrap {
+.ab-carousel .caption-wrap {
 	background: none !important;
 	color: #2AAD69 !important;
 	opacity: 1 !important;
 }
 
-.ab-carousel .metaslider .caption {
-	position: inherit !important;
+.metaslider .caption {
+	position: relative;
 }
 
 .issue-nav {
