@@ -15,7 +15,7 @@
 
 	<hr style="border: 1px solid #B0D8BC">
 	<br>
-	<section class="issue-nav">
+	<section class="">
 		<?php echo do_shortcode('[metaslider id="166"]'); ?>
 		<!--a title="Cost Sharing" href="./cost-sharing"><img src="<?php echo get_stylesheet_directory_uri(); ?>/img/icons/wallet.png"></a>
 		<a title="Coverage Design" href="./coverage-design"><img src="<?php echo get_stylesheet_directory_uri(); ?>/img/icons/checklist.png"></a>
