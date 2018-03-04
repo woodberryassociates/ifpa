@@ -8,4 +8,4 @@
     });
 
 	});
-})(jQuery, this);
+}(jQuery, this);
