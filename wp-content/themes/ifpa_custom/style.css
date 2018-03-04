@@ -403,7 +403,9 @@ button[role=button] {
 	text-transform: uppercase;
 }
 
-.issue-nav {
+/*****AB NAV (DEPRECATED)******/
+
+/*.issue-nav {
 	margin: auto;
 	margin-top: -20px;
 
@@ -422,7 +424,7 @@ button[role=button] {
 
 .issue-nav a:hover {
 	transform: scale(1.05);
-}
+}*/
 
 /*Blog Post Formatting*/
 
@@ -463,7 +465,7 @@ button[role=button] {
 
 #content {
 	text-align: justify;
-	color: #2AAD69;
+	color: #000;
 	width: 80%;
 	font-size: 1.5em;
 

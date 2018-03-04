@@ -18,6 +18,9 @@
 					<a href="<?php the_permalink(); ?>" title="<?php the_title(); ?>"><?php the_title(); ?></a>
 				</h2>
 				<!-- /post title -->
+				<!-- post date -->
+				<p style="display: flex; padding-left: 10px;"><?php the_date(); ?></p>
+				<!-- /post date -->
 
 				<?php echo "<p style='display: flex; padding: 5px 10px;'"; // dumb hack to correctly style the excerpt ?>
 				<?php html5wp_excerpt('html5wp_index'); // Build your custom callback length in functions.php ?>

@@ -11,6 +11,7 @@
 	</section>
 	
 	<section>
+		<h1>Summits</h1>
 		<?php
 			$catObj = get_category_by_slug('summits'); 
 			$catId = $catObj->term_id;
