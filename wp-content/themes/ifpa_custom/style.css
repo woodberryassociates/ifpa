@@ -312,7 +312,7 @@ button[role=button] {
 .column {
 	display: inline-block;
 	width: 10%;
-	min-width: 100px;
+	min-width: 225px;
 	padding-left: 5%;
 
 	vertical-align: top;
