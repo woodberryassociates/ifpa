@@ -43,6 +43,7 @@
 				Tustin, California</strong><br><br>
 				Robin K. Dore, M.D., is a Board certified rheumatologist in private practice in Tustin, Calif. and a Clinical Professor of Medicine at UCLA.<br><br> Dr. Dore is Chair of the Orange County Branch of the Arthritis Foundation, Pacific Region.<br><br> She is a past president of the Southern California Rheumatology Society and a past member of the board of directors of the American College of Rheumatology.<br><br> A clinical investigator, Dr. Dore participates in clinical research studies of medications for treatment of gout, osteoarthritis, osteoporosis, rheumatoid arthritis, and other metabolic bone diseases.</p>
 		</section>
+		&nbsp;&nbsp;
 	</center>
 </main>
 <?php get_footer(); ?>
