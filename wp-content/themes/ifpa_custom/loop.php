@@ -19,14 +19,17 @@
 				</h1>
 				<!-- /post title -->
 				<!-- post date -->
-				<a style="display: flex; padding-left: 10px;" href="<?php the_permalink(); ?>" title="<?php the_title(); ?>"><?php the_date(); ?></a>
+				<h2>
+					<a style="display: flex; padding-left: 10px;" href="<?php the_permalink(); ?>" title="<?php the_title(); ?>"><?php the_date(); ?></a>
+				</h2>
 				<!-- /post date -->
 
-				<?php echo "<p style='display: flex; padding: 5px 10px;'"; // dumb hack to correctly style the excerpt ?>
+				<?php echo "<h2 style='display: flex; padding: 5px 10px;'"; // dumb hack to correctly style the excerpt ?>
 				<?php html5wp_excerpt('html5wp_index'); // Build your custom callback length in functions.php ?>
-				<?php echo "</p><a style='display: flex; padding: 0px 10px;'"; ?>
+				<?php echo "</h2><a style='display: flex; padding: 0px 10px;'"; ?>
 				<?php edit_post_link(); ?>
 				<?php echo "</a>"; ?>
+
 			<?php else: //if no thumbnail ?>
 				<!-- post title -->
 				<h1 style="display: inline; padding: 10px 10px 10px 310px;">
@@ -34,12 +37,14 @@
 				</h1>
 				<!-- /post title -->
 				<!-- post date -->
-				<a style="display: flex; padding-left: 10px;" href="<?php the_permalink(); ?>" title="<?php the_title(); ?>"><?php the_date(); ?></a>
+				<h2>
+					<a style="display: flex; padding-left: 10px;" href="<?php the_permalink(); ?>" title="<?php the_title(); ?>"><?php the_date(); ?></a>
+				</h2>
 				<!-- /post date -->
 
-				<?php echo "<p style='display: flex; padding: 5px 10px 5px 310px;'"; // dumb hack to correctly style the excerpt ?>
+				<?php echo "<h2 style='display: flex; padding: 5px 10px 5px 310px;'"; // dumb hack to correctly style the excerpt ?>
 				<?php html5wp_excerpt('html5wp_index'); // Build your custom callback length in functions.php ?>
-				<?php echo "</p><a style='display: flex; padding: 0px 10px 0px 310px;'"; ?>
+				<?php echo "</h2><a style='display: flex; padding: 0px 10px 0px 310px;'"; ?>
 				<?php edit_post_link(); ?>
 				<?php echo "</a>"; ?>
 			<?php endif; ?>
