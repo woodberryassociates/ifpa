@@ -1,5 +1,5 @@
 <?php if (have_posts()): while (have_posts()) : the_post(); ?>
-	<!--if the post title contains no spaces AND isn't titled "nfographic" (i.e. not content), skip it (hack to display content media)-->
+	<!--if the post title contains no spaces AND isn't titled "infographic" (i.e. not content), skip it (hack to display content media)-->
 	<?php if (!strpos(the_title('','',false),' ') && strpos(the_title('','',false),"Infographic")) {
 		continue;
 	} ?>
