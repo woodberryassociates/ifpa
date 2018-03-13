@@ -37,7 +37,7 @@
 				</h1>
 				<!-- /post title -->
 				<!-- post date -->
-				<h2 style="display: flex; padding-left: 10px;">
+				<h2 style="display: flex; padding-left: 10px 10px 10px 310px;">
 					<a href="<?php the_permalink(); ?>" title="<?php the_title(); ?>"><?php the_date(); ?></a>
 				</h2>
 				<!-- /post date -->
