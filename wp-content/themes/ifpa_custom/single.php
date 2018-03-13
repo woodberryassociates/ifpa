@@ -32,23 +32,18 @@
 					<?php the_tags( __( 'Tags: ', 'html5blank' ), ', ', '<br>'); ?>
 					&nbsp;
 					<p style="text-align: right;"><?php _e( 'Categorized in: ', 'html5blank' ); the_category(', '); ?></p>
-					<p style="text-align: right;"><?php edit_post_link(); ?></p>
-
-					
+					<p style="text-align: right;"><?php edit_post_link(); ?></p>	
 				</article>
 			</article>
 		</article>
 		<!-- /article -->
 
 	<?php endwhile; ?>
-
 	<?php else: ?>
 
 		<!-- article -->
 		<article id="content">
-
 			<h1><?php _e( 'Sorry, nothing to display.', 'html5blank' ); ?></h1>
-
 		</article>
 		<!-- /article -->
 
@@ -56,21 +51,23 @@
 
 	</section>
 	<!-- /section -->
-
-	<!-- next/prev posts -->
+	
+	<!-- next-prev posts -->
 	<section class="home-block">
 		<?php
 			$recent_posts = new WP_Query('posts_per_page=2'); /*this number determines how many recent posts display on the home page*/
-			while($recent_posts->have_posts()) : $recent_posts->the_post(); ?>
+			while($recent_posts->have_posts()) : $recent_posts->the_post();
+		?>
 				<section class="home-block-article">
 					<a href="<?php the_permalink(); ?>"><?php the_title(); ?></a>
 					<a href="<?php the_permalink(); ?>"><?php the_post_thumbnail(); ?></a>
 				</section>
 		<?php
-			endwhile;*/
+			endwhile;
 			wp_reset_postdata();	
 		?>
 	</section>
+	<!-- /next-prev posts -->
 
 	</main>
 
