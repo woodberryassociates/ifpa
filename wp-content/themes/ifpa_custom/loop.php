@@ -5,7 +5,7 @@
 	} ?>
 
 		<!-- article -->
-		<article style="padding: 0 15vw 0 15vw; display: block;" id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
+		<article style="padding: 0 15vw 0 15vw; display: block; min-height: 220px" id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
 
 			<?php if (has_post_thumbnail()): // Check if thumbnail exists ?>
 				<!-- post thumbnail -->
