@@ -11,6 +11,14 @@
 		<!-- article -->
 		<article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
 
+			<!-- post thumbnail -->
+			<?php if ( has_post_thumbnail()) : // Check if Thumbnail exists ?>
+				<a class="thumbnail" href="<?php the_permalink(); ?>" title="<?php the_title(); ?>">
+					<?php the_post_thumbnail(); // Fullsize image for the single post ?>
+				</a>
+			<?php endif; ?>
+			<!-- /post thumbnail -->
+
 			<!-- post title -->
 			<article id="article-overlay">
 				<article id="content">

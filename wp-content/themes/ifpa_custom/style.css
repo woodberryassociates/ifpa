@@ -346,9 +346,11 @@ button[role=button] {
 	flex-flow: row wrap;
 	justify-content: space-around;
 	align-items: center;
-	margin-bottom: 15px;
+	margin-bottom: 0px;
 
 	transition: .2s;
+
+	background: linear-gradient(transparent, #2AAD69);
 }
 
 .home-block-article {
@@ -453,14 +455,13 @@ button[role=button] {
 #article-overlay {
 	width: 100%;
 	position: static;
-	margin-top: 35vw;
+	margin-top: 200px;
 
 	display: flex;
 	flex-direction: column;
 	align-items: center;
 
 	color: transparent;
-	background: linear-gradient(transparent, #2AAD69);
 }
 
 #content {
