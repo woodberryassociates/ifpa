@@ -20,7 +20,7 @@
 				<!-- /post title -->
 				<!-- post date -->
 				<h2 style="display: flex; padding-left: 10px;">
-					<a href="<?php the_permalink(); ?>" title="<?php the_title(); ?>"><?php the_date(); ?></a>
+					<a href="<?php the_permalink(); ?>" title="<?php the_title(); ?>"><?php echo get_the_date(); ?></a>
 				</h2>
 				<!-- /post date -->
 
@@ -32,13 +32,13 @@
 
 			<?php else: //if no thumbnail ?>
 				<!-- post title -->
-				<h1 style="padding: 10px 10px 10px 310px;">
+				<h1 style="padding: 10px 10px 0px 310px;">
 					<a href="<?php the_permalink(); ?>" title="<?php the_title(); ?>"><?php the_title(); ?></a>
 				</h1>
 				<!-- /post title -->
 				<!-- post date -->
-				<h2 style="display: flex; padding-left: 10px 10px 10px 310px;">
-					<a href="<?php the_permalink(); ?>" title="<?php the_title(); ?>"><?php the_date(); ?></a>
+				<h2 style="display: flex; padding: 0px 10px 10px 310px;">
+					<a href="<?php the_permalink(); ?>" title="<?php the_title(); ?>"><?php echo get_the_date(); ?></a>
 				</h2>
 				<!-- /post date -->
 
