@@ -14,6 +14,7 @@
 	</section>
 
 	<section>
+		<h1>Recent Posts</h1>
 		<?php
 			query_posts('posts_per_page=4');
 			get_template_part('loop');
