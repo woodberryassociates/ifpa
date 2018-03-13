@@ -604,21 +604,25 @@ p.attachment {
 /*------------------------------------*\
     RESPONSIVE
 \*------------------------------------*/
+/*rules proceed as screen grows in width*/
+/*remove logo, only display collapsible menu icon*/
 @media only screen and (max-width:570px) {
 	.logo {
 		display: none;
 	}
 }
+/*remove thumbnail for loop'ed posts*/
 @media only screen and (max-width:650px) {
 	.loop-thumbnail {
 	display: none;
 	}
 
-	#content {
+	/*#content {
 		margin-top: -50px;
-	}
+	}*/
 }
-@media only screen and (max-width:1200px) {
+/*display collapible menu icon, remove default (nav) menu, reduce search bar size*/
+@media only screen and (max-width:1100px) {
 	.header {
 		margin-bottom: 0px;
 	}
@@ -631,14 +635,10 @@ p.attachment {
 	.nav a {
 		display: none;
 	}
-
-	.search-input,
-	button[role=button] {
-		font-size: 12px;
-		font-weight: normal;
-	}
 }
-@media only screen and (min-width: 1200px) and (max-width:1350px) {
+/*reduce default (nav) menu font size & search bar size
+	min-width required for reasons that escape me now (some display issue, iirc)*/
+@media only screen and (min-width: 1100px) and (max-width:1350px) {
 	.nav a,
 	.search-input,
 	button[role=button] {
