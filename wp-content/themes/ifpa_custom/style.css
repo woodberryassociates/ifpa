@@ -371,6 +371,8 @@ button[role=button] {
 	border-radius: 3px;
 
 	transition: .2s;
+
+	background: transparent; /* stops gradient from home-block */
 }
 
 .home-block-article img {
