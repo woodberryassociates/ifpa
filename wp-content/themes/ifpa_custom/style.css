@@ -612,7 +612,7 @@ p.attachment {
 	}
 }
 /*remove thumbnail for loop'ed posts*/
-@media only screen and (max-width:650px) {
+@media only screen and (max-width:700px) {
 	.loop-thumbnail {
 	display: none;
 	}
