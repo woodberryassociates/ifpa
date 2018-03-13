@@ -15,7 +15,8 @@
 	<?php endif; ?>
 	</section>
 
-	<section> 
+	<section>
+		<p style="font-size: 35px; color: #2AAD69; padding: 10px 0px 10px 2vw">Blog</p>
 		<?php
 			$catObj = get_category_by_slug('blog'); 
 			$catId = $catObj->term_id;
