@@ -644,7 +644,7 @@ p.attachment {
 }
 /*reduce default (nav) menu font size & search bar size
 	min-width required for reasons that escape me now (some display issue, iirc)*/
-@media only screen and (min-width: 1050px) and (max-width:1250px) {
+@media only screen and (min-width: 1050px) and (max-width:1200px) {
 	.nav a,
 	.search-input,
 	button[role=button] {

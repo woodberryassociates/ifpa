@@ -5,7 +5,7 @@
 	} ?>
 
 		<!-- article -->
-		<article style="padding: 0 15vw 0 15vw; display: block; height: 220px;" id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
+		<article style="padding: 0 15vw 0 15vw; display: block;" id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
 
 			<?php if (has_post_thumbnail()): // Check if thumbnail exists ?>
 				<!-- post thumbnail -->
@@ -20,7 +20,7 @@
 				<!-- /post title -->
 				<!-- post date -->
 				<h2 style="display: flex; padding-left: 10px;">
-					<a href="<?php the_permalink(); ?>" title="<?php the_title(); ?>"><?php echo get_the_date(); ?></a>
+					<a href="<?php the_permalink(); ?>" title="<?php the_title(); ?>"><?php the_time(get_option('date_format')); ?></a>
 				</h2>
 				<!-- /post date -->
 
@@ -38,7 +38,7 @@
 				<!-- /post title -->
 				<!-- post date -->
 				<h2 style="display: flex; padding: 0px 10px 10px 310px;">
-					<a href="<?php the_permalink(); ?>" title="<?php the_title(); ?>"><?php echo get_the_date(); ?></a>
+					<a href="<?php the_permalink(); ?>" title="<?php the_title(); ?>"><?php the_time(get_option('date_format')); ?></a>
 				</h2>
 				<!-- /post date -->
 
