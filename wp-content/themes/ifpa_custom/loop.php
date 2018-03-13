@@ -54,7 +54,7 @@
 <?php else: ?>
 	<!-- article -->
 	<article>
-		<h1 style="text-align: center; color: #2AAD69;"><?php _e( 'Sorry, nothing to display. :(', 'html5blank' ); ?></h1>
+		<h1 style="text-align: center; color: #2AAD69; padding-bottom: 20px;"><?php _e( 'Sorry, nothing to display.	:(', 'html5blank' ); ?></h1>
 	</article>
 	<!-- /article -->
 <?php endif; ?>
