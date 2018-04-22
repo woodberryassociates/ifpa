@@ -8,9 +8,9 @@
 		<!-- article -->
 		<article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
 			<?php the_content(); ?>
+			<?php echo do_shortcode("[metaslider id="166"]"); ?>
 			<br class="clear">
 		</article>
-		<?php echo do_shortcode('[metaslider id="166"]'); ?>
 		<!-- /article -->
 	</section>
 
