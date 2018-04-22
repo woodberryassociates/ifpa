@@ -88,7 +88,7 @@ h2 {
   	z-index: -1;
   	opacity: .12;
 
-	background: repeating-linear-gradient(20deg, white 0%, white 20%, #2AAD69 21%)
+	/*background: repeating-linear-gradient(20deg, white 0%, white 20%, #2AAD69 21%)*/
 }
 
 /*------------------------------------*\
@@ -307,8 +307,7 @@ button[role=button] {
 	display: inline-block;
 	width: 100%;
 
-	/*padding-top: 20px;*/
-	background-color: #2AAD69;
+	background-color: #353535;
 
 	font-size: 16px;
 	color: #FFF;

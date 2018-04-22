@@ -10,6 +10,7 @@
 			<?php the_content(); ?>
 			<br class="clear">
 		</article>
+		<?php echo do_shortcode('[metaslider id="166"]'); ?>
 		<!-- /article -->
 	</section>
 
