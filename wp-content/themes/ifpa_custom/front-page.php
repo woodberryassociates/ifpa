@@ -8,12 +8,11 @@
 		<!-- article -->
 		<article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
 			<?php the_content(); ?>
-			<br class="clear">
 		</article>
 		<!-- /article -->
 	</section>
 
-	<section style="background-color: #F8F6F7">
+	<section style="padding-top: 125px; background-color: #F8F6F7">
 		<h1>Recent Posts</h1>
 		<?php
 			query_posts('posts_per_page=4');
