@@ -336,6 +336,8 @@ button[role=button] {
 }
 
 .copyright {
+	white-space: pre-line;
+	padding-right: 20px;
 }
 
 /*------------------------------------*\
