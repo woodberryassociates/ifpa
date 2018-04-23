@@ -3,13 +3,16 @@
 			<footer class="footer" role="contentinfo">
 				<div style="min-width: 40%; text-align: left">
 					<img style="max-width: 40%" src="<?php echo get_stylesheet_directory_uri(); ?>/img/logo-white.png">
+					<!-- left footer widget -->
 					<?php if ( !function_exists('dynamic_sidebar') || !dynamic_sidebar("footer_widget_left") ) : ?>
 					<?php endif;?>
+					<!-- /left footer widget -->
 				</div>
 				<div style="min-width: 40%; text-align: right">
-					<!-- footer widget -->
-
-					<!-- /footer widget -->
+					<!-- right footer widget -->
+					<?php if ( !function_exists('dynamic_sidebar') || !dynamic_sidebar("footer_widget_right") ) : ?>
+					<?php endif;?>
+					<!-- /right footer widget -->
 					<!-- copyright -->
 					<p class="copyright">
 						&copy; <?php echo date('Y'); ?> Copyright <?php bloginfo('name'); ?>.

@@ -326,11 +326,11 @@ button[role=button] {
 }
 
 #column-left {
-
+	white-space: pre-line;
 }
 
 #column-right {
-	
+	white-space: pre-line;
 }
 
 .copyright {
