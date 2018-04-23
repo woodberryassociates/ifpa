@@ -7,6 +7,14 @@
 					<?php if ( !function_exists('dynamic_sidebar') || !dynamic_sidebar("footer_widget_left") ) : ?>
 					<?php endif;?>
 					<!-- /left footer widget -->
+					<!-- social links -->
+					<div style="display: flex; align-items: center; padding: 0 0 20px 20px">
+						<img style="padding: 10px;" src="<?php echo get_stylesheet_directory_uri(); ?>/img/social/facebook.png">
+						<img style="padding: 10px;" src="<?php echo get_stylesheet_directory_uri(); ?>/img/social/twitter.png">
+						<img style="padding: 10px;" src="<?php echo get_stylesheet_directory_uri(); ?>/img/social/linkedin.png">
+						<img style="padding: 10px;" src="<?php echo get_stylesheet_directory_uri(); ?>/img/social/youtube.png">
+					</div>
+					<!-- /social links -->
 				</div>
 				<div style="min-width: 40%; text-align: right">
 					<!-- right footer widget -->
