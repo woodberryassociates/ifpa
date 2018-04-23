@@ -1,18 +1,32 @@
 			<?php echo "</a>"; //this is necessary on the remote site ?>
 			<!-- footer -->
 			<footer class="footer" role="contentinfo">
-				<?php if ( !function_exists('dynamic_sidebar') || !dynamic_sidebar("footer_widget") ) : ?>
-				<?php endif;?>
+				<div style="min-width: 40%; text-align: left">
+					<img style="max-width: 40%" src="<?php echo get_stylesheet_directory_uri(); ?>/img/logo-white.png">
+					<?php if ( !function_exists('dynamic_sidebar') || !dynamic_sidebar("footer_widget_left") ) : ?>
+					<?php endif;?>
+				</div>
+				<div style="min-width: 40%; text-align: right">
+					<!-- footer widget -->
 
-				<!-- copyright -->
-				<p class="copyright">
-					&copy; <?php echo date('Y'); ?> Copyright Institute for Patient Access<!--?php bloginfo('name'); ?-->. <?php _e('Powered by', 'html5blank'); ?>
-					<a href="//wordpress.org" title="WordPress">WordPress</a> &amp; <a href="//html5blank.com" title="HTML5 Blank">HTML5 Blank</a>. Theme developed by <a href="//avinerenberg.com">Avi Nerenberg</a>.
-				</p>
-				<!-- /copyright -->
+					<!-- /footer widget -->
+					<!-- copyright -->
+					<p class="copyright">
+						&copy; <?php echo date('Y'); ?> Copyright <?php bloginfo('name'); ?>.
+					</p>
+					<p>
+						<?php _e('Powered by', 'html5blank'); ?>
+						<a href="//wordpress.org" title="WordPress">WordPress</a> &amp; <a href="//html5blank.com" title="HTML5 Blank">HTML5 Blank</a>.
+					</p>
+					<p>Theme developed by <a href="//avinerenberg.com">Avi Nerenberg</a>.</p>
+					<!-- /copyright -->
+				</div>
+
 
 			</footer>
 			<!-- /footer -->
+
+			
 
 		</div>
 		<!-- /wrapper -->

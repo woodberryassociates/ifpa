@@ -304,12 +304,16 @@ button[role=button] {
 
 /* footer & copyright*/
 .footer {
-	display: inline-block;
 	width: 100%;
+
+	display: flex;
+	justify-content: center;
+	align-items: center;
 
 	background-color: #353535;
 
 	font-size: 16px;
+	line-height: 20px;
 	color: #FFF;
 }
 
@@ -321,19 +325,15 @@ button[role=button] {
 	color: #B0D8BC;
 }
 
-.column {
-	display: inline-block;
-	width: 10%;
-	min-width: 225px;
-	padding-left: 5%;
+#column-left {
 
-	vertical-align: top;
-	list-style-type: none;
+}
+
+#column-right {
+	
 }
 
 .copyright {
-	float: right;
-	font-size: 10px;
 }
 
 /*------------------------------------*\
