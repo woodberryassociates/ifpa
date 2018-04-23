@@ -8,11 +8,11 @@
 					<?php endif;?>
 					<!-- /left footer widget -->
 					<!-- social links -->
-					<div style="display: flex; align-items: center; padding: 0 0 20px 20px">
-						<img style="padding: 10px;" src="<?php echo get_stylesheet_directory_uri(); ?>/img/social/facebook.png">
-						<img style="padding: 10px;" src="<?php echo get_stylesheet_directory_uri(); ?>/img/social/twitter.png">
-						<img style="padding: 10px;" src="<?php echo get_stylesheet_directory_uri(); ?>/img/social/linkedin.png">
-						<img style="padding: 10px;" src="<?php echo get_stylesheet_directory_uri(); ?>/img/social/youtube.png">
+					<div style="display: flex; align-items: center; padding: 0 0 20px 15px">
+						<a href="https://www.facebook.com/patientaccess/"><img style="height: 32px; padding: 5px;" src="<?php echo get_stylesheet_directory_uri(); ?>/img/social/facebook.svg"></a>
+						<a href="https://twitter.com/patientaccess?lang=en"><img style="height: 32px; padding: 5px;" src="<?php echo get_stylesheet_directory_uri(); ?>/img/social/twitter.svg"></a>
+						<a href="https://www.linkedin.com/company/alliance-for-patient-access/"><img style="height: 32px; padding: 5px;" src="<?php echo get_stylesheet_directory_uri(); ?>/img/social/linkedin.svg"></a>
+						<a href="https://www.youtube.com/channel/UCnFUTFIj5E8jMNbmkZbiRMw"><img style="height: 32px; padding: 5px;" src="<?php echo get_stylesheet_directory_uri(); ?>/img/social/youtube.svg"></a>
 					</div>
 					<!-- /social links -->
 				</div>
