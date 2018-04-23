@@ -478,7 +478,7 @@ add_filter( 'comments_open', 'tweakjp_rm_comments_att', 10 , 2 );
 //add widgets to footer
 if ( function_exists('register_sidebar') )
   register_sidebar(array(
-    'name' => 'footer_widget',
+    'name' => 'footer_widget_left',
     'before_widget' => '<div class = "footer_widget_left">',
     'after_widget' => '</div>',
     'before_title' => '<h3>',
@@ -488,7 +488,7 @@ if ( function_exists('register_sidebar') )
 
 if ( function_exists('register_sidebar') )
   register_sidebar(array(
-    'name' => 'footer_widget',
+    'name' => 'footer_widget_right',
     'before_widget' => '<div class = "footer_widget_right">',
     'after_widget' => '</div>',
     'before_title' => '<h3>',
