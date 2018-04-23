@@ -327,10 +327,12 @@ button[role=button] {
 
 #column-left {
 	white-space: pre-line;
+	padding-left: 20px;
 }
 
 #column-right {
 	white-space: pre-line;
+	padding-right: 20px;
 }
 
 .copyright {
