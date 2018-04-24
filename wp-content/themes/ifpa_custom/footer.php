@@ -1,8 +1,34 @@
 			<?php echo "</a>"; //this is necessary on the remote site ?>
 			<!-- footer -->
 			<footer class="footer" role="contentinfo">
-				<?php if ( !function_exists('dynamic_sidebar') || !dynamic_sidebar("footer_widget") ) : ?>
-				<?php endif;?>
+				<div style="min-width: 40%; text-align: left">
+					<img style="max-width: 40%" src="<?php echo get_stylesheet_directory_uri(); ?>/img/logo-white.png">
+					<!-- left footer widget -->
+					<?php if ( !function_exists('dynamic_sidebar') || !dynamic_sidebar("footer_widget_left") ) : ?>
+					<?php endif;?>
+					<!-- /left footer widget -->
+					<!-- social links -->
+					<div style="display: flex; align-items: center; padding: 15px 0 20px 15px">
+						<a href="https://www.facebook.com/patientaccess/"><img style="height: 32px; padding: 5px;" src="<?php echo get_stylesheet_directory_uri(); ?>/img/social/facebook.svg"></a>
+						<a href="https://twitter.com/patientaccess?lang=en"><img style="height: 32px; padding: 5px;" src="<?php echo get_stylesheet_directory_uri(); ?>/img/social/twitter.svg"></a>
+						<a href="https://www.linkedin.com/company/alliance-for-patient-access/"><img style="height: 32px; padding: 5px;" src="<?php echo get_stylesheet_directory_uri(); ?>/img/social/linkedin.svg"></a>
+						<a href="https://www.youtube.com/channel/UCnFUTFIj5E8jMNbmkZbiRMw"><img style="height: 32px; padding: 5px;" src="<?php echo get_stylesheet_directory_uri(); ?>/img/social/youtube.svg"></a>
+					</div>
+					<!-- /social links -->
+				</div>
+				<div style="min-width: 40%; text-align: right">
+					<!-- right footer widget -->
+					<?php if ( !function_exists('dynamic_sidebar') || !dynamic_sidebar("footer_widget_right") ) : ?>
+					<?php endif;?>
+					<!-- /right footer widget -->
+					<!-- copyright -->
+					<p class="copyright">
+						&copy; <?php echo date('Y'); ?> Copyright <?php bloginfo('name'); ?>.
+						<?php _e('Powered by ', 'html5blank'); ?><a href="//wordpress.org" title="WordPress">WordPress</a> &amp; <a href="//html5blank.com" title="HTML5 Blank">HTML5 Blank</a>.
+						Theme developed by <a href="//avinerenberg.com">Avi Nerenberg</a>.
+					</p>
+					<!-- /copyright -->
+				</div>
 
 				<!-- copyright -->
 				<p class="copyright">

@@ -8,13 +8,11 @@
 		<!-- article -->
 		<article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
 			<?php the_content(); ?>
-			<br class="clear">
 		</article>
-		<?php echo do_shortcode('[metaslider id="166"]'); ?>
 		<!-- /article -->
 	</section>
 
-	<section>
+	<section style="padding-top: 150px; background-color: #F6F6F6">
 		<h1>Recent Posts</h1>
 		<?php
 			query_posts('posts_per_page=4');
