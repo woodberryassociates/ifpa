@@ -137,7 +137,7 @@ h1,h2,h3,p {
 }
 
 .nav a {
-	padding: 0px 10px;
+	/*padding: 0px 10px;*/
 	color: #2AAD69;
 	transition: 0.3s;
 }
@@ -363,7 +363,7 @@ button[role=button] {
 	display: flex;
 	flex-flow: row wrap;
 	justify-content: space-around;
-	align-items: center;
+	align-items: flex-start;
 	margin-bottom: 0px;
 
 	transition: .2s;
