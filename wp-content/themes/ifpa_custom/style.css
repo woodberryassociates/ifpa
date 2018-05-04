@@ -137,7 +137,7 @@ h1,h2,h3,p {
 }
 
 .nav a {
-	/*padding: 0px 10px;*/
+	padding: 0px 10px;
 	color: #2AAD69;
 	transition: 0.3s;
 }
@@ -442,6 +442,10 @@ button[role=button] {
 	background-color: #F6F6F6;
 }
 
+#front-page-main a {
+	padding: 0 !important; /* not sure where this <a> tag is coming from, hack to remove excess padding */
+}
+
 #front-page-container {
 	margin: auto;
 	width: 1000px;
@@ -468,6 +472,7 @@ button[role=button] {
 }
 
 #recent-blog-posts {
+	padding-left: 0px !important;
 	margin: auto;
 	min-width: 100vw;
 	background-color: #282f5d;

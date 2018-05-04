@@ -32,11 +32,14 @@
 			</section>
 			<section id="latest">
 				<h1>Latest</h1>
+
 			</section>
 		</div>
-		<section id="recent-blog-posts">
-			<h1 style="padding-left: 6vw;	font-weight: bold; color: white;">Recent Blog Posts</h1>
+
+		<section id="recent-blog-posts" style="padding: 0px !important">
+			<h1 style="padding-left: 6vw; font-weight: bold; color: white;">Recent Blog Posts</h1>
 		</section>
+
 		<section class="home-block">
 			<?php
 				$recent_posts = new WP_Query('posts_per_page=3'); /*this number determines how many recent posts display on the home page*/
@@ -54,4 +57,5 @@
 		</section>
 	</div>
 </main>
+<div style="height: 5px; background-color: #707070"></div>
 <?php get_footer(); ?>
