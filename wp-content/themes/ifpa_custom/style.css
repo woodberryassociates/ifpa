@@ -408,7 +408,7 @@ button[role=button] {
 
 /*Access Barriers carousel on home page*/
 .ab-carousel {
-	max-width: 800px;
+	max-width: 1000px;
 	margin: auto;
 }
 
