@@ -467,6 +467,8 @@ button[role=button] {
 	margin: auto;
 	min-width: 100vw;
 	background-color: #282f5d;
+
+	line-height: 10em;
 }
 
 /*****AB NAV (DEPRECATED)******/
