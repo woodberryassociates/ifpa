@@ -21,7 +21,7 @@
 			<!-- /post title -->
 			<!-- post date -->
 			<h2 style="display: flex; padding-left: 10px; text-transform: uppercase;">
-				<a href="<?php the_permalink(); ?>" title="<?php the_title(); ?>"><?php the_time(get_option('date_format')); ?></a>
+				<?php the_time(get_option('date_format')); ?>
 			</h2>
 			<!-- /post date -->
 
