@@ -449,14 +449,14 @@ button[role=button] {
 	flex-grow: 2;
 	padding-top: 150px;
 
-	background-color: #F6F6F6;
+	/*background-color: #F6F6F6;*/
 }
 
 #latest {
 	flex-grow: 1;
 	padding-top: 150px;
 
-	background-color: #F6F6F6;
+	/*background-color: #F6F6F6;*/
 }
 
 /*****AB NAV (DEPRECATED)******/
