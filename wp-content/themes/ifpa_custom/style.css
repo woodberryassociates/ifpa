@@ -78,7 +78,7 @@ h2 {
 	display: none;
 }
 
-#main::before {
+/*#main::before {
 	content: "";
 	position: absolute;
 	top: 0; 
@@ -88,8 +88,8 @@ h2 {
   	z-index: -1;
   	opacity: .12;
 
-	/*background: repeating-linear-gradient(20deg, white 0%, white 20%, #2AAD69 21%)*/
-}
+	background: repeating-linear-gradient(20deg, white 0%, white 20%, #2AAD69 21%)
+}*/
 
 /*------------------------------------*\
     STRUCTURE
@@ -410,6 +410,10 @@ button[role=button] {
 .ab-carousel {
 	max-width: 800px;
 	margin: auto;
+}
+
+.ab-carousel .caption {
+	color: #282f5d;
 }
 
 .ab-carousel .caption-wrap {
