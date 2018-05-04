@@ -50,7 +50,7 @@
 			<?php endif; ?>
 		</article>
 		<!-- /article -->
-		<div style="height: 5px; background-color: #707070"></div>
+		<div style="margin-bottom: 20px; height: 1px; background-color: #707070"></div>
 <?php endwhile; ?>
 <?php else: ?>
 	<!-- article -->

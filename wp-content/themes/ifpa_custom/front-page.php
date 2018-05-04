@@ -57,5 +57,5 @@
 		</section>
 	</div>
 </main>
-<div style="margin-bottom: 20px; height: 1px; background-color: #707070"></div>
+<div style="height: 5px; background-color: #707070"></div>
 <?php get_footer(); ?>
