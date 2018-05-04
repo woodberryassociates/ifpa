@@ -338,6 +338,8 @@ button[role=button] {
 }
 
 #footer-right {
+	align-self: stretch;
+
 	display: flex;
 	flex-direction: column;
 	justify-content: space-between;
