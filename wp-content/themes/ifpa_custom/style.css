@@ -442,7 +442,7 @@ button[role=button] {
 	display: flex;
 	justify-content: center;
 
-	background-color: #F6F6F6;
+	/*background-color: #F6F6F6;*/
 }
 
 #whats-new {
@@ -453,6 +453,7 @@ button[role=button] {
 }
 
 #latest {
+	min-width: 33%;
 	flex-grow: 1;
 	padding-top: 150px;
 
