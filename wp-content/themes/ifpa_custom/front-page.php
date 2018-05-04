@@ -33,12 +33,10 @@
 			<section id="latest">
 				<h1>Latest</h1>
 			</section>
-
-			<section id="recent-blog-posts">
-				
-			</section>
 		</div>
-
+		<section id="recent-blog-posts">
+			<h1>Recent Blog Posts</h1>
+		</section>
 		<section class="home-block">
 			<?php
 				$recent_posts = new WP_Query('posts_per_page=2'); /*this number determines how many recent posts display on the home page*/

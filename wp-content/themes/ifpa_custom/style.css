@@ -463,6 +463,12 @@ button[role=button] {
 	/*background-color: #F6F6F6;*/
 }
 
+#recent-blog-posts {
+	margin: auto;
+	min-width: 100vw;
+	background-color: #282f5d;
+}
+
 /*****AB NAV (DEPRECATED)******/
 
 /*.issue-nav {
