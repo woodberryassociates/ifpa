@@ -14,7 +14,7 @@
 
 	<div id="front-page-container">
 		<section id="whats-new">
-			<h1>Recent Posts</h1>
+			<h1>What's New</h1>
 			<?php
 				query_posts('posts_per_page=4');
 				get_template_part('loop');
@@ -28,6 +28,10 @@
 				endwhile;*/
 				wp_reset_postdata();	
 			?>
+		</section>
+
+		<section id="recent-blog-posts">
+			
 		</section>
 	</div>
 </main>
