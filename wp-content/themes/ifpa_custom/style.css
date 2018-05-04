@@ -337,6 +337,12 @@ button[role=button] {
 	font-weight: bold;
 }
 
+#footer-right {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+}
+
 .copyright {
 	white-space: pre-line;
 	padding: 0 20px 20px 0;

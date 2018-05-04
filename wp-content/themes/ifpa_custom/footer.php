@@ -16,19 +16,21 @@
 					</div>
 					<!-- /social links -->
 				</div>
-				<div style="min-width: 40%; text-align: right">
-					<!-- right footer widget -->
-					<?php if ( !function_exists('dynamic_sidebar') || !dynamic_sidebar("footer_widget_right") ) : ?>
-					<?php endif;?>
-					<!-- /right footer widget -->
-					<!-- copyright -->
-					<p class="copyright">
-						&copy; <?php echo date('Y'); ?> Copyright Institute for Patient Access<!--?php bloginfo('name'); ?>. <?php _e('Powered by', 'html5blank'); ?>
-						<a href="//wordpress.org" title="WordPress">WordPress</a> &amp; <a href="//html5blank.com" title="HTML5 Blank">HTML5 Blank</a>. Theme developed by <a href="//avinerenberg.com">Avi Nerenberg</a-->.
-					</p>
-				<!-- /copyright -->
-				</div>
+				<div id="footer-right">
+					<div style="min-width: 100%; text-align: right">
+						<!-- right footer widget -->
+						<?php if ( !function_exists('dynamic_sidebar') || !dynamic_sidebar("footer_widget_right") ) : ?>
+						<?php endif;?>
+						<!-- /right footer widget -->
 
+						<!-- copyright -->
+						<p class="copyright">
+							&copy; <?php echo date('Y'); ?> Copyright Institute for Patient Access<!--?php bloginfo('name'); ?>. <?php _e('Powered by', 'html5blank'); ?>
+							<a href="//wordpress.org" title="WordPress">WordPress</a> &amp; <a href="//html5blank.com" title="HTML5 Blank">HTML5 Blank</a>. Theme developed by <a href="//avinerenberg.com">Avi Nerenberg</a-->.
+						</p>
+					<!-- /copyright -->
+					</div>
+				</div>
 			</footer>
 			<!-- /footer -->
 
