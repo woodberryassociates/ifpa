@@ -429,16 +429,17 @@ button[role=button] {
 /*#front-page-container {
 	margin: auto;
 	max-width: 1000px;
-}
+}*/
 
 #whats-new {
-	margin-left: -300px;
+	padding-top: 150px;
+/*	margin-left: -300px;
 	padding: 150px 300px 0 0;
 
 	background-color: #F6F6F6;
 
-	z-index: -1;
-}*/
+	z-index: -1;*/
+}
 
 /*****AB NAV (DEPRECATED)******/
 
