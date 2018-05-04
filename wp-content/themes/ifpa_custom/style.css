@@ -433,11 +433,11 @@ button[role=button] {
 
 #whats-new {
 	margin-left: -300px; /*position:relative messes up the background*/;
-	/*padding: 150px 300px 0 0;
+	padding: 150px 300px 0 0;
 
 	background-color: #F6F6F6;
 
-	z-index: -1;*/
+	z-index: -1;
 }
 
 /*****AB NAV (DEPRECATED)******/
