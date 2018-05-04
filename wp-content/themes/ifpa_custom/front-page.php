@@ -29,6 +29,9 @@
 				wp_reset_postdata();	
 			?>
 		</section>
+		<section id="latest">
+			<h1>Latest</h1>
+		</section>
 
 		<section id="recent-blog-posts">
 			
