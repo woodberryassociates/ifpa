@@ -15,7 +15,7 @@
 	<div id="front-page-main">
 		<div id="front-page-container">
 			<section id="whats-new">
-				<h1>What's New</h1>
+				<h1 style="padding-bottom: 10px">What's New</h1>
 				<?php
 					query_posts('posts_per_page=4');
 					get_template_part('loop');
@@ -57,5 +57,5 @@
 		</section>
 	</div>
 </main>
-<div style="height: 5px; background-color: #707070"></div>
+<div style="margin-bottom: 20px; height: 1px; background-color: #707070"></div>
 <?php get_footer(); ?>
