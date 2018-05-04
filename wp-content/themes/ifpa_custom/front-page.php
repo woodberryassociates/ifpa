@@ -35,7 +35,7 @@
 			</section>
 		</div>
 		<section id="recent-blog-posts">
-			<h1>Recent Blog Posts</h1>
+			<h1 style="padding-left: 15vw;	font-weight: bold;">Recent Blog Posts</h1>
 		</section>
 		<section class="home-block">
 			<?php
