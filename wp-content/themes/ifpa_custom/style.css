@@ -426,6 +426,15 @@ button[role=button] {
 	text-align: center;
 }
 
+#front-page-main {
+	width: 100%;
+
+	display: flex;
+	justify-content: center;
+
+	background-color: #F6F6F6;
+}
+
 #front-page-container {
 	margin: auto;
 	width: 1000px;
@@ -446,6 +455,8 @@ button[role=button] {
 #latest {
 	flex-grow: 1;
 	padding-top: 150px;
+
+	background-color: #F6F6F6;
 }
 
 /*****AB NAV (DEPRECATED)******/
