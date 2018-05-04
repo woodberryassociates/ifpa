@@ -17,7 +17,7 @@
 					<!-- /social links -->
 				</div>
 				
-				<div style="min-width: 40%; text-align: right">
+				<div style="align-self: stretch; min-width: 40%; text-align: right">
 					<div id="footer-right">
 						<!-- right footer widget -->
 						<?php if ( !function_exists('dynamic_sidebar') || !dynamic_sidebar("footer_widget_right") ) : ?>
