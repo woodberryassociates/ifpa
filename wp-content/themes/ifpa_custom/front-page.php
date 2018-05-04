@@ -42,7 +42,7 @@
 
 		<section class="home-block">
 			<?php
-				$recent_posts = new WP_Query('posts_per_page=3'); /*this number determines how many recent posts display on the home page*/
+				$recent_posts = new WP_Query('posts_per_page=4'); /*this number determines how many recent posts display on the home page*/
 				while($recent_posts->have_posts()) : $recent_posts->the_post();
 			?>
 					<section class="home-block-article">
