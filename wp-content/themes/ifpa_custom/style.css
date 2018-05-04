@@ -368,6 +368,8 @@ button[role=button] {
 
 	transition: .2s;
 
+	background-color: #282f5d;
+
 	/*background: linear-gradient(transparent 80%, #2AAD69);*/
 }
 
