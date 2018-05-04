@@ -442,9 +442,9 @@ button[role=button] {
 	background-color: #F6F6F6;
 }
 
-#front-page-main a {
-	padding: 0 !important; /* not sure where this <a> tag is coming from, hack to remove excess padding */
-}
+/*#front-page-main a {
+	padding: 0 !important; /* not sure where this <a> tag is coming from, hack to remove excess padding 
+}*/
 
 #front-page-container {
 	margin: auto;
@@ -474,7 +474,7 @@ button[role=button] {
 #recent-blog-posts {
 	padding-left: 0px !important;
 	margin: auto;
-	min-width: 100vw;
+	width: 100%;
 	background-color: #282f5d;
 
 	line-height: 10em;

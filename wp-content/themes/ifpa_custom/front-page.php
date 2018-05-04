@@ -36,7 +36,7 @@
 			</section>
 		</div>
 
-		<section id="recent-blog-posts" style="padding: 0px !important">
+		<section id="recent-blog-posts">
 			<h1 style="padding-left: 6vw; font-weight: bold; color: white;">Recent Blog Posts</h1>
 		</section>
 
