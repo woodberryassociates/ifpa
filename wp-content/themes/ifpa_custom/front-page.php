@@ -39,12 +39,13 @@
 		</section>
 		<section class="home-block">
 			<?php
-				$recent_posts = new WP_Query('posts_per_page=2'); /*this number determines how many recent posts display on the home page*/
+				$recent_posts = new WP_Query('posts_per_page=3'); /*this number determines how many recent posts display on the home page*/
 				while($recent_posts->have_posts()) : $recent_posts->the_post();
 			?>
 					<section class="home-block-article">
-						<a href="<?php the_permalink(); ?>"><?php the_title(); ?></a>
 						<a href="<?php the_permalink(); ?>"><?php the_post_thumbnail(); ?></a>
+						<a href="<?php the_permalink(); ?>"><?php the_title(); ?></a>
+						<a href="<?php the_permalink(); ?>" style="font-size: .7em"><?php the_time(get_option('date_format')); ?></a>
 					</section>
 			<?php
 				endwhile;

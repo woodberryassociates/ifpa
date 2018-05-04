@@ -376,23 +376,23 @@ button[role=button] {
 .home-block-article {
 	max-width: 300px; /*fixed thumbnail sizes for home page*/
 	min-height: 200px;
-	margin: 0px 100px 30px 100px;
+	margin: 0 0 30px 0;
 
 	display: flex;
 	flex-direction: column;
-	align-items: center;
+	align-items: left;
 	justify-content: flex-end;
 
-	text-align: center;
+	text-align: left;
 	font-weight: normal;
 	font-size: 20px;
 
-	box-shadow: 0 0 10px #555;
-	border-radius: 3px;
+	/*box-shadow: 0 0 10px #555;
+	border-radius: 3px;*/
 
 	transition: .2s;
 
-	background: white; /* stops gradient from home-block */
+	background-color: #282f5d;
 }
 
 .home-block-article img {
@@ -400,8 +400,12 @@ button[role=button] {
 	height: 200px;
 }
 
+.home-block-article a {
+	color: white;
+}
+
 .home-block-article a:hover {
-	color: #2AAD69; /*avoid changing color*/
+	/*color: #2AAD69; /*avoid changing color*/
 }
 
 .home-block-article:hover {
