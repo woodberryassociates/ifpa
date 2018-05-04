@@ -338,11 +338,14 @@ button[role=button] {
 }
 
 #footer-right {
-	align-self: stretch;
+	height: 100%;
+	margin-top: 20px; /*correctly pads right footer widget*/
 
 	display: flex;
 	flex-direction: column;
 	justify-content: space-between;
+
+	text-align: right;
 }
 
 .copyright {
