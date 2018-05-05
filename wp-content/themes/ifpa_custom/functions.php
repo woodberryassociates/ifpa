@@ -348,6 +348,7 @@ add_action('init', 'register_html5_menu'); // Add HTML5 Blank Menu
 //add_action('init', 'create_post_type_html5'); // Add our HTML5 Blank Custom Post Type
 add_action('widgets_init', 'my_remove_recent_comments_style'); // Remove inline Recent Comment Styles from wp_head()
 add_action('init', 'html5wp_pagination'); // Add our HTML5 Pagination
+add_action( 'wp_enqueue_scripts', 'my_theme_scripts' );
 
 // Remove Actions
 remove_action('wp_head', 'feed_links_extra', 3); // Display the links to the extra feeds such as category feeds
@@ -452,6 +453,11 @@ function html5_shortcode_demo_2($atts, $content = null) // Demo Heading H2 short
 /*------------------------------------*\
     Custom
 \*------------------------------------*/
+
+// Load custom jquery scripts
+function my_theme_scripts() {
+    wp_enqueue_script( 'my_scripts', get_template_directory_uri() . '/js/scripts.js', array( 'jquery' ), '1.0.0', true );
+}
 
 // Add attachment search to searchbar
 function attachment_search( $query ) {

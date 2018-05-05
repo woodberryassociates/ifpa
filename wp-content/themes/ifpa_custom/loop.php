@@ -36,17 +36,20 @@
 	</article>
 	<!-- /article -->
 
-	<!--adding breaks between articles-->
+	<!-- breaks between articles -->
 	<?php $articleCount++; ?>
 	<?php if($articleCount <= 3): ?> <!-- loop.php is only called by front-page.php, so hardcoding this at 3 -->
 		<div style="margin-bottom: 20px; height: 1px; background-color: #707070"></div>
 	<?php endif; ?>
+	<!-- /breaks between articles -->
 
 <?php endwhile; ?>
 <?php else: ?>
+
 	<!-- article -->
 	<article>
 		<h1 style="text-align: center; color: #2AAD69; padding-bottom: 20px;"><?php _e( 'Sorry, nothing to display.		:(', 'html5blank' ); ?></h1>
 	</article>
 	<!-- /article -->
+	
 <?php endif; ?>

@@ -74,7 +74,7 @@ ul {
 }
 
 h2 {
-	font-weight: bold !important;
+	/*font-weight: bold !important;*/
 }
 
 button {
@@ -379,7 +379,7 @@ button[role=button] {
   .sidebar {padding-top: 15px;}
 }*/
 
-/* Home Page formatting */
+/*******FOOTER POSTS FORMATTING*********/
 
 .home-block {
 	display: flex;
@@ -454,37 +454,42 @@ button[role=button] {
 	text-align: center;
 }
 
-#front-page-main {
+/*******SPLIT-PAGE FORMATTING*******/
+
+#split-page-main {
 	width: 100%;
 
-	display: flex;
+	/*display: flex;
 	flex-flow: column nowrap;
-	justify-content: center;
+	justify-content: center;*/
 
 	background-color: #F6F6F6;
 }
 
-/*#front-page-main a {
-	padding: 0 !important; /* not sure where this <a> tag is coming from, hack to remove excess padding 
-}*/
-
-#front-page-container {
+#split-page-container {
 	margin: auto;
-	width: 1000px;
+	max-width: 1000px;
 
 	display: flex;
+	flex-flow: row wrap;
 	justify-content: center;
 }
 
-#whats-new {
-	flex-grow: 2;
+#split-page-left {
+	max-width: 65%;
 	padding-top: 150px;
 }
 
-#latest {
-	min-width: 33%;
-	flex-grow: 1;
-	padding: 150px 0 0 10px;
+#split-page-right {
+	max-width: 33%;
+	padding: 150px 10px 0 10px;
+
+	display: flex;
+	flex-direction: column;
+}
+
+#years {
+
 }
 
 #recent-blog-posts {
@@ -496,7 +501,66 @@ button[role=button] {
 	line-height: 10em;
 }
 
+#split-page-with-thumbnail {
+	display: flex;
+	flex-flow: row wrap;
+	justify-content: space-around;
+	align-items: flex-start;
+	margin-bottom: 0px;
+}
 
+.split-page-with-thumbnail-article {
+	max-width: 300px; /*fixed thumbnail sizes for home page*/
+	margin: 0 0 30px 0;
+
+	display: flex;
+	flex-direction: column;
+	align-items: left;
+	justify-content: flex-end;
+
+	text-align: left;
+	font-weight: normal;
+	font-size: 20px;
+}
+
+.split-page-with-thumbnail-article img {
+	max-width: 300px; /*fixed thumbnail sizes for home page*/
+	max-height: 375px;
+}
+
+.split-page-with-thumbnail-article a {
+	
+}
+
+.split-page-with-thumbnail-article a:hover {
+	/*color: #2AAD69; /*avoid changing color*/
+}
+
+.split-page-with-thumbnail-article:hover {
+	/*transform: translateY(-5px);*/
+}
+
+#split-page-no-thumbnail {
+	display: flex;
+	flex-flow: column nowrap;
+	justify-content: flex-start;
+	align-items: flex-start;
+	margin-bottom: 0px;
+}
+
+.split-page-no-thumbnail-article {
+	max-width: inherit; /*fixed thumbnail sizes for home page*/
+	margin: 0 0 30px 0;
+
+	display: flex;
+	flex-direction: column;
+	align-items: left;
+	justify-content: flex-end;
+
+	text-align: left;
+	font-weight: normal;
+	font-size: 20px;
+}
 
 /*****AB NAV (DEPRECATED)******/
 

@@ -16,6 +16,8 @@
 			query_posts('cat='.$catId);
 		?>
 
+		<?php $articleCount = 0; ?>
+
 		<?php if (have_posts()): while (have_posts()) : the_post(); ?>
 			<!-- article -->
 			<article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
@@ -54,12 +56,15 @@
 			</article>
 			<!-- /article -->
 
-			<!-- adding breaks between articles -->
+			<!-- breaks between articles -->
 			<?php $articleCount++; ?>
-			<?php if($articleCount < get_option('posts_per_page') /*set in admin under settings -> reading*/ && $articleCount < get_category_by_slug('summits')->count): ?>
-				<div style="margin-bottom: 20px; height: 1px; background-color: #707070"></div>
+			<?php
+				/*posts_per_page set in admin under settings -> reading,
+				  get_category_by_slug('SLUG')->count is number of articles in specific category*/
+				if($articleCount < get_option('posts_per_page')  && $articleCount < get_category_by_slug('summits')->count): ?>
+					<div style="margin-bottom: 20px; height: 1px; background-color: #707070"></div>
 			<?php endif; ?>
-			<!-- /adding breaks between articles -->
+			<!-- /breaks between articles -->
 
 		<?php endwhile; ?>
 		<?php else: ?>

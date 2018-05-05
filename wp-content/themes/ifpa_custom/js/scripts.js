@@ -1,9 +1,7 @@
-(function ($, root, undefined) {
-	$(function () {
-		'use strict';
-		
-		//Hide coverflow (broken)
-		/*$("#menu-icon").click(function(){
-        $("#fwdr3dcovDiv0").hide();*/
-    });
-}(jQuery, this);
+jQuery(document).ready(function( $ ) {
+	
+  $('.clickable').on('click', function() {
+    $(this).css({"font-weight":"bold"});
+  });
+	
+});

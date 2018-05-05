@@ -12,9 +12,9 @@
 		<!-- /article -->
 	</section>
 
-	<div id="front-page-main">
-		<div id="front-page-container">
-			<section id="whats-new">
+	<div id="split-page-main">
+		<div id="split-page-container">
+			<section id="split-page-left">
 				<h1 style="padding-bottom: 10px">What's New</h1>
 				<?php
 					query_posts('posts_per_page=4');
@@ -30,7 +30,7 @@
 					wp_reset_postdata();	
 				?>
 			</section>
-			<section id="latest">
+			<section id="split-page-right">
 				<h1>Latest</h1>
 
 			</section>
