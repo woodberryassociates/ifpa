@@ -77,6 +77,10 @@ h2 {
 	font-weight: bold !important;
 }
 
+button {
+	text-transform: uppercase;
+}
+
 /*#main::before {
 	content: "";
 	position: absolute;
@@ -522,7 +526,7 @@ button[role=button] {
 	background: linear-gradient(45deg, white, #2AAD69 5%, white 5%)
 }
 
-.single {
+.single-full {
 	margin: auto;
 	max-width: 1000px;
 }
