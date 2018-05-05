@@ -623,7 +623,12 @@ h1 > a:hover {
 	background-color: white;
 }
 
-.summits-thumbnail > img{
+.summits-thumbnail {
+	display: flex;
+	justify-content: center;
+}
+
+.summits-thumbnail > img {
 	max-height: 400px;
 }
 
