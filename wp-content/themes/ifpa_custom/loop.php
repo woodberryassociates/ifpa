@@ -13,7 +13,7 @@
 			<?php the_post_thumbnail(array(300,200)); // Declare pixel size you need inside the array ?>
 		</a>
 		<!-- /post thumbnail -->
-		
+
 		<!-- post title -->
 		<h1 style="display: flex; padding-left: 10px;">
 			<a href="<?php the_permalink(); ?>" title="<?php the_title(); ?>"><?php the_title(); ?></a>
@@ -38,7 +38,7 @@
 
 	<!--adding breaks between articles-->
 	<?php $articleCount++; ?>
-	<?php if($articleCount <= 3): ?>
+	<?php if($articleCount <= 3): ?> <!-- loop.php is only called by front-page.php, so hardcoding this at 3 -->
 		<div style="margin-bottom: 20px; height: 1px; background-color: #707070"></div>
 	<?php endif; ?>
 

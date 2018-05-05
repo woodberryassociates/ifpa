@@ -21,43 +21,42 @@
 		<?php if (have_posts()): while (have_posts()) : the_post(); ?>
 			<!-- article -->
 			<article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
-					<article id="content">
+				<article id="content">
 
-						<!-- post title -->
-						<h1>
-							<a href="<?php the_permalink(); ?>" title="<?php the_title(); ?>"><?php the_title(); ?></a>
-						</h1>
-						<!-- /post title -->
+					<!-- post title -->
+					<h1>
+						<a href="<?php the_permalink(); ?>" title="<?php the_title(); ?>"><?php the_title(); ?></a>
+					</h1>
+					<!-- /post title -->
 
-						<!-- post date -->
-						<p style="padding-top: 1em;"><?php the_time(get_option('date_format')); ?></p>
-						<!-- /post date -->
+					<!-- post date -->
+					<p style="padding-top: 1em;"><?php the_time(get_option('date_format')); ?></p>
+					<!-- /post date -->
 
-						<!-- post content -->
-						<p style="padding-top: 1em;"><?php the_content(); ?></p>
-						<!-- /post content -->
+					<!-- post content -->
+					<p style="padding-top: 1em;"><?php the_content(); ?></p>
+					<!-- /post content -->
 
-						<!-- post tags -->
-						<?php the_tags( __( 'Tags: ', 'html5blank' ), ', ', '<br>'); ?>
-						<!-- /post tags -->
+					<!-- post tags -->
+					<?php the_tags( __( 'Tags: ', 'html5blank' ), ', ', '<br>'); ?>
+					<!-- /post tags -->
 
-						<!-- post categories -->
-						<p style="text-align: right;"><?php _e( 'Categorized in: ', 'html5blank' ); the_category(', '); ?></p>
-						<!-- /post categories -->
+					<!-- post categories -->
+					<p style="text-align: right;"><?php _e( 'Categorized in: ', 'html5blank' ); the_category(', '); ?></p>
+					<!-- /post categories -->
 
-						<p style="text-align: right;"><?php edit_post_link(); ?></p>
-
-						<!-- previous post link -->
-						<?php
-						$prev_post = get_previous_post('in_same_cat=true');
-						if (!empty( $prev_post )): ?>
-							<p style="padding-top: 1em; text-align: right;"><a href="<?php echo get_permalink($prev_post->ID) ?>"><button>Previous Post &#9658;</button></a></p>
-						<?php endif ?>
-						<!-- /previous post link -->
-
-					</article>
+					<p style="text-align: right;"><?php edit_post_link(); ?></p>
+				</article>
 			</article>
 			<!-- /article -->
+
+			<!-- adding breaks between articles -->
+			<?php $articleCount++; ?>
+			<?php if($articleCount <= 10): ?>
+				<div style="margin-bottom: 20px; height: 1px; background-color: #707070"></div>
+			<?php endif; ?>
+			<!-- /adding breaks between articles -->
+
 		<?php endwhile; ?>
 		<?php else: ?>
 
