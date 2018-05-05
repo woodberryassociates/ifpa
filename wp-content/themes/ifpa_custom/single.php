@@ -40,7 +40,7 @@
 					<?php
 					$prev_post = get_previous_post('in_same_cat=true');
 					if (!empty( $prev_post )): ?>
-						<p style="padding-top: 1em; text-align: right;"><a href="<?php echo get_permalink($prev_post->ID) ?>"><button>Previous Post</button></a></p>
+						<p style="padding-top: 1em; text-align: right;"><a href="<?php echo get_permalink($prev_post->ID) ?>"><button>Previous Post &#9658;</button></a></p>
 					<?php endif ?>
 					<!-- /previous post link -->
 				</article>

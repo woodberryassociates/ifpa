@@ -79,6 +79,12 @@ h2 {
 
 button {
 	text-transform: uppercase;
+	background-color: white;
+
+	border: 1px solid #353535;
+    border-radius: 5px;
+
+    color: #353535;
 }
 
 /*#main::before {
