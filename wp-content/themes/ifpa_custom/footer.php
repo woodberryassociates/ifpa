@@ -2,7 +2,7 @@
 
 			<!--recent blog posts-->
 			<section id="recent-blog-posts">
-				<h1 style="padding-left: 6vw; font-weight: bold; color: white;">Recent Blog Posts</h1>
+				<h1 style="padding-left: 6vw; font-weight: bold; text-transform: uppercase; color: white;">Recent Blog Posts</h1>
 			</section>
 
 			<section class="home-block">
