@@ -16,8 +16,6 @@
 			query_posts('cat='.$catId);
 		?>
 
-		<h2 style="margin: 2em 0 1em 2em; text-transform: uppercase;">Latest Post</h2>
-
 		<?php if (have_posts()): while (have_posts()) : the_post(); ?>
 			<!-- article -->
 			<article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
@@ -52,7 +50,7 @@
 
 			<!-- adding breaks between articles -->
 			<?php $articleCount++; ?>
-			<?php if($articleCount <= 10): ?>
+			<?php if($articleCount <= get_option('posts_per_page' /*set in admin under settings -> reading*/)): ?>
 				<div style="margin-bottom: 20px; height: 1px; background-color: #707070"></div>
 			<?php endif; ?>
 			<!-- /adding breaks between articles -->

@@ -16,7 +16,7 @@
 			query_posts('cat='.$catId.'&&posts_per_page=1');
 		?>
 
-		<h2 style="margin: 2em 0 1em 2em; text-transform: uppercase;">Latest Post</h2>
+		<h2 style="margin: 2em 0 1em; text-transform: uppercase;">Latest Post</h2>
 
 		<?php if (have_posts()): while (have_posts()) : the_post(); ?>
 			<!-- article -->
