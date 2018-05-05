@@ -623,6 +623,10 @@ h1 > a:hover {
 	background-color: white;
 }
 
+.summits-thumbnail > img{
+	max-height: 400px;
+}
+
 /*------------------------------------*\
     IMAGES
 \*------------------------------------*/

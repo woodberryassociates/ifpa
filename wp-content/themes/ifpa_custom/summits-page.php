@@ -4,7 +4,7 @@
 
 <main role="main">
 	<!-- header img -->
-	<div style="width: 100%; height: 300px; background-color: rgba(74, 152, 190, .7);"></div>
+	<div style="margin-bottom: 20px; width: 100%; height: 300px; background-color: rgba(74, 152, 190, .7);"></div>
 	<!-- /header img -->
 
 	<!-- section -->
@@ -22,7 +22,7 @@
 				<article id="content">
 
 					<!-- post thumbnail -->
-					<a class="loop-thumbnail" href="<?php the_permalink(); ?>" title="<?php the_title(); ?>">
+					<a class="summits-thumbnail" href="<?php the_permalink(); ?>" title="<?php the_title(); ?>">
 						<?php the_post_thumbnail(); // Declare pixel size you need inside the array ?>
 					</a>
 					<!-- /post thumbnail -->
