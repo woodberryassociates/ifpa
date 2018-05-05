@@ -74,8 +74,7 @@ ul {
 }
 
 h2 {
-	/*margins screw up the JS highlighting*/
-	display: none;
+	font-weight: bold !important;
 }
 
 /*#main::before {
@@ -523,6 +522,11 @@ button[role=button] {
 	background: linear-gradient(45deg, white, #2AAD69 5%, white 5%)
 }
 
+.single {
+	margin: auto;
+	max-width: 1000px;
+}
+
 .single > [id^="post-"] > a {
 	position: absolute;
 	width: 100%;
@@ -541,7 +545,7 @@ button[role=button] {
 #article-overlay {
 	width: 100%;
 	position: static;
-	margin-top: 200px;
+	margin-top: 150px;
 
 	display: flex;
 	flex-direction: column;
@@ -553,14 +557,13 @@ button[role=button] {
 #content {
 	text-align: justify;
 	color: #000;
-	width: 80%;
+	width: 100%;
 	font-size: 1.5em;
 
-	margin-top: -150px;
 	padding: 5px 30px;
-	border-radius: 20px;
+	/*border-radius: 20px;
 	box-shadow: 0 0 10px #555;
-	background-color: #FFF;
+	background-color: #FFF;*/
 
 	margin-bottom: 20px;
 }
