@@ -456,6 +456,10 @@ button[role=button] {
 
 /*******SPLIT-PAGE FORMATTING*******/
 
+.divider {
+	background-color: #707070
+}
+
 #split-page-main {
 	width: 100%;
 
@@ -481,7 +485,7 @@ button[role=button] {
 }
 
 #split-page-right {
-	max-width: 33%;
+	width: 31%;
 	padding: 150px 10px 0 10px;
 
 	display: flex;
@@ -489,7 +493,17 @@ button[role=button] {
 }
 
 #years {
+	display: flex;
+	flex-flow: row wrap;
+}
 
+.year {
+	padding-right: 10px;
+	float: left;
+}
+
+#twenty-seventeen {
+	visibility: hidden;
 }
 
 #recent-blog-posts {

@@ -62,7 +62,7 @@
 				/*posts_per_page set in admin under settings -> reading,
 				  get_category_by_slug('SLUG')->count is number of articles in specific category*/
 				if($articleCount < get_option('posts_per_page')  && $articleCount < get_category_by_slug('summits')->count): ?>
-					<div style="margin-bottom: 20px; height: 1px; background-color: #707070"></div>
+					<div class="divider" style="margin-bottom: 20px; height: 1px;"></div>
 			<?php endif; ?>
 			<!-- /breaks between articles -->
 

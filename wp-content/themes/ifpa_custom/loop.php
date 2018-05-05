@@ -39,7 +39,7 @@
 	<!-- breaks between articles -->
 	<?php $articleCount++; ?>
 	<?php if($articleCount <= 3): ?> <!-- loop.php is only called by front-page.php, so hardcoding this at 3 -->
-		<div style="margin-bottom: 20px; height: 1px; background-color: #707070"></div>
+		<div class="divider" style="margin-bottom: 20px; height: 1px;"></div>
 	<?php endif; ?>
 	<!-- /breaks between articles -->
 
