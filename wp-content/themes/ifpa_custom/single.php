@@ -43,7 +43,7 @@
 					if (!empty( $next_post )): ?>
 						<p style="padding-top: 1em; text-align: left;"><a href="<?php echo get_permalink($next_post->ID) ?>"><button>&#9664; Next Post</button></a></p>
 					<?php endif ?>
-					if (!empty( $prev_post )): ?>
+					<?php if (!empty( $prev_post )): ?>
 						<p style="padding-top: 1em; text-align: right;"><a href="<?php echo get_permalink($prev_post->ID) ?>"><button>Previous Post &#9658;</button></a></p>
 					<?php endif ?>
 					<!-- /next & previous post link -->
