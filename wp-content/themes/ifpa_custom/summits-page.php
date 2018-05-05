@@ -50,8 +50,9 @@
 
 			<!-- adding breaks between articles -->
 			<?php $articleCount++; ?>
-			<?php echo get_category_by_slug('summits')->count);
-			echo $articleCount;
+			<?php 
+				echo get_category_by_slug('summits')->count;
+				echo $articleCount;
 			?>
 			<?php if($articleCount < get_option('posts_per_page') /*set in admin under settings -> reading*/ && $articleCount < get_category_by_slug('summits')->count): ?>
 				<div style="margin-bottom: 20px; height: 1px; background-color: #707070"></div>
