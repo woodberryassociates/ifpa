@@ -5,20 +5,20 @@ jQuery(document).ready(function( $ ) {
   	var itemClass = $(this).attr('itemYear');
 
   	//reset display
-    $('#years').children().css({"font-weight":"normal"});
+    $('#years').children().css({"color":"#B5B5B5"});
     $('#split-page-no-thumbnail').children().css({"display":"none"})
-    //bold this year
-    $(this).css({"font-weight":"bold"});
-
+    //color this year
+    $(this).css({"color":"#282f5d"});
+    //display selected year's posts
     $('.' + itemClass).css({"display":"flex"});
   });
 	
 });
 
-// for dropdown menu
+// DROPDOWN MENU
 var opened = false;
 
-// Activates the dropdown menu
+// activates the dropdown menu
 function dropdown() {
   var element = document.getElementById("menu-collapsible");
 

@@ -12,7 +12,7 @@
 		<!-- /article -->
 	</section>
 
-	<div id="split-page-main">
+	<div id="split-page-main" class="gray">
 		<div style="height: 150px;"></div>
 		<div id="split-page-container">
 			<section id="split-page-left">

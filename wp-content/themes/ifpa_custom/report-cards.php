@@ -6,12 +6,12 @@
 	<!-- header img -->
 	<div style="width: 100%; height: 300px; background-color: rgba(74, 152, 190, .7);"></div>
 	<!-- /header img -->
-
+	<div style="width: 100%; height: 60px;"></div>
 	<div id="split-page-main">
 		<div id="split-page-container">
 			<!-- recent report cards -->
 			<section id="split-page-left">
-				<h1 style="padding-bottom: 10px">Recent</h1>
+				<h1 class="page-header">Latest</h1>
 				<section id="split-page-with-thumbnail">
 					<?php
 						$catObj = get_category_by_slug('report-cards'); 
@@ -21,9 +21,9 @@
 					?>
 						<section class="split-page-with-thumbnail-article">
 							<a href="<?php the_permalink(); ?>"><?php the_post_thumbnail(); ?></a>
-							<a href="<?php the_permalink(); ?>"><?php the_title(); ?></a>
-							<a href="<?php the_permalink(); ?>" style="font-size: .7em"><?php the_author(); ?></a>
-							<a href="<?php the_permalink(); ?>" style="font-size: .7em; text-transform: uppercase;"><?php the_time(get_option('date_format' /*accessible under Settings -> General */)); ?></a>
+							<a class="thumbnail-article-title" href="<?php the_permalink(); ?>"><?php the_title(); ?></a>
+							<p class="thumbnail-article-author" href="<?php the_permalink(); ?>"><?php the_author(); ?></p>
+							<p class="thumbnail-article-date" href="<?php the_permalink(); ?>"><?php the_time(get_option('date_format' /*accessible under Settings -> General */)); ?></p>
 						</section>
 					<?php
 						endwhile;
@@ -33,11 +33,11 @@
 			</section>
 			<!-- /recent report cards -->
 
-			<div class="divider" style="margin: 190px 0 20px 0; width:1px; height: auto;"></div>
+			<div class="divider divider-horizontal" style="margin: 100px 0 20px 0; width:1px; height: auto;"></div>
 
 			<!-- report cards archive -->
 			<section id="split-page-right">
-				<div style="width: inherit; height: 40px"></div>
+				<div style="width: inherit; height: 100px"></div>
 
 				<!-- years -->
 				<section id="years">
@@ -75,14 +75,14 @@
 							while($recent_posts->have_posts()) :
 								$recent_posts->the_post();
 								//only insert divider if not the first article
-								if($count != 0) :
-					?>
-									<!--div class="divider" style="width: 100%; height: 1px;"></div-->
-								<?php endif; ?>
+								/*if($count != 0) :
+								<?php endif; ?>*/
+					?>			
 								<section id="<?php echo $year ?>" class="split-page-no-thumbnail-article <?php echo $year ?>">
-									<a href="<?php the_permalink(); ?>"><?php the_title(); ?></a>
-									<a href="<?php the_permalink(); ?>" style="font-size: .7em"><?php the_author(); ?></a>
-									<a href="<?php the_permalink(); ?>" style="font-size: .7em; text-transform: uppercase;"><?php the_time(get_option('date_format')); ?></a>
+									<!--div class="divider divider-multi" style="width: 310px; height: 1px; margin-bottom: 15px;"></div-->
+									<a class="no-thumbnail-article-title" href="<?php the_permalink(); ?>"><?php the_title(); ?></a>
+									<p class="no-thumbnail-article-author" href="<?php the_permalink(); ?>" style="font-size: .7em"><?php the_author(); ?></p>
+									<p class="no-thumbnail-article-date" href="<?php the_permalink(); ?>" style="font-size: .7em; text-transform: uppercase;"><?php the_time(get_option('date_format')); ?></p>
 								</section>
 					<?php
 								$count++;

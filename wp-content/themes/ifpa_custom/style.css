@@ -381,6 +381,15 @@ button[role=button] {
 
 /*******FOOTER POSTS FORMATTING*********/
 
+#recent-blog-posts {
+	padding-left: 0px !important;
+	margin: auto;
+	width: 100%;
+	background-color: #282f5d;
+
+	line-height: 10em;
+}
+
 .home-block {
 	display: flex;
 	flex-flow: row wrap;
@@ -388,11 +397,7 @@ button[role=button] {
 	align-items: flex-start;
 	margin-bottom: 0px;
 
-	transition: .2s;
-
 	background-color: #282f5d;
-
-	/*background: linear-gradient(transparent 80%, #2AAD69);*/
 }
 
 .home-block-article {
@@ -409,11 +414,6 @@ button[role=button] {
 	font-weight: normal;
 	font-size: 20px;
 
-	/*box-shadow: 0 0 10px #555;
-	border-radius: 3px;*/
-
-	transition: .2s;
-
 	background-color: #282f5d;
 }
 
@@ -422,16 +422,22 @@ button[role=button] {
 	height: 200px;
 }
 
-.home-block-article a {
+.home-block-title {
+	font-weight: 800;
+	margin: 10px 0;
 	color: white;
 }
 
-.home-block-article a:hover {
-	/*color: #2AAD69; /*avoid changing color*/
+.home-block-title:hover,
+.home-block-date:hover {
+	color: white;
 }
 
-.home-block-article:hover {
-	transform: translateY(-5px);
+.home-block-date {
+	font-weight: 600;
+	font-size: .8em;
+	text-transform: uppercase;
+	color: white;
 }
 
 /*Access Barriers carousel on home page*/
@@ -456,17 +462,27 @@ button[role=button] {
 
 /*******SPLIT-PAGE FORMATTING*******/
 
+.page-header {
+	padding: 0 0 0 3.6%;
+
+	font-family: 'Montserrat', sans-serif;
+	font-weight: 600;
+	line-height: 100px;
+	text-transform: uppercase;
+	color: #282f5d;
+
+	
+}
+
 .divider {
-	background-color: #707070
+	background-color: #B5B5B5;
 }
 
 #split-page-main {
-	width: 100%;
+	width: 100%;	
+}
 
-	/*display: flex;
-	flex-flow: column nowrap;
-	justify-content: center;*/
-
+.gray {
 	background-color: #F6F6F6;
 }
 
@@ -486,7 +502,7 @@ button[role=button] {
 
 #split-page-right {
 	width: 31%;
-	padding: 0px 10px 0 10px;
+	padding: 0px 10px 0 25px;
 
 	display: flex;
 	flex-direction: column;
@@ -500,19 +516,13 @@ button[role=button] {
 .year {
 	padding-right: 10px;
 	float: left;
+
+	font-weight: 600;
+	color: #B5B5B5;
 }
 
 #twenty-seventeen {
 	visibility: hidden;
-}
-
-#recent-blog-posts {
-	padding-left: 0px !important;
-	margin: auto;
-	width: 100%;
-	background-color: #282f5d;
-
-	line-height: 10em;
 }
 
 #split-page-with-thumbnail {
@@ -524,7 +534,7 @@ button[role=button] {
 }
 
 .split-page-with-thumbnail-article {
-	max-width: 300px; /*fixed thumbnail sizes for home page*/
+	max-width: 275px; /*fixed thumbnail sizes for home page*/
 	margin: 0 0 30px 0;
 
 	display: flex;
@@ -538,20 +548,30 @@ button[role=button] {
 }
 
 .split-page-with-thumbnail-article img {
-	max-width: 300px; /*fixed thumbnail sizes for home page*/
-	max-height: 375px;
+	max-width: 275px; /*fixed thumbnail sizes for home page*/
+	max-height: 350px;
 }
 
-.split-page-with-thumbnail-article a {
-	
+.thumbnail-article-title {
+	font-weight: 800;
+	margin-top: 30px;
+	color: #66ac6e;
 }
 
-.split-page-with-thumbnail-article a:hover {
-	/*color: #2AAD69; /*avoid changing color*/
+.thumbnail-article-title:hover {
+	color: #66ac6e; /*avoid changing color*/
 }
 
-.split-page-with-thumbnail-article:hover {
-	/*transform: translateY(-5px);*/
+.thumbnail-article-author {
+	font-size: .65em;
+	color: #707070;
+}
+
+.thumbnail-article-date {
+	font-weight: 600;
+	font-size: .7em;
+	text-transform: uppercase;
+	color: #282f5d;
 }
 
 #split-page-no-thumbnail {
@@ -564,7 +584,7 @@ button[role=button] {
 
 .split-page-no-thumbnail-article {
 	max-width: inherit; /*fixed thumbnail sizes for home page*/
-	margin: 0 0 30px 0;
+	margin: 15px 0 15px 0;
 
 	display: flex;
 	flex-direction: column;
@@ -575,6 +595,30 @@ button[role=button] {
 	font-weight: normal;
 	font-size: 20px;
 }
+
+.no-thumbnail-article-title {
+
+	font-weight: 600;
+	font-size: .75em;
+	color: #282f5d;
+}
+
+.no-thumbnail-article-title:hover {
+	color: #282f5d;
+}
+
+.no-thumbnail-article-author {
+	color: #707070;
+}
+
+.no-thumbnail-article-date {
+	font-weight: 600;
+	font-size: .7em;
+	text-transform: uppercase;
+	color: #707070;
+}
+
+/* hide the first iteration of the divider on report cards, policy papers, studies */
 
 /*****AB NAV (DEPRECATED)******/
 
@@ -809,6 +853,13 @@ p.attachment {
 	button[role=button] {
 		font-size: 12px;
 		font-weight: normal;
+	}
+}
+
+/* hide horizontal dividers at <1000px */
+@media only screen and (max-width: 1000px) {
+	.divider-horizontal {
+		display: none;
 	}
 }
 /*reduce default (nav) menu font size & search bar size

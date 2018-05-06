@@ -168,12 +168,15 @@
 								$recent_posts = new WP_Query('cat='.$catId.'&&year='.$year);
 								while($recent_posts->have_posts()) :
 									$recent_posts->the_post();
-									//only insert divider if not the first article (TODO)
-									if($count != 0) :
+									
 						?>
-										<!--div class="divider" style="width: 100%; height: 1px;"></div-->
-									<?php endif; ?>
-									<section id="<?php echo $year ?>" class="split-page-no-thumbnail-article <?php echo $year ?>">
+									<section id="" class="split-page-no-thumbnail-article <?php echo $year ?>">
+										<!--?php
+											//only insert divider if not the first article (TODO)
+											if($count != 0) :
+										?-->
+										<div class="divider" style="width: 100%; height: 1px;"></div>
+										<!--?php endif; ?-->
 										<a href="<?php the_permalink(); ?>"><?php the_title(); ?></a>
 										<a href="<?php the_permalink(); ?>" style="font-size: .7em"><?php the_author(); ?></a>
 										<a href="<?php the_permalink(); ?>" style="font-size: .7em; text-transform: uppercase;"><?php the_time(get_option('date_format')); ?></a>

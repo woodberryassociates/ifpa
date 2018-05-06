@@ -1,7 +1,7 @@
 <!doctype html>
 <html <?php language_attributes(); ?> class="no-js">
 <head>
-	<link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Montserrat:300,400,500,600,700,800" rel="stylesheet">
 	<meta charset="<?php bloginfo('charset'); ?>">
 	<title>Institute for Patient Access</title>
 
