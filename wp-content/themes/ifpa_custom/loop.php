@@ -38,7 +38,7 @@
 
 	<!-- breaks between articles -->
 	<?php $articleCount++; ?>
-	<?php if($articleCount <= 3): ?> <!-- loop.php is only called by front-page.php, so hardcoding this at 3 -->
+	<?php if($articleCount <= 3 && $articleCount < $wp_query->found_posts): ?> <!-- loop.php is only called by front-page.php, so hardcoding this at 3 -->
 		<div class="divider" style="margin-bottom: 20px; height: 1px;"></div>
 	<?php endif; ?>
 	<!-- /breaks between articles -->

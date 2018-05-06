@@ -515,6 +515,10 @@ button[role=button] {
 	justify-content: center;
 }
 
+.search-page {
+	flex-flow: column nowrap !important;
+}
+
 #split-page-left {
 	max-width: 65%;
 	/*padding-top: 150px;*/
