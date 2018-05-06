@@ -1,16 +1,18 @@
-//TODO: insert jquery in footer, rather than header (bad practice)
+//TODO: insert jquery in footer, rather than header
 jQuery(document).ready(function( $ ) {
 	
   $('.clickable').on('click', function() {
-  	var itemClass = $(this).attr('itemYear');
+  	var itemClassYear = $(this).attr('itemYear');
+    // itemClassType is used to distinguish b/w diff types of policy paers
+    var itemClassType = $(this).attr('itemType');
 
   	//reset display
-    $('#years').children().css({"color":"#B5B5B5"});
-    $('#split-page-no-thumbnail').children().css({"display":"none"})
+    $('.years.' + itemClassType).children().css({"color":"#B5B5B5"});
+    $('.split-page-no-thumbnail.' + itemClassType).children().css({"display":"none"})
     //color this year
     $(this).css({"color":"#282f5d"});
     //display selected year's posts
-    $('.' + itemClass).css({"display":"flex"});
+    $('.' + itemClassType + '.' + itemClassYear).css({"display":"flex"});
   });
 	
 });

@@ -9,7 +9,7 @@
 	<div style="width: 100%; height: 60px;"></div>
 	<div id="split-page-main">
 		<div id="split-page-container">
-			
+
 			<!-- recent report cards -->
 			<section id="split-page-left">
 				<h1 class="page-header">Latest</h1>
@@ -41,7 +41,7 @@
 				<div style="width: inherit; height: 100px"></div>
 
 				<!-- years -->
-				<section id="years">
+				<section class="years report-cards">
 					<?php
 						$years = array();
 						$catObj = get_category_by_slug('report-cards'); 
@@ -60,12 +60,12 @@
 						//print years
 						foreach ($years as $year) :
 					?>
-						<h1 class="clickable year" itemYear="<?php echo $year ?>"><?php echo $year ?></h1>
+						<h1 class="clickable year" itemYear="<?php echo $year ?>" itemType="report-cards"><?php echo $year ?></h1>
 					<?php endforeach; ?>
 				</section>
 				<!-- /years -->
 				
-				<section id="split-page-no-thumbnail">
+				<section class="split-page-no-thumbnail report-cards">
 					<?php
 						$count = 0; //used to insert dividers b/w articles (TODO)
 						$catObj = get_category_by_slug('report-cards'); 
@@ -79,7 +79,7 @@
 								/*if($count != 0) :
 								<?php endif; ?>*/
 					?>			
-								<section id="<?php echo $year ?>" class="split-page-no-thumbnail-article <?php echo $year ?>">
+								<section class="split-page-no-thumbnail-article report-cards <?php echo $year ?>">
 									<!--div class="divider divider-multi" style="width: 310px; height: 1px; margin-bottom: 15px;"></div-->
 									<a class="no-thumbnail-article-title" href="<?php the_permalink(); ?>"><?php the_title(); ?></a>
 									<p class="no-thumbnail-article-author" href="<?php the_permalink(); ?>" style="font-size: .7em"><?php the_author(); ?></p>

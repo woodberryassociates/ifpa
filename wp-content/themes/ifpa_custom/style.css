@@ -529,7 +529,7 @@ button[role=button] {
 	flex-direction: column;
 }
 
-#years {
+.years {
 	display: flex;
 	flex-flow: row wrap;
 }
@@ -547,11 +547,13 @@ button[role=button] {
 }
 
 #split-page-with-thumbnail {
+	min-width: 650px;
+	margin-bottom: 0px;
+
 	display: flex;
 	flex-flow: row wrap;
 	justify-content: space-around;
 	align-items: flex-start;
-	margin-bottom: 0px;
 }
 
 .split-page-with-thumbnail-article {

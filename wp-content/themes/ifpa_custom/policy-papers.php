@@ -20,7 +20,7 @@
 						<?php
 							$catObj = get_category_by_slug('policy-briefs'); 
 							$catId = $catObj->term_id;
-							$recent_posts = new WP_Query('cat='.$catId.'&&posts_per_page=4');
+							$recent_posts = new WP_Query('cat='.$catId.'&&posts_per_page=2');
 							while($recent_posts->have_posts()) : $recent_posts->the_post();
 						?>
 							<section class="split-page-with-thumbnail-article">
@@ -44,7 +44,7 @@
 					<div style="width: inherit; height: 100px"></div>
 
 					<!-- years -->
-					<section id="years">
+					<section class="years policy-briefs">
 						<?php
 							$years = array();
 							$catObj = get_category_by_slug('policy-briefs'); 
@@ -63,12 +63,12 @@
 							//print years
 							foreach ($years as $year) :
 						?>
-							<h1 class="clickable year" itemYear="<?php echo $year ?>"><?php echo $year ?></h1>
+							<h1 class="clickable year" itemYear="<?php echo $year ?>" itemType="policy-briefs"><?php echo $year ?></h1>
 						<?php endforeach; ?>
 					</section>
 					<!-- /years -->
 					
-					<section id="split-page-no-thumbnail">
+					<section class="split-page-no-thumbnail policy-briefs">
 						<?php
 							$count = 0; //used to insert dividers b/w articles (TODO)
 							$catObj = get_category_by_slug('policy-briefs'); 
@@ -83,7 +83,7 @@
 						?>
 										<!--div class="divider" style="width: 100%; height: 1px;"></div-->
 									<?php endif; ?>
-									<section id="<?php echo $year ?>" class="split-page-no-thumbnail-article <?php echo $year ?>">
+									<section class="split-page-no-thumbnail-article policy-briefs <?php echo $year ?>">
 										<a class="no-thumbnail-article-title" href="<?php the_permalink(); ?>"><?php the_title(); ?></a>
 										<p class="no-thumbnail-article-author" href="<?php the_permalink(); ?>" style="font-size: .7em"><?php the_author(); ?></p>
 										<p class="no-thumbnail-article-date" href="<?php the_permalink(); ?>" style="font-size: .7em; text-transform: uppercase;"><?php the_time(get_option('date_format')); ?></p>
@@ -110,7 +110,7 @@
 						<?php
 							$catObj = get_category_by_slug('white-papers'); 
 							$catId = $catObj->term_id;
-							$recent_posts = new WP_Query('cat='.$catId.'&&posts_per_page=4');
+							$recent_posts = new WP_Query('cat='.$catId.'&&posts_per_page=2');
 							while($recent_posts->have_posts()) : $recent_posts->the_post();
 						?>
 							<section class="split-page-with-thumbnail-article">
@@ -134,7 +134,7 @@
 					<div style="width: inherit; height: 100px"></div>
 
 					<!-- years -->
-					<section id="years">
+					<section class="years white-papers">
 						<?php
 							$years = array();
 							$catObj = get_category_by_slug('white-papers'); 
@@ -153,12 +153,12 @@
 							//print years
 							foreach ($years as $year) :
 						?>
-							<h1 class="clickable year" itemYear="<?php echo $year ?>"><?php echo $year ?></h1>
+							<h1 class="clickable year" itemYear="<?php echo $year ?>" itemType="white-papers"><?php echo $year ?></h1>
 						<?php endforeach; ?>
 					</section>
 					<!-- /years -->
 					
-					<section id="split-page-no-thumbnail">
+					<section class="split-page-no-thumbnail white-papers">
 						<?php
 							$count = 0; //used to insert dividers b/w articles (TODO)
 							$catObj = get_category_by_slug('white-papers'); 
@@ -170,7 +170,7 @@
 									$recent_posts->the_post();
 									
 						?>
-									<section id="" class="split-page-no-thumbnail-article <?php echo $year ?>">
+									<section class="split-page-no-thumbnail-article white-papers <?php echo $year ?>">
 										<a class="no-thumbnail-article-title" href="<?php the_permalink(); ?>"><?php the_title(); ?></a>
 										<p class="no-thumbnail-article-author" href="<?php the_permalink(); ?>" style="font-size: .7em"><?php the_author(); ?></p>
 										<p class="no-thumbnail-article-date" href="<?php the_permalink(); ?>" style="font-size: .7em; text-transform: uppercase;"><?php the_time(get_option('date_format')); ?></p>
@@ -196,7 +196,7 @@
 						<?php
 							$catObj = get_category_by_slug('fast-facts'); 
 							$catId = $catObj->term_id;
-							$recent_posts = new WP_Query('cat='.$catId.'&&posts_per_page=4');
+							$recent_posts = new WP_Query('cat='.$catId.'&&posts_per_page=2');
 							while($recent_posts->have_posts()) : $recent_posts->the_post();
 						?>
 							<section class="split-page-with-thumbnail-article">
@@ -220,7 +220,7 @@
 					<div style="width: inherit; height: 100px"></div>
 
 					<!-- years -->
-					<section id="years">
+					<section class="years fast-facts">
 						<?php
 							$years = array();
 							$catObj = get_category_by_slug('fast-facts'); 
@@ -239,12 +239,12 @@
 							//print years
 							foreach ($years as $year) :
 						?>
-							<h1 class="clickable year" itemYear="<?php echo $year ?>"><?php echo $year ?></h1>
+							<h1 class="clickable year" itemYear="<?php echo $year ?>" itemType="fast-facts"><?php echo $year ?></h1>
 						<?php endforeach; ?>
 					</section>
 					<!-- /years -->
 					
-					<section id="split-page-no-thumbnail">
+					<section class="split-page-no-thumbnail fast-facts">
 						<?php
 							$count = 0; //used to insert dividers b/w articles (TODO)
 							$catObj = get_category_by_slug('fast-facts'); 
@@ -259,7 +259,7 @@
 						?>
 										<!--div class="divider" style="width: 100%; height: 1px;"></div-->
 									<?php endif; ?>
-									<section id="<?php echo $year ?>" class="split-page-no-thumbnail-article <?php echo $year ?>">
+									<section class="split-page-no-thumbnail-article fast-facts <?php echo $year ?>">
 										<a class="no-thumbnail-article-title" href="<?php the_permalink(); ?>"><?php the_title(); ?></a>
 										<p class="no-thumbnail-article-author" href="<?php the_permalink(); ?>" style="font-size: .7em"><?php the_author(); ?></p>
 										<p class="no-thumbnail-article-date" href="<?php the_permalink(); ?>" style="font-size: .7em; text-transform: uppercase;"><?php the_time(get_option('date_format')); ?></p>
