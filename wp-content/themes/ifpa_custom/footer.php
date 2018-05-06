@@ -15,7 +15,7 @@
 						<section class="home-block-article">
 							<a href="<?php the_permalink(); ?>"><?php the_post_thumbnail(); ?></a>
 							<a class="home-block-title" href="<?php the_permalink(); ?>"><?php the_title(); ?></a>
-							<a class="home-block-date" href="<?php the_permalink(); ?>" style="font-size: .7em"><?php the_time('F j, Y'); ?></a>
+							<a class="home-block-date" href="<?php the_permalink(); ?>" style="font-size: .7em"><?php the_time(get_option('date_format')); ?></a>
 						</section>
 				<?php
 					endwhile;

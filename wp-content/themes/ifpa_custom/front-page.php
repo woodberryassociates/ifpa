@@ -14,25 +14,77 @@
 
 	<div id="split-page-main" class="gray">
 		<div style="height: 150px;"></div>
+
 		<div id="split-page-container">
 			<section id="split-page-left">
-				<h1 style="padding-bottom: 10px">What's New</h1>
+				<h1 class="page-header" style="padding: 0;">What's New</h1>
 				<?php
 					query_posts('posts_per_page=4');
 					get_template_part('loop');
-					/*$recent_posts = new WP_Query('posts_per_page=3'); /*this number determines how many recent posts display on the home page*/
-					/*while($recent_posts->have_posts()) : $recent_posts->the_post(); ?>
-						<section class="home-block-article">
-							<a href="<?php the_permalink(); ?>"><?php the_title(); ?></a>
-							<a href="<?php the_permalink(); ?>"><?php the_post_thumbnail(); ?></a>
-						</section>
-				<?php
-					endwhile;*/
 					wp_reset_postdata();	
 				?>
 			</section>
-			<section id="split-page-right">
-				<h1>Latest</h1>
+			<section class="front-page" id="split-page-right">
+				<h1 class="page-header-inverted">Latest</h1>
+
+				<!-- policy papers -->
+				<h2 class="page-header" style="padding: 0 12% 0 12%; line-height: 75px; position: relative; top: 15px;">Policy Papers</h2>
+				
+				<?php
+					$count = 0; //used to insert dividers b/w articles (TODO)
+					$catObj = get_category_by_slug('policy-papers'); 
+					$catId = $catObj->term_id;
+
+					$recent_posts = new WP_Query('cat='.$catId.'&&posts_per_page=3');
+					while($recent_posts->have_posts()) :
+						$recent_posts->the_post();
+						//only insert divider if not the first article
+						/*if($count != 0) :
+						<?php endif; ?>*/
+				?>			
+						<section class="split-page-no-thumbnail-article" style="padding-left: 12%; margin: 10px 0 10px 0">
+							<!--div class="divider divider-multi" style="width: 310px; height: 1px; margin-bottom: 15px;"></div-->
+							<a class="no-thumbnail-article-title" href="<?php the_permalink(); ?>"><?php the_title(); ?></a>
+							<p class="no-thumbnail-article-author" href="<?php the_permalink(); ?>" style="font-size: .7em"><?php the_author(); ?></p>
+							<p class="no-thumbnail-article-date" href="<?php the_permalink(); ?>" style="font-size: .7em; text-transform: uppercase;"><?php the_time(get_option('date_format')); ?></p>
+						</section>
+				<?php
+					endwhile;
+					wp_reset_postdata();	
+				?>
+				<!-- /policy papers -->
+
+				<!-- twitter widget -->
+				<a class="twitter-timeline" href="https://twitter.com/patientaccess"  data-width="260" data-tweet-limit="1">Tweets by Alliance for Patient Access</a> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script> 
+				<!-- /twitter widget -->
+
+				<!-- summits thumbnail -->
+				<h2 class="page-header" style="padding: 0 12% 0 12%; line-height: 75px; position: relative; top: 15px;">Policy Summits</h2>
+
+				<?php
+					$count = 0; //used to insert dividers b/w articles (TODO)
+					$catObj = get_category_by_slug('summits'); 
+					$catId = $catObj->term_id;
+
+					$recent_posts = new WP_Query('cat='.$catId.'&&posts_per_page=1');
+					while($recent_posts->have_posts()) :
+						$recent_posts->the_post();
+						//only insert divider if not the first article
+						/*if($count != 0) :
+						<?php endif; ?>*/
+				?>			
+						<section  style="margin: auto;">
+							<!-- post thumbnail -->
+							<a class="loop-thumbnail" href="<?php the_permalink(); ?>" title="<?php the_title(); ?>">
+								<?php the_post_thumbnail(array(300,200)); // Declare pixel size you need inside the array ?>
+							</a>
+							<!-- /post thumbnail -->
+						</section>
+				<?php
+					endwhile;
+					wp_reset_postdata();	
+				?>
+				<!-- /summits thumbnail -->
 
 			</section>
 		</div>
