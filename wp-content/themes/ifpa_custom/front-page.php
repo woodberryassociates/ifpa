@@ -15,7 +15,7 @@
 	<div id="split-page-main" class="gray">
 		<div style="height: 150px;"></div>
 
-		<div id="split-page-container">
+		<div id="split-page-container" style="padding-bottom: 60px;">
 			<section id="split-page-left">
 				<h1 class="page-header" style="padding: 0;">What's New</h1>
 				<?php
@@ -59,7 +59,7 @@
 				<!-- /twitter widget -->
 
 				<!-- summits thumbnail -->
-				<h2 class="page-header" style="padding: 0 12% 0 12%; line-height: 75px; position: relative; top: 15px;">Policy Summits</h2>
+				<h2 class="page-header" style="padding: 0 12% 0 12%; line-height: 75px;">Policy Summits</h2>
 
 				<?php
 					$count = 0; //used to insert dividers b/w articles (TODO)
@@ -73,7 +73,7 @@
 						/*if($count != 0) :
 						<?php endif; ?>*/
 				?>			
-						<section  style="margin: auto;">
+						<section  style="margin: auto; padding-bottom: 20px;">
 							<!-- post thumbnail -->
 							<a class="loop-thumbnail" href="<?php the_permalink(); ?>" title="<?php the_title(); ?>">
 								<?php the_post_thumbnail(array(300,200)); // Declare pixel size you need inside the array ?>

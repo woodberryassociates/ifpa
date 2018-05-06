@@ -465,8 +465,6 @@ button[role=button] {
 /*******SPLIT-PAGE FORMATTING*******/
 
 .front-page {
-	height: 983px;
-
 	position: relative;
 	top: 40px;
 
@@ -774,7 +772,7 @@ h1 > a:hover {
 .loop-thumbnail > img {
 	/*box-shadow: 0 0 10px #555;
 	border-radius: 3px;*/
-	width: 200px;
+	max-width: 200px;
 	object-fit: cover;
 
 	background-color: white;
