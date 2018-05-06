@@ -75,8 +75,8 @@
 				?>			
 						<section  style="margin: auto; padding-bottom: 20px;">
 							<!-- post thumbnail -->
-							<a class="loop-thumbnail" href="<?php the_permalink(); ?>" title="<?php the_title(); ?>">
-								<?php the_post_thumbnail(array(300,200)); // Declare pixel size you need inside the array ?>
+							<a class="loop-thumbnail" style="height: 300px; width: 225px" href="<?php the_permalink(); ?>" title="<?php the_title(); ?>">
+								<?php the_post_thumbnail(); // Declare pixel size you need inside the array ?>
 							</a>
 							<!-- /post thumbnail -->
 						</section>
