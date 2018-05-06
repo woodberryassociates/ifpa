@@ -487,9 +487,6 @@ button[role=button] {
 .page-header-inverted {
 	padding: 0 0 0 12%;
 
-	/*position: relative;
-	top: 40px;*/
-
 	font-weight: 700;
 	line-height: 75px;
 	text-transform: uppercase;

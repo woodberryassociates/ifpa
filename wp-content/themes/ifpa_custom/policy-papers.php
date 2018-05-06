@@ -15,7 +15,7 @@
 
 				<!-- recent policy briefs -->
 				<section id="split-page-left">
-					<h1 style="padding-bottom: 10px">Policy Briefs</h1>
+					<h1 class="page-header">Policy Briefs</h1>
 					<section id="split-page-with-thumbnail">
 						<?php
 							$catObj = get_category_by_slug('policy-briefs'); 
@@ -25,9 +25,9 @@
 						?>
 							<section class="split-page-with-thumbnail-article">
 								<a href="<?php the_permalink(); ?>"><?php the_post_thumbnail(); ?></a>
-								<a href="<?php the_permalink(); ?>"><?php the_title(); ?></a>
-								<a href="<?php the_permalink(); ?>" style="font-size: .7em"><?php the_author(); ?></a>
-								<a href="<?php the_permalink(); ?>" style="font-size: .7em; text-transform: uppercase;"><?php the_time(get_option('date_format' /*accessible under Settings -> General */)); ?></a>
+								<a class="thumbnail-article-title" href="<?php the_permalink(); ?>"><?php the_title(); ?></a>
+								<p class="thumbnail-article-author" href="<?php the_permalink(); ?>"><?php the_author(); ?></p>
+								<p class="thumbnail-article-date" href="<?php the_permalink(); ?>"><?php the_time(get_option('date_format' /*accessible under Settings -> General */)); ?></p>
 							</section>
 						<?php
 							endwhile;
@@ -37,11 +37,11 @@
 				</section>
 				<!-- /recent policy briefs -->
 
-				<div class="divider" style="margin: 40px 0 20px 0; width:1px; height: auto;"></div>
+				<div class="divider divider-horizontal" style="margin: 100px 0 20px 0; width:1px; height: auto;"></div>
 
 				<!-- policy briefs archive -->
 				<section id="split-page-right">
-					<div style="width: inherit; height: 40px"></div>
+					<div style="width: inherit; height: 100px"></div>
 
 					<!-- years -->
 					<section id="years">
@@ -84,9 +84,9 @@
 										<!--div class="divider" style="width: 100%; height: 1px;"></div-->
 									<?php endif; ?>
 									<section id="<?php echo $year ?>" class="split-page-no-thumbnail-article <?php echo $year ?>">
-										<a href="<?php the_permalink(); ?>"><?php the_title(); ?></a>
-										<a href="<?php the_permalink(); ?>" style="font-size: .7em"><?php the_author(); ?></a>
-										<a href="<?php the_permalink(); ?>" style="font-size: .7em; text-transform: uppercase;"><?php the_time(get_option('date_format')); ?></a>
+										<a class="no-thumbnail-article-title" href="<?php the_permalink(); ?>"><?php the_title(); ?></a>
+										<p class="no-thumbnail-article-author" href="<?php the_permalink(); ?>" style="font-size: .7em"><?php the_author(); ?></p>
+										<p class="no-thumbnail-article-date" href="<?php the_permalink(); ?>" style="font-size: .7em; text-transform: uppercase;"><?php the_time(get_option('date_format')); ?></p>
 									</section>
 						<?php
 									$count++;
@@ -103,9 +103,9 @@
 			<!-- WHITE PAPERS -->
 			<div id="split-page-container">
 
-				<!-- recent report cards -->
+				<!-- recent white papers -->
 				<section id="split-page-left">
-					<h1 style="padding-bottom: 10px">White Papers</h1>
+					<h1 class="page-header">White Papers</h1>
 					<section id="split-page-with-thumbnail">
 						<?php
 							$catObj = get_category_by_slug('white-papers'); 
@@ -115,9 +115,9 @@
 						?>
 							<section class="split-page-with-thumbnail-article">
 								<a href="<?php the_permalink(); ?>"><?php the_post_thumbnail(); ?></a>
-								<a href="<?php the_permalink(); ?>"><?php the_title(); ?></a>
-								<a href="<?php the_permalink(); ?>" style="font-size: .7em"><?php the_author(); ?></a>
-								<a href="<?php the_permalink(); ?>" style="font-size: .7em; text-transform: uppercase;"><?php the_time(get_option('date_format' /*accessible under Settings -> General */)); ?></a>
+								<a class="thumbnail-article-title" href="<?php the_permalink(); ?>"><?php the_title(); ?></a>
+								<p class="thumbnail-article-author" href="<?php the_permalink(); ?>"><?php the_author(); ?></p>
+								<p class="thumbnail-article-date" href="<?php the_permalink(); ?>"><?php the_time(get_option('date_format' /*accessible under Settings -> General */)); ?></p>
 							</section>
 						<?php
 							endwhile;
@@ -127,11 +127,11 @@
 				</section>
 				<!-- /recent white papers -->
 
-				<div class="divider" style="margin: 40px 0 20px 0; width:1px; height: auto;"></div>
+				<div class="divider divider-horizontal" style="margin: 100px 0 20px 0; width:1px; height: auto;"></div>
 
 				<!-- white papers archive -->
 				<section id="split-page-right">
-					<div style="width: inherit; height: 40px"></div>
+					<div style="width: inherit; height: 100px"></div>
 
 					<!-- years -->
 					<section id="years">
@@ -171,15 +171,9 @@
 									
 						?>
 									<section id="" class="split-page-no-thumbnail-article <?php echo $year ?>">
-										<!--?php
-											//only insert divider if not the first article (TODO)
-											if($count != 0) :
-										?-->
-										<div class="divider" style="width: 100%; height: 1px;"></div>
-										<!--?php endif; ?-->
-										<a href="<?php the_permalink(); ?>"><?php the_title(); ?></a>
-										<a href="<?php the_permalink(); ?>" style="font-size: .7em"><?php the_author(); ?></a>
-										<a href="<?php the_permalink(); ?>" style="font-size: .7em; text-transform: uppercase;"><?php the_time(get_option('date_format')); ?></a>
+										<a class="no-thumbnail-article-title" href="<?php the_permalink(); ?>"><?php the_title(); ?></a>
+										<p class="no-thumbnail-article-author" href="<?php the_permalink(); ?>" style="font-size: .7em"><?php the_author(); ?></p>
+										<p class="no-thumbnail-article-date" href="<?php the_permalink(); ?>" style="font-size: .7em; text-transform: uppercase;"><?php the_time(get_option('date_format')); ?></p>
 									</section>
 						<?php
 									$count++;
@@ -197,7 +191,7 @@
 			<div id="split-page-container">
 				<!-- recent fast facts -->
 				<section id="split-page-left">
-					<h1 style="padding-bottom: 10px">Fast Facts</h1>
+					<h1 class="page-header">Fast Facts</h1>
 					<section id="split-page-with-thumbnail">
 						<?php
 							$catObj = get_category_by_slug('fast-facts'); 
@@ -207,9 +201,9 @@
 						?>
 							<section class="split-page-with-thumbnail-article">
 								<a href="<?php the_permalink(); ?>"><?php the_post_thumbnail(); ?></a>
-								<a href="<?php the_permalink(); ?>"><?php the_title(); ?></a>
-								<a href="<?php the_permalink(); ?>" style="font-size: .7em"><?php the_author(); ?></a>
-								<a href="<?php the_permalink(); ?>" style="font-size: .7em; text-transform: uppercase;"><?php the_time(get_option('date_format' /*accessible under Settings -> General */)); ?></a>
+								<a class="thumbnail-article-title" href="<?php the_permalink(); ?>"><?php the_title(); ?></a>
+								<p class="thumbnail-article-author" href="<?php the_permalink(); ?>"><?php the_author(); ?></p>
+								<p class="thumbnail-article-date" href="<?php the_permalink(); ?>"><?php the_time(get_option('date_format' /*accessible under Settings -> General */)); ?></p>
 							</section>
 						<?php
 							endwhile;
@@ -219,11 +213,11 @@
 				</section>
 				<!-- /recent fast facts -->
 
-				<div class="divider" style="margin: 40px 0 20px 0; width:1px; height: auto;"></div>
+				<div class="divider divider-horizontal" style="margin: 100px 0 20px 0; width:1px; height: auto;"></div>
 
 				<!-- fast facts archive -->
 				<section id="split-page-right">
-					<div style="width: inherit; height: 40px"></div>
+					<div style="width: inherit; height: 100px"></div>
 
 					<!-- years -->
 					<section id="years">
@@ -266,9 +260,9 @@
 										<!--div class="divider" style="width: 100%; height: 1px;"></div-->
 									<?php endif; ?>
 									<section id="<?php echo $year ?>" class="split-page-no-thumbnail-article <?php echo $year ?>">
-										<a href="<?php the_permalink(); ?>"><?php the_title(); ?></a>
-										<a href="<?php the_permalink(); ?>" style="font-size: .7em"><?php the_author(); ?></a>
-										<a href="<?php the_permalink(); ?>" style="font-size: .7em; text-transform: uppercase;"><?php the_time(get_option('date_format')); ?></a>
+										<a class="no-thumbnail-article-title" href="<?php the_permalink(); ?>"><?php the_title(); ?></a>
+										<p class="no-thumbnail-article-author" href="<?php the_permalink(); ?>" style="font-size: .7em"><?php the_author(); ?></p>
+										<p class="no-thumbnail-article-date" href="<?php the_permalink(); ?>" style="font-size: .7em; text-transform: uppercase;"><?php the_time(get_option('date_format')); ?></p>
 									</section>
 						<?php
 									$count++;

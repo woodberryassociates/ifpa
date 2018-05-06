@@ -9,6 +9,7 @@
 	<div style="width: 100%; height: 60px;"></div>
 	<div id="split-page-main">
 		<div id="split-page-container">
+			
 			<!-- recent report cards -->
 			<section id="split-page-left">
 				<h1 class="page-header">Latest</h1>
