@@ -654,6 +654,56 @@ button[role=button] {
 	color: #707070;
 }
 
+/***********ABOUT PAGE*********/
+
+.bio {
+	padding: 10px 0;
+}
+
+.bio-name {
+	text-align: left;
+
+	font-weight: 800;
+	color: #66ac6e;
+}
+
+.bio-place {
+	text-align: left;
+
+	font-weight: 600;
+	font-size: .9em;
+	text-transform: uppercase;
+	color: #282f5d;
+}
+
+.bio-text {
+	margin-left: 210px;
+	padding-bottom: 1em;
+
+	text-align: left;
+	font-size: 1.1em;
+	color: #707070;
+}
+
+.bio-text.bold {
+	padding: 1em 0;
+
+	font-weight: 600;
+	font-size: 1.1em;
+	color: #282f5d;
+}
+
+.bio img {
+	float: left;
+	padding-right: 10px;
+
+	height: 200px;
+	width: 200px;
+	object-fit: cover;
+
+	border-radius: 50%;
+}
+
 /* hide the first iteration of the divider on report cards, policy papers, studies */
 
 /*****AB NAV (DEPRECATED)******/
