@@ -9,6 +9,12 @@
 	<section class="single-full">
 		<?php if (have_posts()): while (have_posts()) : the_post(); ?>
 
+			<?php
+				ob_start();
+				the_content();
+				$content = ob_get_clean();
+			?>
+
 			<!-- article -->
 			<article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
 				<article id="content">
@@ -24,7 +30,8 @@
 					<!-- post content -->
 					<?php
 						echo "<p class='post-text'";
-						the_content();
+						//the_content();
+						_e( $content, 'html5blank' );
 					?>
 					<!-- /post content -->
 
