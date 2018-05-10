@@ -794,6 +794,14 @@ button[role=button] {
 	color: #707070;
 }
 
+#content > li {
+	padding: 10px 0 0 20px;
+
+	text-align: left;
+	font-size: 1.1em;
+	color: #707070;
+}
+
 /*Jetpack sharing section*/
 .sd-title {
 	margin: 1em 0 !important;
@@ -804,14 +812,6 @@ button[role=button] {
 
 .sd-title::before {
 	display: none !important;
-}
-
-.post-text {
-	padding: 10px 0;
-
-	text-align: left;
-	font-size: 1.1em;
-	color: #707070;
 }
 
 /*article > .footer { /*because articles in single.php are removed from the document flow (position: absolute)*/
