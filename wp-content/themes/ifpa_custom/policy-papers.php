@@ -100,6 +100,8 @@
 			</div>
 			<!-- /POLICY BRIEFS -->
 
+			<div class="divider" style="margin: 2em auto 0 auto; width: 1000px; height: 1px;"></div>
+
 			<!-- WHITE PAPERS -->
 			<div id="split-page-container">
 
@@ -186,6 +188,8 @@
 				<!-- /white papers archive -->
 			</div>
 			<!-- /WHITE PAPERS -->
+
+			<div class="divider" style="margin: 2em auto 0 auto; width: 1000px; height: 1px;"></div>
 
 			<!-- FAST FACTS -->
 			<div id="split-page-container">
