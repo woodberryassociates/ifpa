@@ -794,7 +794,7 @@ button[role=button] {
 	color: #707070;
 }
 
-#content > li {
+#content > ul {
 	padding: 10px 0 0 20px;
 
 	text-align: left;
