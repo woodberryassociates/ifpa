@@ -8,22 +8,24 @@
 	<!-- section -->
 	<section class="single-full">
 		<?php if (have_posts()): while (have_posts()) : the_post(); ?>
+
 			<!-- article -->
 			<article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
 				<article id="content">
 
 					<!-- post title -->
-					<h1>
-						<a href="<?php the_permalink(); ?>" title="<?php the_title(); ?>"><center><?php the_title(); ?></center></a>
-					</h1>
+					<h1 class="page-header" style="padding: 0; line-height: 1em;"><?php the_title(); ?></h1>
 					<!-- /post title -->
 
 					<!-- post date -->
-					<?php the_time(get_option('date_format')); ?>
+					<h2 class="thumbnail-article-date" style=""><?php the_time('F j, Y'); ?></h2>
 					<!-- /post date -->
 
 					<!-- post content -->
-					<?php the_content(); ?>
+					<?php
+						echo "<p class='post-text'";
+						the_content();
+					?>
 					<!-- /post content -->
 
 					<!-- post tags -->
@@ -31,7 +33,7 @@
 					<!-- /post tags -->
 
 					<!-- post categories -->
-					<p style="text-align: right;"><?php _e( 'Categorized in: ', 'html5blank' ); the_category(', '); ?></p>
+					<p class="post-text" style="padding: 0; text-align: right;"><?php _e( 'Categorized in: ', 'html5blank' ); the_category(', '); ?></p>
 					<!-- /post categories -->
 
 					<p style="text-align: right;"><?php edit_post_link(); ?></p>
@@ -41,10 +43,10 @@
 					$next_post = get_next_post('in_same_term=true');
 					$prev_post = get_previous_post('in_same_cat=true');
 					if (!empty( $next_post )): ?>
-						<p style="padding-top: 1em; float: left;"><a href="<?php echo get_permalink($next_post->ID) ?>"><button>&#9664; Next Post</button></a></p>
+						<p style="padding-top: 1em; float: left;"><a href="<?php echo get_permalink($next_post->ID) ?>"><button style="color: #282f5d;">&#9664; Next Post</button></a></p>
 					<?php endif ?>
 					<?php if (!empty( $prev_post )): ?>
-						<p style="padding-top: 1em; text-align: right;"><a href="<?php echo get_permalink($prev_post->ID) ?>"><button>Previous Post &#9658;</button></a></p>
+						<p style="padding-top: 1em; text-align: right;"><a href="<?php echo get_permalink($prev_post->ID) ?>"><button style="color: #282f5d;">Previous Post &#9658;</button></a></p>
 					<?php endif ?>
 					<!-- /next & previous post link -->
 				</article>

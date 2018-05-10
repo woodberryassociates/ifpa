@@ -53,10 +53,10 @@ img {
 }
 a {
 	text-decoration:none;
-	color: #2AAD69;
+	color: #282f5d;
 }
 a:hover {
-	color:#B0D8BC;
+	color:#282f5d;
 }
 a:focus {
 	outline:0;
@@ -741,7 +741,7 @@ button[role=button] {
 }
 
 .single-full {
-	margin: auto;
+	margin: 20px auto;
 	max-width: 1000px;
 }
 
@@ -798,9 +798,12 @@ button[role=button] {
 	display: none !important;
 }
 
-/*remove hover behavior on post titles on post pages*/
-h1 > a:hover {
-	color: #2AAD69;
+.post-text {
+	padding: 10px 0;
+
+	text-align: left;
+	font-size: 1.1em;
+	color: #707070;
 }
 
 /*article > .footer { /*because articles in single.php are removed from the document flow (position: absolute)*/
