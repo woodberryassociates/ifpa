@@ -774,7 +774,7 @@ button[role=button] {
 
 #content {
 	text-align: justify;
-	color: #000;
+	color:#282f5d;
 	width: 100%;
 	font-size: 1.5em;
 
@@ -784,6 +784,14 @@ button[role=button] {
 	background-color: #FFF;*/
 
 	margin-bottom: 20px;
+}
+
+#content > p {
+	padding: 10px 0;
+
+	text-align: left;
+	font-size: 1.1em;
+	color: #707070;
 }
 
 /*Jetpack sharing section*/

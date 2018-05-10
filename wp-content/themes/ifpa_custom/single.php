@@ -29,9 +29,7 @@
 
 					<!-- post content -->
 					<?php
-						echo "<p class='post-text'";
-						//the_content();
-						_e( $content, 'html5blank' );
+						the_content();
 					?>
 					<!-- /post content -->
 
