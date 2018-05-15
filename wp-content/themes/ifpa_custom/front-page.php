@@ -16,6 +16,7 @@
 		<div style="height: 150px;"></div>
 
 		<div id="split-page-container" style="padding-bottom: 60px;">
+			
 			<section id="split-page-left">
 				<h1 class="page-header" style="padding: 0;">What's New</h1>
 				<?php
@@ -24,6 +25,7 @@
 					wp_reset_postdata();	
 				?>
 			</section>
+
 			<section class="front-page" id="split-page-right">
 				<h1 class="page-header-inverted">Latest</h1>
 

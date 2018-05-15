@@ -476,6 +476,16 @@ button[role=button] {
 	background-color: white !important;
 }
 
+/* exceptions for weird <a/> artifacts in chrome */
+#split-page-container > a {
+	display: none !important;
+}
+
+#split-page-right > a {
+	display: block !important;
+	padding: 0 !important;
+}
+
 #twitter-widget-0 {
 	margin: 10px auto !important;
 }
