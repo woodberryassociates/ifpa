@@ -1,5 +1,3 @@
-<?php /*Template Name: Blog*/ ?>
-
 <?php get_header(); ?>
 
 <main role="main">

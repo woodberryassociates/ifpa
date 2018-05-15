@@ -31,16 +31,16 @@
 
 					<!-- post title -->
 					<h1>
-						<a href="<?php the_permalink(); ?>" title="<?php the_title(); ?>"><?php the_title(); ?></a>
+						<a class="page-header no-padding" href="<?php the_permalink(); ?>" title="<?php the_title(); ?>"><?php the_title(); ?></a>
 					</h1>
 					<!-- /post title -->
 
 					<!-- post date -->
-					<p style="padding-top: 1em;"><?php the_time(get_option('date_format')); ?></p>
+					<h2 class="thumbnail-article-date no-padding" style="padding-top: 1em;"><?php the_time(get_option('date_format')); ?></h2>
 					<!-- /post date -->
 
 					<!-- post content -->
-					<p style="padding-top: 1em;"><?php the_content(); ?></p>
+					<?php the_content(); ?>
 					<!-- /post content -->
 
 					<!-- post tags -->

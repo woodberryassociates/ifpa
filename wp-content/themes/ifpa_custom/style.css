@@ -100,6 +100,11 @@ button {
 	background: repeating-linear-gradient(20deg, white 0%, white 20%, #2AAD69 21%)
 }*/
 
+.no-padding {
+	padding: 0 !important;
+	line-height: 1em !important;
+}
+
 /*------------------------------------*\
     STRUCTURE
 \*------------------------------------*/

@@ -4,7 +4,7 @@
 
 <main role="main">
 	<!-- header img -->
-	<div style="width: 100%; height: 300px; background-color: rgba(74, 152, 190, .7);"></div>
+	<img src="<?php echo get_template_directory_uri(); ?>/img/headers/Blogs.png"/>
 	<!-- /header img -->
 
 	<!-- section -->
@@ -25,16 +25,16 @@
 
 						<!-- post title -->
 						<h1>
-							<a href="<?php the_permalink(); ?>" title="<?php the_title(); ?>"><?php the_title(); ?></a>
+							<a class="page-header no-padding" href="<?php the_permalink(); ?>" title="<?php the_title(); ?>"><?php the_title(); ?></a>
 						</h1>
 						<!-- /post title -->
 
 						<!-- post date -->
-						<p style="padding-top: 1em;"><?php the_time(get_option('date_format')); ?></p>
+						<h2 class="thumbnail-article-date no-padding" style="padding-top: 1em;"><?php the_time(get_option('date_format')); ?></h2>
 						<!-- /post date -->
 
 						<!-- post content -->
-						<p style="padding-top: 1em;"><?php the_content(); ?></p>
+						<?php the_content(); ?>
 						<!-- /post content -->
 
 						<!-- post tags -->
