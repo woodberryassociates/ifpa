@@ -140,9 +140,7 @@ h1,h2,h3,p {
 	display: inline-flex; 
 	flex-wrap: nowrap;
 	line-height: 85px;
-	position: center;
-	float: left;
-
+	
 	color: #282f5d;
 	font-size: 15px;
 	text-transform: uppercase;
@@ -162,6 +160,10 @@ h1,h2,h3,p {
 .nav a:hover {
     color: white;
     background-color: #282f5d;
+}
+
+.nav[role="navigation"] {
+	margin-left: 300px;
 }
 
 #menu-icon {
