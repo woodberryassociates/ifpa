@@ -4,7 +4,7 @@
 
 <main role="main">
 	<!-- header img -->
-	<div style="width: 100%; height: 300px; background-color: rgba(74, 152, 190, .7);"></div>
+	<img src="<?php echo get_template_directory_uri(); ?>/img/headers/Papers.png"/>
 	<!-- /header img -->
 
 	<div id="split-page-main">

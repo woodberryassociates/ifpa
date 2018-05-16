@@ -5,16 +5,17 @@
 <main role="main">
 
 	<!-- header img -->
-	<div style="width: 100%; height: 300px; background-color: rgba(74, 152, 190, .7);"></div>
+	<img src="<?php echo get_template_directory_uri(); ?>/img/headers/About.png"/>
 	<!-- /header img -->
+
+	<!-- article -->
+	<?php while ( have_posts()) : the_post(); ?>
+		<?php the_content(); ?>
+	<?php endwhile; ?>
+	<!-- /article -->
 
 	<section id="split-page-main">
 		<section id="split-page-container" class="gray" style="margin: 30px auto; padding: 0 20px;">
-			<!-- article -->
-			<?php while ( have_posts()) : the_post(); ?> 
-				<?php the_content(); ?>
-			<?php endwhile; ?>
-			<!-- /article -->
 
 			<h1 class="page-header" style="text-transform: none; position: relative; right:  42%;">IfPA LEADERSHIP</h1>
 			<section class="bio">
