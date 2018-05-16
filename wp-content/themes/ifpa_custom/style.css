@@ -131,12 +131,13 @@ h1,h2,h3,p {
 	float:left;
 	padding: 10px 5px 0px 20px;
 
-	margin-left: 21%;
+	margin-left: 19%;
 }
 
 .logo-img {
 	height: 65px;
 }
+
 /* nav */
 .nav {
 	display: inline-flex; 
@@ -151,7 +152,7 @@ h1,h2,h3,p {
 }
 
 .nav a {
-	padding: 0px 30px;
+	padding: 0px 15px;
 
 	font-weight: 600;
 	color: #282f5d;
