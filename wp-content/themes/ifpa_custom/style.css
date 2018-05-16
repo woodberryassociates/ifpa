@@ -130,6 +130,8 @@ h1,h2,h3,p {
 	display: block;
 	float:left;
 	padding: 10px 5px 0px 20px;
+
+	margin-left: 21%;
 }
 
 .logo-img {
@@ -149,7 +151,7 @@ h1,h2,h3,p {
 }
 
 .nav a {
-	padding: 0px 10px;
+	padding: 0px 30px;
 
 	font-weight: 600;
 	color: #282f5d;
@@ -240,8 +242,9 @@ h1,h2,h3,p {
 }
 
 button[role=button] {
-	background-color: #282f5d;
-	padding: 15px;
+	color: #282f5d;
+	background-color: #fff;
+	padding: 5px;
 	border: none;
 	border-radius: 5px;
 	font-size: 15px;
@@ -249,17 +252,19 @@ button[role=button] {
 }
 
 .search-input {
-	padding: 15px;
+	max-width: 150px;
+
+	padding: 5px;
 	border: none;
 	border-radius: 5px;
 	font-weight: bold;
 
-	color: white;
-	background-color: #282f5d;
+	color: #282f5d;
+	background-color: #fff;
 }
 
 .search-input::placeholder {
-	color: white;
+	color: #282f5d;
 }
 
 .search-submit {

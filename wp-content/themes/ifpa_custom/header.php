@@ -34,7 +34,7 @@
 			<!-- /logo -->
 
 			<!-- nav -->
-			<nav role="navigation"><?php wp_nav_menu(array('theme_location' => 'header-menu')); ?></nav>
+			<nav style="margin-left: 20%" role="navigation"><?php wp_nav_menu(array('theme_location' => 'header-menu')); ?></nav>
 
 			<!--menu icon, for dropdown menu-->
 			<nav class="nav" id="menu-icon" onclick="dropdown()">&#9776;</nav>
