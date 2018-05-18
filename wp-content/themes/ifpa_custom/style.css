@@ -504,6 +504,7 @@ button[role=button] {
 	font-weight: 700;
 	line-height: 100px;
 	text-transform: uppercase;
+	text-align: left;
 	color: #282f5d;
 }
 
