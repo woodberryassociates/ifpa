@@ -460,7 +460,7 @@ function my_theme_scripts() {
 }
 
 // Add attachment search to searchbar
-function attachment_search( $query ) {
+/*function attachment_search( $query ) {
     if ( $query->is_search ) {
        $query->set( 'post_type', array( 'post', 'attachment' ) );
        $query->set( 'post_status', array( 'publish', 'inherit' ) );
@@ -469,7 +469,7 @@ function attachment_search( $query ) {
    return $query;
 }
 
-add_filter( 'pre_get_posts', 'attachment_search' );
+add_filter( 'pre_get_posts', 'attachment_search' );*/
 
 // Remove comments from JP lightbox
 function tweakjp_rm_comments_att( $open, $post_id ) {

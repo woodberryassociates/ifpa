@@ -10,9 +10,8 @@
 			<h1><?php echo sprintf( __( '%s Search Results for ', 'html5blank' ), $wp_query->found_posts ); echo get_search_query(); ?></h1>
 
 			<div id="split-page-container" class="search-page">
-				<?php $articleCount = 0; ?>
-				<?php include(locate_template('loop.php', false, false)); //necessary to pass articleCount/frontPage variable to loop ?>
-				<?php include(locate_template('pagination.php', false, false)); ?>
+				<?php get_template_part('loop'); ?>
+				<?php get_template_part('pagination'); ?>
 			</div>
 
 		</section>
