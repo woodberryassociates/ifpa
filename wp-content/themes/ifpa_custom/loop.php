@@ -1,9 +1,10 @@
 <?php $articleCount = 0; ?>
+
 <?php if (have_posts()): while (have_posts()) : the_post(); ?>
 	<!--if the post title contains no spaces AND isn't titled "infographic" (i.e. not content), skip it (hack to display content media)-->
-	<?php if (!strpos(the_title('','',false),' ') && strpos(the_title('','',false),"Infographic")) {
+	<!--?php if (!strpos(the_title('','',false),' ') && strpos(the_title('','',false),"Infographic")) {
 		continue;
-	} ?>
+	} ?-->
 
 	<!-- article -->
 	<article style="display: block; min-height: 220px" id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
@@ -38,8 +39,12 @@
 
 	<!-- breaks between articles -->
 	<?php $articleCount++; ?>
-	<?php if($articleCount <= 3 && $articleCount < $wp_query->found_posts): ?> <!-- loop.php is only called by front-page.php, so hardcoding this at 3 -->
+	<?php if($frontPage == true && $articleCount <= 3): ?> <!-- front page only has 4 articles, so hardcoding this -->
 		<div class="divider" style="margin-bottom: 20px; height: 1px;"></div>
+
+	<?php elseif($frontPage == false && $articleCount % get_option('posts_per_page') != 0 && $articleCount < $wp_query->found_posts): ?> 
+		<div class="divider" style="margin-bottom: 20px; height: 1px;"></div>
+
 	<?php endif; ?>
 	<!-- /breaks between articles -->
 

@@ -9,7 +9,7 @@
 				<?php
 					$catObj = get_category_by_slug('blog'); 
 					$catId = $catObj->term_id;
-					$recent_posts = new WP_Query('cat='.$catId.'&&posts_per_page=4');
+					$recent_posts = new WP_Query('cat='.$catId.'&&posts_per_page=3');
 					while($recent_posts->have_posts()) : $recent_posts->the_post();
 				?>
 						<section class="home-block-article">
