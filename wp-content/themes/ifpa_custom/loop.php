@@ -39,6 +39,7 @@
 
 	<!-- breaks between articles -->
 	<?php $articleCount++; ?>
+	<?php echo $articleCount ?>
 	<?php if($frontPage == true && $articleCount <= 3): ?> <!-- front page only has 4 articles, so hardcoding this -->
 		<div class="divider" style="margin-bottom: 20px; height: 1px;"></div>
 
