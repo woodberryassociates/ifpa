@@ -2,7 +2,7 @@
 
 <main role="main">
 	<!-- header img -->
-	<div style="width: 100%; height: 300px; background-color: rgba(74, 152, 190, .7);"></div>
+	<img style="margin-bottom: 20px;" src="<?php echo get_template_directory_uri(); echo '/img/headers/tag-'; echo rand(1, 3); echo '.png'?>"/>
 	<!-- /header img -->
 
 	<!-- section -->
