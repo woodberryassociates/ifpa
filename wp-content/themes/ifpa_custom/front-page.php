@@ -20,9 +20,10 @@
 			<section id="split-page-left">
 				<h1 class="page-header" style="padding: 0;">What's New</h1>
 				<?php
+					$articleCount = 0;
 					$frontPage = true; //used to limit article dividers to 3
 					query_posts('posts_per_page=4');
-					include(locate_template('loop.php', false, false)); //necessary to pass frontPage variable to loop
+					include(locate_template('loop.php', false, false)); //necessary to pass articleCount/frontPage variable to loop
 					//get_template_part('loop');
 					wp_reset_postdata();
 					$frontPage = false; //reset variable
