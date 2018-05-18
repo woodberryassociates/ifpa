@@ -12,7 +12,7 @@
 			<div id="split-page-container" class="search-page">
 				<?php $articleCount = 0; ?>
 				<?php include(locate_template('loop.php', false, false)); //necessary to pass articleCount/frontPage variable to loop ?>
-				<?php get_template_part('pagination'); ?>
+				<?php include(locate_template('pagination.php', false, false)); ?>
 			</div>
 
 		</section>
