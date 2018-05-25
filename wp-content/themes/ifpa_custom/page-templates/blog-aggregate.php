@@ -26,6 +26,7 @@
 				$catId = $catObj->term_id;
 				query_posts('cat='.$catId);
 				get_template_part('loop');
+				get_template_part('pagination');
 			?>
 		</div>
 	</section>
