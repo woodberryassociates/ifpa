@@ -18,8 +18,8 @@
 
 	</section>
 
-	<section id="split-page-main" class="gray">
-		<div class="single-full no-margin">
+	<section id="split-page-main" class="gray" style="justify-content: center;">
+		<div class="single-full no-margin" style="margin: auto !important;">
 			<h1 class="page-header" style="padding: 0;">Recent Blog Posts</h1>
 			<?php
 				$catObj = get_category_by_slug('blog'); 
