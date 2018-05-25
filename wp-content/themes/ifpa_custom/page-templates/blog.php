@@ -3,7 +3,7 @@
 <?php get_header(); ?>
 
 <main role="main">
-	
+
 	<!-- header img -->
 	<img src="<?php echo get_template_directory_uri(); ?>/img/headers/Blogs.png"/>
 	<!-- /header img -->
@@ -55,6 +55,7 @@
 							<p style="padding-top: 1em; text-align: right;"><a href="<?php echo get_permalink($prev_post->ID) ?>"><button>Previous Post &#9658;</button></a></p>
 						<?php endif ?>
 						<!-- /previous post link -->
+						
 					</article>
 			</article>
 			<!-- /article -->

@@ -54,6 +54,7 @@
 						<p style="padding-top: 1em; text-align: right;"><a href="<?php echo get_permalink($prev_post->ID) ?>"><button style="color: #282f5d;">Previous Post &#9658;</button></a></p>
 					<?php endif ?>
 					<!-- /next & previous post link -->
+					
 				</article>
 			</article>
 			<!-- /article -->
