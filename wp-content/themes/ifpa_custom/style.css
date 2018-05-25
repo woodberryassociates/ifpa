@@ -549,16 +549,18 @@ button[role=button] {
 
 #split-page-left {
 	max-width: 65%;
-	/*padding-top: 150px;*/
 }
 
 #split-page-right {
 	width: 31%;
 	margin: 0 10px 0 25px;
-	/*padding: 0px 10px 0 25px;*/
 
 	display: flex;
 	flex-direction: column;
+}
+
+#split-page-right.front-page {
+	min-width: 180px; /*the twitter widget's minimum width*/
 }
 
 .years {
@@ -770,6 +772,8 @@ button[role=button] {
 
 .single-full {
 	margin: 20px auto;
+	padding: 0px 10%;
+
 	max-width: 1000px;
 }
 
@@ -828,6 +832,10 @@ button[role=button] {
 	text-align: left;
 	font-size: 1.1em;
 	color: #707070;
+}
+
+#content a {
+	font-weight: bold;
 }
 
 /*Jetpack sharing section*/
@@ -944,11 +952,20 @@ p.attachment {
 \*------------------------------------*/
 /*rules proceed as screen grows in width*/
 /*remove logo, only display collapsible menu icon*/
-@media only screen and (max-width:570px) {
+@media only screen and (max-width:500px) {
 	.logo {
 		display: none;
 	}
 }
+
+@media only screen and (max-width:660px) {
+	#split-page-right {
+		width: 66%;
+		min-width: 200px !important; /*so text doesn't wrap*/
+		margin: 0;
+	}
+}
+
 /*remove thumbnail for loop'ed posts*/
 @media only screen and (max-width:700px) {
 	.loop-thumbnail {
@@ -959,6 +976,29 @@ p.attachment {
 		margin-top: -50px;
 	}*/
 }
+
+/*so that articles with thumbnails will wrap (flex) down*/
+@media only screen and (max-width:760px) {
+	.divider-horizontal {
+		display: none;
+	}
+
+	#split-page-with-thumbnail {
+		min-width: 0;
+	}
+}
+
+/* hide horizontal dividers at <1000px */
+@media only screen and (min-width:760px) and (max-width: 1000px) {
+	.divider-horizontal {
+		display: none;
+	}
+
+	#split-page-with-thumbnail {
+		min-width: 600px;
+	}
+}
+
 /*display collapible menu icon, remove default (nav) menu, reduce search bar size, reduce logo size*/
 @media only screen and (max-width:1115px) {
 	/*.header {
@@ -974,9 +1014,14 @@ p.attachment {
 		display: none;
 	}
 
-	.search {
-		line-height: 100px;
+	.header {
+		justify-content: left;
+	}
+
+	.search-menu {
+		float: right;
 		padding-left: 20px;
+		line-height: 100px;
 	}
 
 	.search-input,
@@ -990,12 +1035,6 @@ p.attachment {
 	}
 }
 
-/* hide horizontal dividers at <1000px */
-@media only screen and (max-width: 1000px) {
-	.divider-horizontal {
-		display: none;
-	}
-}
 /*reduce default (nav) menu font size & search bar size
 	min-width required for reasons that escape me now (some display issue, iirc)*/
 @media only screen and (min-width: 1115px) and (max-width:1260px) {
