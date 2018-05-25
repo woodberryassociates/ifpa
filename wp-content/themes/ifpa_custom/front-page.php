@@ -10,6 +10,7 @@
 			<?php the_content(); ?>
 		</article>
 		<!-- /article -->
+		
 	</section>
 
 	<div id="split-page-main" class="gray">
