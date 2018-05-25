@@ -109,6 +109,10 @@ button {
 	margin: 0 !important;
 }
 
+.page-numbers {
+	font-size: large;
+}
+
 /*------------------------------------*\
     STRUCTURE
 \*------------------------------------*/
@@ -117,6 +121,7 @@ h1,h2,h3,p {
 	margin: 0;
 	font-weight: normal;
 }
+
 /* wrapper */
 .wrapper {
 	/*max-width:1440px;*/
@@ -124,12 +129,14 @@ h1,h2,h3,p {
 	margin:0 0; /*should be 0 auto, but JS is screwing this up*/
 	position:relative;
 }
+
 /* header */
 .header {
 	width: 100%;
 	display: flex;
 	justify-content: center;
 }
+
 /* logo */
 .logo {
 	padding: 10px 5px 0px 20px;
