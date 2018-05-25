@@ -24,22 +24,27 @@
 		<!-- header -->
 		<header class="header clear" role="banner">
 
-			<!-- logo -->
-			<div class="logo">
-				<a href="<?php echo home_url(); ?>">
-					<!-- svg logo - toddmotto.com/mastering-svg-use-for-a-retina-web-fallbacks-with-png-script -->
-					<img src="<?php echo get_template_directory_uri(); ?>/img/logo.png" alt="Logo" class="logo-img">
-				</a>
-			</div>
-			<!-- /logo -->
+				<!-- logo -->
+				<div class="logo">
+					<a href="<?php echo home_url(); ?>">
+						<!-- svg logo - toddmotto.com/mastering-svg-use-for-a-retina-web-fallbacks-with-png-script -->
+						<img src="<?php echo get_template_directory_uri(); ?>/img/logo.png" alt="Logo" class="logo-img">
+					</a>
+				</div>
+				<!-- /logo -->
 
-			<!-- nav -->
-			<nav style="margin-left: 20%" role="navigation"><?php wp_nav_menu(array('theme_location' => 'header-menu')); ?></nav>
+				<!-- nav -->
 
-			<!--menu icon, for dropdown menu-->
-			<nav class="nav" id="menu-icon" onclick="dropdown()">&#9776;</nav>
-			<?php wp_nav_menu(array('theme_location' => 'sidebar-menu')); ?>
-			<!-- /nav -->
+				<!-- dropdown menu -->
+				<nav class="nav" id="menu-icon" onclick="dropdown()">&#9776;</nav>
+				<?php wp_nav_menu(array('theme_location' => 'sidebar-menu')); ?>
+				<!-- /dropdown menu -->
+
+				<div style="display: flex; flex-direction: column;">
+					<div role="navigation"><?php wp_nav_menu(array('theme_location' => 'search-menu')); ?></div>
+					<nav role="navigation"><?php wp_nav_menu(array('theme_location' => 'header-menu')); ?></nav>
+				</div>
+				<!-- /nav -->
 			
 		</header>
 		<!-- /header -->

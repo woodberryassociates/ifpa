@@ -122,20 +122,17 @@ h1,h2,h3,p {
 }
 /* header */
 .header {
-	padding-right: 10px;
-	/*margin-bottom: 10px;*/
+	width: 100%;
+	display: flex;
+	justify-content: center;
 }
 /* logo */
 .logo {
-	display: block;
-	float:left;
 	padding: 10px 5px 0px 20px;
-
-	margin-left: 19%;
 }
 
 .logo-img {
-	height: 65px;
+	height: 150px;
 }
 
 /* nav */
@@ -174,6 +171,7 @@ h1,h2,h3,p {
 	padding-left: 10px;
 
 	font-size: 30px;
+	line-height: 100px;
 }
 
 #menu-collapsible {
@@ -269,9 +267,15 @@ button[role=button] {
 }
 
 .search-submit {
-	color: white;
-    background-color: white;
+	display: none;
+	/*color: rgba(0,0,0,0) !important; /*remove "SEARCH" text*/
+    /*background-color: white;*/
 }
+
+/*.search-submit:after {
+	color: #282f5d !important;
+	content: <?php echo get_template_directory_uri(); ?>/img/leftpointing_magnifying_glass.svg;
+}*/
 
 /*center the pagination for blog/search results*/
 .pagination {
@@ -955,8 +959,8 @@ p.attachment {
 		margin-top: -50px;
 	}*/
 }
-/*display collapible menu icon, remove default (nav) menu, reduce search bar size*/
-@media only screen and (max-width:1050px) {
+/*display collapible menu icon, remove default (nav) menu, reduce search bar size, reduce logo size*/
+@media only screen and (max-width:1115px) {
 	/*.header {
 		margin-bottom: 0px;
 	}*/
@@ -970,10 +974,19 @@ p.attachment {
 		display: none;
 	}
 
+	.search {
+		line-height: 100px;
+		padding-left: 20px;
+	}
+
 	.search-input,
 	button[role=button] {
 		font-size: 12px;
 		font-weight: normal;
+	}
+
+	.logo-img {
+		height: 85px;
 	}
 }
 
@@ -985,7 +998,7 @@ p.attachment {
 }
 /*reduce default (nav) menu font size & search bar size
 	min-width required for reasons that escape me now (some display issue, iirc)*/
-@media only screen and (min-width: 1050px) and (max-width:1200px) {
+@media only screen and (min-width: 1115px) and (max-width:1260px) {
 	.nav a,
 	.search-input,
 	button[role=button] {
