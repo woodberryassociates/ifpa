@@ -845,10 +845,13 @@ button[role=button] {
 	color: #707070;
 }
 
+#content > h1 {
+	text-align: left !important;
+}
+
 #content a {
 	font-weight: bold;
 }
-
 /*Jetpack sharing section*/
 .sd-title {
 	margin: 1em 0 !important;
