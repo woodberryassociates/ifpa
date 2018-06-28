@@ -1,4 +1,4 @@
-<?php /*Template Name: Studies*/ ?>
+<?php /*Template Name: Analysis*/ ?>
 
 <?php get_header(); ?>
 
