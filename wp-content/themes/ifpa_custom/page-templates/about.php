@@ -18,31 +18,13 @@
 		<section id="split-page-container" class="gray" style="margin: 30px auto; padding: 0 20px;">
 
 			<h1 class="page-header" style="text-transform: none; position: relative; right:  42%;">IfPA LEADERSHIP</h1>
-			<section class="bio">
-				<img src="<?php echo get_stylesheet_directory_uri(); ?>/img/profiles/David-Charles.png"><div></div>
-				<h2 class="bio-name">David Charles, M.D.</h2>
-				<h2 class="bio-place">Nashville, Tennessee</h2>
-				<p class="bio-text bold">AfPA is led by David Charles, M.D., who is the Chief Medical Officer of the Vanderbilt University Clinical Neurosciences 	Institute.</p>
-				<p class="bio-text">Dr. Charles is a national leader in Movement Disorders research. He took leave from his practice in 1998 and spent a year on the staff of U.S. Senator Bill Frist, where he served as a health policy advisor. Following this experience in Washington, Dr. Charles conducted Parkinson’s disease research in France as a Fulbright Senior Scholar.</p>
-			</section>
-
-			<div class="divider" style="width: 100%; height: 1px;"></div>
-
-			<section class="bio">
-				<img src="<?php echo get_stylesheet_directory_uri(); ?>/img/profiles/Howard-Hoffberg.png">
-				<h2 class="bio-name">Howard Hoffberg, M.D.</h2>
-				<h2 class="bio-place">Owings Mills, Maryland</h2>
-				<p class="bio-text bold">Dr. Hoffberg is associate medical director of Rehabilitation and Pain Managements Associates,</p>
-				<p class="bio-text">a freestanding private practice specializing in multidisciplinary treatment (including Physical Therapy and Psychosocial Counseling) for pain located in the surburban Baltimore region. He was a former president of the Maryland Society of Physical Medicine and Rehabilitation, and is currently the Highmark Medicare Part B Carrier Advisor Representative in Maryland. He has written book chapters and journal articles in the subjects of Rehabilitation and Pain, and has been involved in training residents and physician assistants.</p>
-			</section>
-
-			<div class="divider" style="width: 100%; height: 1px;"></div>
 
 			<section class="bio">
 				<img src="<?php echo get_stylesheet_directory_uri(); ?>/img/profiles/Jack-Shim.png">
 				<h2 class="bio-name">Jack Shim, M.D.</h2>
 				<h2 class="bio-place">Oceanside, California</h2>
 				<p class="bio-text bold">Dr. Schim is Voluntary Assistant Clinical Professor in the Neuroscience Department at University of California San Diego,</p>
+
 				<p class="bio-text">and is on staff at the VA Medical Center in La Jolla. He has special interests in headache management, stroke prevention, acute stroke intervention, and neurologic rehabilitation.</p>
 
 				<p class="bio-text">Dr. Schim earned his medical degree from University of California San Diego (UCSD) Medical School, served as a medical intern at Cedars Sinai Medical Center, Los Angeles, and completed his neurology residency at UCSD, with special emphasis on electromyography and neuromuscular disease. He is Past President of the Association of California Neurologists and an active member of the American Academy of Neurology, American Stroke Association, and American Headache Society. Dr. Schim is Chair of the Division of Neuroscience at Scripps Hospital, Encinitas.</p>
@@ -53,27 +35,44 @@
 			<div class="divider" style="width: 100%; height: 1px;"></div>
 
 			<section class="bio">
-				<img src="<?php echo get_stylesheet_directory_uri(); ?>/img/profiles/Robert-Yapundich.png">
-				<h2 class="bio-name">Robert Yapundich, M.D.</h2>
-				<h2 class="bio-place">Hickory, North Carolina</h2>
-				<p class="bio-text bold">Dr. Robert Yapundich is a neurologist in private practice with Neurology Associates in Hickory, N.C.</p>
+				<img src="<?php echo get_stylesheet_directory_uri(); ?>/img/profiles/Madelaine-Feldman.jpg">
+				<h2 class="bio-name">Madelaine Feldman, M.D.</h2>
+				<h2 class="bio-place">New Orleans, La.</h2>
+				<p class="bio-text bold">Madelaine A. Feldman, M.D., a partner in The Rheumatology Group,  has been in private practice in New Orleans for 25 years.</p>
 
-				<p class="bio-text">Dr. Yapundich completed a neurology residency at the University of Alabama at Birmingham, followed by a fellowship in electromyography/neuromuscular diseases. He is a diplomat of The American Board of Psychiatry and Neurology with subspecialty certifications in Clinical Neurophysiology and Sleep Medicine, along with certification by the American Board of Electrodiagnostic Medicine.</p>
+				<p class="bio-text">Dr. Feldman earned her undergraduate degree in theatre and biology from Tulane University. She remained at Tulane University for medical school, residency and fellowship in Rheumatology.</p>
 
-				<p class="bio-text">Dr. Yapundich maintains an active outpatient practice that involves all aspects of Neurology, with a special interest in Electrodiagnostic Medicine. He has served as president of the North Carolina Neurological Society, and participates in various other local and statewide committees. Currently he is a board member of the North Carolina Medical Society and state liason for the American Association of Neuromuscular and Electrodiagnostic Medicine. Healthcare advocacy at the state and national levels has also been an area of significant interest. He has participated in clinical trials, many as primary investigator, and has served as co-author on a variety of past publications.</p>
+				<p class="bio-text">Dr. Feldman is currently president of the Rheumatology Alliance of Louisiana,  board member of the Coalition of State Rheumatology Organizations, and member of the American College of Rheumatology’s  insurance subcommittee of CORC.  Dr. Feldman is a Clinical Assistant Professor of Medicine at Tulane University School of Medicine and has been named one of the Top Doctors in New Orleans for many years.</p>
+
+				<p class="bio-text">On a lighter note,  Dr. Madelaine Feldman has been an on-air television personality for New Orleans PBS member station WYES-TV  and was the host of the radio show “Driving with Dr. Mattie.”</p>
 			</section>
 
 			<div class="divider" style="width: 100%; height: 1px;"></div>
 
 			<section class="bio">
-				<img src="<?php echo get_stylesheet_directory_uri(); ?>/img/profiles/Robin-K.-Dore.png">
-				<h2 class="bio-name">Robin K. Dore, M.D.</h2>
-				<h2 class="bio-place">Tustin, California</h2>
-				<p class="bio-text bold">Robin K. Dore, M.D., is a Board certified rheumatologist in private practice in Tustin, Calif. and a Clinical Professor of Medicine at UCLA.</p>
-				
-				<p class="bio-text">Dr. Dore is Chair of the Orange County Branch of the Arthritis Foundation, Pacific Region. She is a past president of the Southern California Rheumatology Society and a past member of the board of directors of the American College of Rheumatology.</p>
+				<img src="<?php echo get_stylesheet_directory_uri(); ?>/img/profiles/Bruce-Rubin.jpg">
+				<h2 class="bio-name">Bruce Rubin, M.D.</h2>
+				<h2 class="bio-place">Miami, Fla.</h2>
+				<p class="bio-text bold">Dr. Bruce Rubin is an Assistant Professor of Clinical Neurology at the University of Miami Miller School Of Medicine. He also currently serves as the Director of the Spasticity Clinic at Jackson Memorial Hospital.</p>
 
-				<p class="bio-text">A clinical investigator, Dr. Dore participates in clinical research studies of medications for treatment of gout, osteoarthritis, osteoporosis, rheumatoid arthritis, and other metabolic bone diseases.</p>
+				<p class="bio-text">Dr. Rubin has lectured nationally and has published articles in scientific journals such as Stroke, Neurology and Archives of Family Medicine.  He is a member of several professional organizations, such as the American Academy of Neurology, Dade County Medical association, American Society of Neurorehabilitation and Brain Injury Association of Florida.  He also serves as the Chairman for the Florida Chapter of the Alliance for Patient Access.</p>
+
+				<p class="bio-text">Dr. Rubin received his Bachelor’s of Science degree from Hobart College and his Doctor of Medicine degree from State University of New York Health Science Center at Syracuse.  He completed his Neurological residency at the Neurologic Institute at Columbia Presbyterian Medical Center in New York and his post-doctoral fellowship in Neurological Rehabilitation at the University of Miami School Of Medicine.</p>
+			</section>
+
+			<div class="divider" style="width: 100%; height: 1px;"></div>
+
+			<section class="bio">
+				<img src="<?php echo get_stylesheet_directory_uri(); ?>/img/profiles/Kobayashi-Roger.jpg">
+				<h2 class="bio-name">Roger Kobayashi, M.D.</h2>
+				<h2 class="bio-place">Omaha, Neb.</h2>
+				<p class="bio-text bold">Dr. Roger H. Kobayashi is an immunologist-allergist and served on the full time faculty at the University of Nebraska [director immunology/allergy]  and UCLA [director Pediatric Allergy Clinic] Schools of Medicine.  He is currently in private practice in Omaha, Nebraska and Clinical Professor at UCLA.</p>
+
+				<p class="bio-text">Dr. Kobayashi was born and raised in Honolulu, Hawaii and received his BA in Economics [senior thesis socialized medicine] and M.D. from the University of Nebraska as well as an M.S. in cardiovascular physiology from University of Hawaii-Manoa. He received his residency and fellowship training at USC and UCLA respectively. Of the 80 papers published, most have focused in Asthma and Recurrent infections in the Pediatric population. He has been visiting professor at a number of U.S. medical schools as well as  at the Universities of Hanoi, Hue and the Military Medical School in Hanoi and an invited lecturer in Europe, Asia, the Middle East and Central America.</p>
+
+				<p class="bio-text">He is an Expert Consultant for the Immune Deficiency Foundation and is a recipient of their Physician Volunteer Award and was founding member and first president of the Nebraska Allergy Society.</p>
+
+				<p class="bio-text">He is a member of the Executive Committee, Negotiating Committee and Patient Advocacy Committee [Chair] of the Consortium of Independent Immunology Clinics.</p>
 			</section>
 		</section>
 	</section>
