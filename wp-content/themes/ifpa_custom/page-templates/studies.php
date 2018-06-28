@@ -25,7 +25,9 @@
 							<a class="thumbnail-article-title" href="<?php the_permalink(); ?>"><?php the_title(); ?></a>
 							<p class="thumbnail-article-author" href="<?php the_permalink(); ?>"><?php the_author(); ?></p>
 							<p class="thumbnail-article-date" href="<?php the_permalink(); ?>"><?php the_time(get_option('date_format' /*accessible under Settings -> General */)); ?></p>
+							<div style="height: 50px"></div>
 						</section>
+
 					<?php
 						endwhile;
 						wp_reset_postdata();	
