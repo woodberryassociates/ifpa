@@ -67,7 +67,6 @@
 							<?php endforeach; ?>
 
 							<script type="text/javascript">
-								var id = "pb-"
 								var year = "<?php $years[0] ?>";
 								console.log(year);
 							</script>
@@ -256,7 +255,6 @@
 						<?php endforeach; ?>
 
 						<script type="text/javascript">
-							var id = "ff-"
 							var year = "<?php echo $years[0] ?>"
 						</script>
 

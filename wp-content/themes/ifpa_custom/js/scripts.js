@@ -1,9 +1,9 @@
 //TODO: insert jquery in footer, rather than header
 jQuery(document).ready(function( $ ) {
 
-  $("#pb-"+year).click();
   $("#wp-"+year).click();
   $("#ff-"+year).click();
+  $("#pb-"+year).click();
   $("#rc-"+year).click();
   $("#a-"+year).click();
 
