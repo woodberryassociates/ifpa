@@ -1,24 +1,23 @@
 //TODO: insert jquery in footer, rather than header
 jQuery(document).ready(function( $ ) {
-	
+
+	// pre-select the most recent year for article display
+	$('[name="2018"]').click();
+
 	$('.clickable').on('click', function() {
   	var itemClassYear = $(this).attr('itemYear');
     // itemClassType is used to distinguish b/w diff types of policy papers
     var itemClassType = $(this).attr('itemType');
 
-  	//reset display
+  	// reset display
     $('.years.' + itemClassType).children().css({"color":"#B5B5B5"});
     $('.split-page-no-thumbnail.' + itemClassType).children().css({"display":"none"})
-    //color this year
+    // color this year
     $(this).css({"color":"#282f5d"});
-    //display selected year's posts
+    // display selected year's posts
     $('.' + itemClassType + '.' + itemClassYear).css({"display":"flex"});
-
-    //execute once to select most recent year
-	//$('.itemYear') = "<?php echo $year ?>"
-
+  
   });
-	
 });
 
 // DROPDOWN MENU

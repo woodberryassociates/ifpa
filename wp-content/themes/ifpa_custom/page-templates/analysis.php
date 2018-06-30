@@ -61,7 +61,12 @@
 						//print years
 						foreach ($years as $year) :
 					?>
-						<h1 class="clickable year" itemYear="<?php echo $year ?>" itemType="studies"><?php echo $year ?></h1>
+						<h1 class="clickable year" name="<?php echo $year ?>" itemYear="<?php echo $year ?>" itemType="studies"><?php echo $year ?></h1>
+
+						<script>
+							// pre-select the most recent year for article display
+							$('[name="<?php echo $year ?>"]').click();
+						</script> 
 					<?php endforeach; ?>
 				</section>
 				<!-- /years -->

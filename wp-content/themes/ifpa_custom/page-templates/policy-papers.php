@@ -2,7 +2,7 @@
 
 <?php get_header(); ?>
 
-<main role="main">
+<main role="main" onload="myFunction()">
 	<!-- header img -->
 	<img src="<?php echo get_template_directory_uri(); ?>/img/headers/Papers.png"/>
 	<!-- /header img -->
@@ -62,20 +62,19 @@
 
 							//print years
 							foreach ($years as $year) :
-								if ($year != date('Y')) :
 						?>
-							<h1 class="clickable year" itemYear="<?php echo $year ?>" itemType="policy-briefs"><?php echo $year ?></h1>
+								<h1 class="clickable year" name="<?php echo $year ?>" itemYear="<?php echo $year ?>" itemType="policy-briefs"><?php echo $year ?></h1>
 
-						<?php elseif ($year == date('Y')) : ?>
+								<script>
+									// pre-select the most recent year for article display
+									$('[name="<?php echo $year ?>"]').click();
+								</script> 
 
-							<h1 style="color: #282f5d" class="clickable year" itemYear="<?php echo $year ?>" itemType="policy-briefs"><?php echo $year ?></h1>
-						
-						<?php endif; ?>
-
-						<?php endforeach; ?>
+							<?php endforeach; ?>
 					</section>
 					<!-- /years -->
 					
+					<!-- archive -->
 					<section class="split-page-no-thumbnail policy-briefs">
 						<?php
 							$count = 0; //used to insert dividers b/w articles (TODO)
@@ -101,6 +100,7 @@
 							wp_reset_postdata();	
 						?>
 					</section>
+					<!-- /archive -->
 				</section>
 				<!-- /policy briefs archive -->
 			</div>
@@ -124,7 +124,7 @@
 							<section class="split-page-with-thumbnail-article">
 								<a href="<?php the_permalink(); ?>"><?php the_post_thumbnail(); ?></a>
 								<a class="thumbnail-article-title" href="<?php the_permalink(); ?>"><?php the_title(); ?></a>
-								<!--p class="thumbnail-article-author" href="<?php the_permalink(); ?>"><?php the_author(); ?></--p>
+								<!--p class="thumbnail-article-author" href="<?php the_permalink(); ?>"><?php the_author(); ?></-->
 								<p class="thumbnail-article-date" href="<?php the_permalink(); ?>"><?php the_time(get_option('date_format' /*accessible under Settings -> General */)); ?></p>
 							</section>
 						<?php
@@ -161,7 +161,13 @@
 							//print years
 							foreach ($years as $year) :
 						?>
-							<h1 class="clickable year" itemYear="<?php echo $year ?>" itemType="white-papers"><?php echo $year ?></h1>
+								<h1 class="clickable year" name="<?php echo $year ?>" itemYear="<?php echo $year ?>" itemType="white-papers"><?php echo $year ?></h1>
+
+								<script>
+									// pre-select the most recent year for article display
+									$('[name="<?php echo $year ?>"]').click();
+								</script> 
+
 						<?php endforeach; ?>
 					</section>
 					<!-- /years -->
@@ -180,7 +186,6 @@
 						?>
 									<section class="split-page-no-thumbnail-article white-papers <?php echo $year ?>">
 										<a class="no-thumbnail-article-title" href="<?php the_permalink(); ?>"><?php the_title(); ?></a>
-										<!--p class="no-thumbnail-article-author" href="<?php the_permalink(); ?>" style="font-size: .7em"><?php the_author(); ?></p-->
 										<p class="no-thumbnail-article-date" href="<?php the_permalink(); ?>" style="font-size: .7em; text-transform: uppercase;"><?php the_time(get_option('date_format')); ?></p>
 									</section>
 						<?php
@@ -249,7 +254,13 @@
 							//print years
 							foreach ($years as $year) :
 						?>
-							<h1 class="clickable year" itemYear="<?php echo $year ?>" itemType="fast-facts"><?php echo $year ?></h1>
+							<h1 class="clickable year" name="<?php echo $year ?>" itemYear="<?php echo $year ?>" itemType="fast-facts"><?php echo $year ?></h1>
+
+							<script>
+								// pre-select the most recent year for article display
+								$('[name="<?php echo $year ?>"]').click();
+							</script> 
+
 						<?php endforeach; ?>
 					</section>
 					<!-- /years -->
