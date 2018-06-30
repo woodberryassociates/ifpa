@@ -1,11 +1,9 @@
 //TODO: insert jquery in footer, rather than header
 jQuery(document).ready(function( $ ) {
-
-	//execute once to select most recent year
 	
-  $('.clickable').on('click', function() {
+	$('.clickable').on('click', function() {
   	var itemClassYear = $(this).attr('itemYear');
-    // itemClassType is used to distinguish b/w diff types of policy paers
+    // itemClassType is used to distinguish b/w diff types of policy papers
     var itemClassType = $(this).attr('itemType');
 
   	//reset display
@@ -15,6 +13,10 @@ jQuery(document).ready(function( $ ) {
     $(this).css({"color":"#282f5d"});
     //display selected year's posts
     $('.' + itemClassType + '.' + itemClassYear).css({"display":"flex"});
+
+    //execute once to select most recent year
+	//$('.itemYear') = "<?php echo $year ?>"
+
   });
 	
 });
