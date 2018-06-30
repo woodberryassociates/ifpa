@@ -1,8 +1,8 @@
 //TODO: insert jquery in footer, rather than header
 jQuery(document).ready(function( $ ) {
 
-	// pre-select the most recent year for article display
-	$('[name="2018"]').click();
+  // pre-select the most recent year for article display
+  $('[name=2018]').trigger("click");
 
 	$('.clickable').on('click', function() {
   	var itemClassYear = $(this).attr('itemYear');
@@ -14,7 +14,7 @@ jQuery(document).ready(function( $ ) {
     $('.split-page-no-thumbnail.' + itemClassType).children().css({"display":"none"})
     // color this year
     $(this).css({"color":"#282f5d"});
-    // display selected year's posts
+    // woot woot! illldisplay selected year's posts
     $('.' + itemClassType + '.' + itemClassYear).css({"display":"flex"});
   
   });
