@@ -49,7 +49,7 @@
 							$years = array();
 							$catObj = get_category_by_slug('policy-briefs'); 
 							$catId = $catObj->term_id;
-							$recent_posts = new WP_Query('cat='.$catId.'&&date=echo date("Y")');
+							$recent_posts = new WP_Query('cat='.$catId.'&&date=<?php echo date("Y")?>');
 
 							while($recent_posts->have_posts()) {
 								$recent_posts->the_post();
