@@ -65,11 +65,6 @@
 						?>
 								<h1 class="clickable year" name="<?php echo $year ?>" itemYear="<?php echo $year ?>" itemType="policy-briefs"><?php echo $year ?></h1>
 
-								<script>
-									// pre-select the most recent year for article display
-									$('[name="<?php echo $year ?>"]').click();
-								</script> 
-
 							<?php endforeach; ?>
 					</section>
 					<!-- /years -->
@@ -163,10 +158,7 @@
 						?>
 								<h1 class="clickable year" name="<?php echo $year ?>" itemYear="<?php echo $year ?>" itemType="white-papers"><?php echo $year ?></h1>
 
-								<script>
-									// pre-select the most recent year for article display
-									$('[name="<?php echo $year ?>"]').click();
-								</script> 
+								
 
 						<?php endforeach; ?>
 					</section>
@@ -255,11 +247,6 @@
 							foreach ($years as $year) :
 						?>
 							<h1 class="clickable year" name="<?php echo $year ?>" itemYear="<?php echo $year ?>" itemType="fast-facts"><?php echo $year ?></h1>
-
-							<script>
-								// pre-select the most recent year for article display
-								$('[name="<?php echo $year ?>"]').click();
-							</script> 
 
 						<?php endforeach; ?>
 					</section>
