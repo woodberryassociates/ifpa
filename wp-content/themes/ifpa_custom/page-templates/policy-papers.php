@@ -70,7 +70,7 @@
 
 							<h1 style="color: #282f5d" class="clickable year" itemYear="<?php echo $year ?>" itemType="policy-briefs"><?php echo $year ?></h1>
 						
-						<?php endif ?>
+						<?php endif; ?>
 
 						<?php endforeach; ?>
 					</section>
