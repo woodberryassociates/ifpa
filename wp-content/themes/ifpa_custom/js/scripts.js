@@ -1,5 +1,7 @@
 //TODO: insert jquery in footer, rather than header
 jQuery(document).ready(function( $ ) {
+
+	//execute once to select most recent year
 	
   $('.clickable').on('click', function() {
   	var itemClassYear = $(this).attr('itemYear');

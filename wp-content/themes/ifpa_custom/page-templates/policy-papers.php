@@ -61,9 +61,17 @@
 							wp_reset_postdata();
 
 							//print years
-							foreach ($years as $year) :
+							foreach($years as $year):
+								if($year != echo $year)
 						?>
 							<h1 class="clickable year" itemYear="<?php echo $year ?>" itemType="policy-briefs"><?php echo $year ?></h1>
+
+						<?php elseif ($year == echo $year) ?>
+
+							<h1 style="color: #282f5d" class="clickable year" itemYear="<?php echo $year ?>" itemType="policy-briefs"><?php echo $year ?></h1>
+						
+						<?php endif ?>
+
 						<?php endforeach; ?>
 					</section>
 					<!-- /years -->
@@ -78,15 +86,13 @@
 								$recent_posts = new WP_Query('cat='.$catId.'&&year='.$year);
 								while($recent_posts->have_posts()) :
 									$recent_posts->the_post();
-									//only insert divider if not the first article
-									if($count != 0) :
 						?>
-										<!--div class="divider" style="width: 100%; height: 1px;"></div-->
-									<?php endif; ?>
 									<section class="split-page-no-thumbnail-article policy-briefs <?php echo $year ?>">
+
 										<a class="no-thumbnail-article-title" href="<?php the_permalink(); ?>"><?php the_title(); ?></a>
-										<!--p class="no-thumbnail-article-author" href="<?php the_permalink(); ?>" style="font-size: .7em"><?php the_author(); ?></p-->
+										
 										<p class="no-thumbnail-article-date" href="<?php the_permalink(); ?>" style="font-size: .7em; text-transform: uppercase;"><?php the_time(get_option('date_format')); ?></p>
+
 									</section>
 						<?php
 									$count++;
