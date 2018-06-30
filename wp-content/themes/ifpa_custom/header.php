@@ -13,6 +13,14 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<meta name="description" content="<?php bloginfo('description'); ?>">
 
+	<script>
+	var Globals = <?php echo json_encode(array(
+    	'active_user_id' => $active_user->id,
+	    'token' => $token,
+	    'hash' => $hash,
+		)); ?>;
+	</script>
+
 	<?php wp_head(); ?>
 </head>
 

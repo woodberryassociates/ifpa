@@ -2,7 +2,7 @@
 
 <?php get_header(); ?>
 
-<main role="main" onload="myFunction()">
+<main role="main" onload="selectYear()">
 	<!-- header img -->
 	<img src="<?php echo get_template_directory_uri(); ?>/img/headers/Papers.png"/>
 	<!-- /header img -->
@@ -26,7 +26,6 @@
 							<section class="split-page-with-thumbnail-article">
 								<a href="<?php the_permalink(); ?>"><?php the_post_thumbnail(); ?></a>
 								<a class="thumbnail-article-title" href="<?php the_permalink(); ?>"><?php the_title(); ?></a>
-								<!--p class="thumbnail-article-author" href="<?php the_permalink(); ?>"><?php the_author(); ?></p-->
 								<p class="thumbnail-article-date" href="<?php the_permalink(); ?>"><?php the_time(get_option('date_format' /*accessible under Settings -> General */)); ?></p>
 							</section>
 						<?php
@@ -63,9 +62,16 @@
 							//print years
 							foreach ($years as $year) :
 						?>
-								<h1 class="clickable year" name="<?php echo $year ?>" itemYear="<?php echo $year ?>" itemType="policy-briefs"><?php echo $year ?></h1>
+								<h1 class="clickable year" id="pb-<?php echo $year ?>" itemYear="<?php echo $year ?>" itemType="policy-briefs"><?php echo $year ?></h1>
 
 							<?php endforeach; ?>
+
+							<script type="text/javascript">
+								var id = "pb-"
+								var year = "<?php $years[0] ?>";
+								console.log(year);
+							</script>
+
 					</section>
 					<!-- /years -->
 					
@@ -150,13 +156,12 @@
 								if(!in_array(get_the_date('Y'), $years)) {
 									array_push($years, get_the_date('Y'));
 								}
-							}
-							wp_reset_postdata();
+							}							wp_reset_postdata();
 
 							//print years
 							foreach ($years as $year) :
 						?>
-								<h1 class="clickable year" name="<?php echo $year ?>" itemYear="<?php echo $year ?>" itemType="white-papers"><?php echo $year ?></h1>
+								<h1 class="clickable year" id="wp-<?php echo $year ?>" itemYear="<?php echo $year ?>" itemType="white-papers"><?php echo $year ?></h1>
 
 								
 
@@ -246,9 +251,15 @@
 							//print years
 							foreach ($years as $year) :
 						?>
-							<h1 class="clickable year" name="<?php echo $year ?>" itemYear="<?php echo $year ?>" itemType="fast-facts"><?php echo $year ?></h1>
+							<h1 class="clickable year" id="ff-<?php echo $year ?>" itemYear="<?php echo $year ?>" itemType="fast-facts"><?php echo $year ?></h1>
 
 						<?php endforeach; ?>
+
+						<script type="text/javascript">
+							var id = "ff-"
+							var year = "<?php echo $years[0] ?>"
+						</script>
+
 					</section>
 					<!-- /years -->
 					

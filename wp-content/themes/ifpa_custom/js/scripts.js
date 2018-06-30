@@ -1,10 +1,13 @@
 //TODO: insert jquery in footer, rather than header
 jQuery(document).ready(function( $ ) {
 
-  // pre-select the most recent year for article display
-  $('[name=2018]').trigger("click");
+  $("#pb-"+year).click();
+  $("#wp-"+year).click();
+  $("#ff-"+year).click();
+  $("#rc-"+year).click();
+  $("#a-"+year).click();
 
-	$('.clickable').on('click', function() {
+  $('.clickable').on('click', function() {
   	var itemClassYear = $(this).attr('itemYear');
     // itemClassType is used to distinguish b/w diff types of policy papers
     var itemClassType = $(this).attr('itemType');
@@ -14,7 +17,7 @@ jQuery(document).ready(function( $ ) {
     $('.split-page-no-thumbnail.' + itemClassType).children().css({"display":"none"})
     // color this year
     $(this).css({"color":"#282f5d"});
-    // woot woot! illldisplay selected year's posts
+    // woot woot! displays selected year's posts
     $('.' + itemClassType + '.' + itemClassYear).css({"display":"flex"});
   
   });

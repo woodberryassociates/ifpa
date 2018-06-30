@@ -61,9 +61,14 @@
 						//print years
 						foreach ($years as $year) :
 					?>
-						<h1 class="clickable year" name="<?php echo $year ?>" itemYear="<?php echo $year ?>" itemType="studies"><?php echo $year ?></h1>
+						<h1 class="clickable year" id="a-<?php echo $year ?>" itemYear="<?php echo $year ?>" itemType="studies"><?php echo $year ?></h1>
 						
 					<?php endforeach; ?>
+
+					<script type="text/javascript">
+						var year = "<?php echo $years[0] ?>"
+					</script>
+
 				</section>
 				<!-- /years -->
 				
