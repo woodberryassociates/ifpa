@@ -2,7 +2,7 @@
 
 <?php get_header(); ?>
 
-<main role="main" onload="selectYear()">
+<main role="main">
 	<!-- header img -->
 	<img src="<?php echo get_template_directory_uri(); ?>/img/headers/Papers.png"/>
 	<!-- /header img -->
@@ -67,8 +67,7 @@
 							<?php endforeach; ?>
 
 							<script type="text/javascript">
-								var year = "<?php $years[0] ?>";
-								console.log(year);
+								var pbyear = "<?php echo $years[0] ?>";
 							</script>
 
 					</section>
@@ -165,6 +164,11 @@
 								
 
 						<?php endforeach; ?>
+
+						<script type="text/javascript">
+							var wpyear = "<?php echo $years[0] ?>";
+						</script>
+
 					</section>
 					<!-- /years -->
 					
@@ -255,7 +259,7 @@
 						<?php endforeach; ?>
 
 						<script type="text/javascript">
-							var year = "<?php echo $years[0] ?>"
+							var ffyear = "<?php echo $years[0] ?>"
 						</script>
 
 					</section>
@@ -319,4 +323,13 @@
 				?>
 			</section>
 			<!--/recent blog posts-->
+
+			<script type="text/javascript">
+				jQuery(document).ready(function( $ ) {
+					  $("#pb-"+pbyear).click();
+					  $("#wp-"+wpyear).click();
+					  $("#ff-"+ffyear).click();
+				});
+			</script>
+
 <?php get_footer(); ?>

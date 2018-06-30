@@ -68,7 +68,7 @@
 					<?php endforeach; ?>
 
 					<script type="text/javascript">
-						var year = "<?php echo $years[0] ?>"
+						var rcyear = "<?php echo $years[0] ?>"
 					</script>
 
 				</section>
@@ -130,4 +130,11 @@
 				?>
 			</section>
 			<!--/recent blog posts-->
+
+			<script type="text/javascript">
+				jQuery(document).ready(function( $ ) {
+					$("#rc-"+rcyear).click();
+				});
+			</script>
+
 <?php get_footer(); ?>
