@@ -62,11 +62,11 @@
 
 							//print years
 							foreach($years as $year):
-								if($year != echo $year)
+								if($year != $year)
 						?>
 							<h1 class="clickable year" itemYear="<?php echo $year ?>" itemType="policy-briefs"><?php echo $year ?></h1>
 
-						<?php elseif ($year == echo $year) ?>
+						<?php elseif ($year == $year) ?>
 
 							<h1 style="color: #282f5d" class="clickable year" itemYear="<?php echo $year ?>" itemType="policy-briefs"><?php echo $year ?></h1>
 						
