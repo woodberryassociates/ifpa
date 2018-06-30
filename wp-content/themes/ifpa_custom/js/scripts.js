@@ -1,12 +1,6 @@
 //TODO: insert jquery in footer, rather than header
 jQuery(document).ready(function( $ ) {
 
-  $("#wp-"+year).click();
-  $("#ff-"+year).click();
-  $("#pb-"+year).click();
-  $("#rc-"+year).click();
-  $("#a-"+year).click();
-
   $('.clickable').on('click', function() {
   	var itemClassYear = $(this).attr('itemYear');
     // itemClassType is used to distinguish b/w diff types of policy papers
