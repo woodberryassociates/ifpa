@@ -48,9 +48,8 @@
 				<?php wp_nav_menu(array('theme_location' => 'sidebar-menu')); ?>
 				<!-- /dropdown menu -->
 
-				<div style="display: flex; flex-direction: column;">
-					<div role="navigation"><?php wp_nav_menu(array('theme_location' => 'search-menu')); ?></div>
-					<nav role="navigation"><?php wp_nav_menu(array('theme_location' => 'header-menu')); ?></nav>
+				<div style="display: flex; flex-direction: row; align-items: center;">
+					<nav style="" role="navigation"><?php wp_nav_menu(array('theme_location' => 'header-menu')); ?></nav>
 				</div>
 				<!-- /nav -->
 			
