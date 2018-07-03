@@ -887,8 +887,6 @@ button[role=button] {
 }
 
 .loop-thumbnail > img {
-	/*box-shadow: 0 0 10px #555;
-	border-radius: 3px;*/
 	max-width: 200px;
 	object-fit: cover;
 
@@ -986,7 +984,11 @@ p.attachment {
 /*remove thumbnail for loop'ed posts*/
 @media only screen and (max-width:700px) {
 	.loop-thumbnail {
-	display: none;
+		display: none;
+	}
+
+	.static-thumbnail {
+		display: flex !important;
 	}
 
 	/*#content {
