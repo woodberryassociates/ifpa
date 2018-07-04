@@ -24,7 +24,7 @@
 			<?php
 				$catObj = get_category_by_slug('blog'); 
 				$catId = $catObj->term_id;
-				query_posts('cat='.$catId);
+				$wp_query = new WP_Query('cat='.$catId);
 				get_template_part('loop');
 				get_template_part('pagination');
 			?>
