@@ -24,7 +24,13 @@
 			<?php
 				$catObj = get_category_by_slug('blog'); 
 				$catId = $catObj->term_id;
-				$wp_query = new WP_Query('cat='.$catId);
+				$paged = (get_query_var('paged')) ? get_query_var('paged') : 1;
+				$args = array(
+					'cat' => $catId,
+					'paged' => $paged
+				);
+
+				$wp_query = new WP_Query($args);
 				get_template_part('loop');
 				get_template_part('pagination');
 			?>
