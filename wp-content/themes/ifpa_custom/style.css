@@ -293,6 +293,12 @@ button[role=button] {
 	text-align: center;
 }
 
+/*fixes some weird pagination display bug*/
+.pagination > a:nth-child(1) {
+	display: inline !important;
+	padding: 0 !important;
+}
+
 /*TODO: expand searchbar when focused on*/
 /*.search-input:focus {
 	width: 400px;
