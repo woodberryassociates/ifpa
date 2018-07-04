@@ -974,9 +974,9 @@ p.attachment {
 /*rules proceed as screen grows in width*/
 /*remove logo, only display collapsible menu icon*/
 @media only screen and (max-width:500px) {
-	.logo {
+	/*.logo {
 		display: none;
-	}
+	}*/
 }
 
 @media only screen and (max-width:660px) {
