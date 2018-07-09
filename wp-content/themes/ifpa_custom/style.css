@@ -503,6 +503,10 @@ button[role=button] {
 	display: none;
 }*/
 
+/*#post-19 > div:nth-child(2) > div:nth-child(3) {
+	width: 1000px !important;
+}*/
+
 /*******SPLIT-PAGE FORMATTING*******/
 
 .front-page {
