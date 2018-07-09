@@ -13,8 +13,9 @@
 		
 	</section>
 
+	<div style="height: 150px; position: relative; bottom: 150px;"></div>
+	
 	<div id="split-page-main" class="gray">
-		<div style="height: 150px; position: relative; bottom: 150px;"></div>
 
 		<div id="split-page-container" style="padding-bottom: 60px;">
 			
