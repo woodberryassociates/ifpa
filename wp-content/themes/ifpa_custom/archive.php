@@ -17,6 +17,7 @@
 		</section>
 		<!-- /section -->
 	</main>
+	
 	<!--recent blog posts-->
 			<section id="recent-blog-posts">
 				<h1 style="padding-left: 6vw; font-weight: bold; text-transform: uppercase; color: white;">Recent Blog Posts</h1>
