@@ -8,13 +8,13 @@
 		<!-- article -->
 		<article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
 			<?php the_content(); ?>
-			<div style="height: 150px; class="grey";></div>
 		</article>
 		<!-- /article -->
 		
 	</section>
 
 	<div id="split-page-main" class="gray">
+		<div style="height: 150px; position: relative; bottom: 150px;"></div>
 
 		<div id="split-page-container" style="padding-bottom: 60px;">
 			
