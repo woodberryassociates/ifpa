@@ -13,9 +13,9 @@
 		
 	</section>
 
-		<div id="split-page-container" style="padding-bottom: 60px;">
+	<div id="split-page-main" class="gray">
 
-			<div id="split-page-main" class="gray">
+		<div id="split-page-container" style="padding-bottom: 60px;">
 
 			<section id="split-page-left">
 				<h1 class="page-header" style="padding: 0;">What's New</h1>
