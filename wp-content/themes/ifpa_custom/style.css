@@ -507,6 +507,11 @@ button[role=button] {
 	width: 1000px !important;
 }*/
 
+.front#split-page-main {
+	position: relative;
+	bottom: 250px;
+}
+
 /*******SPLIT-PAGE FORMATTING*******/
 
 .front-page {
