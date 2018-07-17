@@ -446,10 +446,9 @@ button[role=button] {
 
 	display: flex;
 	flex-direction: column;
-	align-items: left;
 	justify-content: flex-end;
 
-	text-align: left;
+	text-align: center;
 	font-weight: normal;
 	font-size: 20px;
 
@@ -457,7 +456,6 @@ button[role=button] {
 }
 
 .home-block-article img {
-	width: 300px;
 	height: 200px;
 }
 
