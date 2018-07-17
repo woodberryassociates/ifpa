@@ -5,7 +5,9 @@
 <main role="main">
 	
 	<!-- header img -->
-	<img src="<?php echo get_template_directory_uri(); ?>/img/headers/Blogs.png"/>
+	<?php while ( have_posts()) : the_post();
+		the_post_thumbnail('full');
+	endwhile; ?>
 	<!-- /header img -->
 
 	<section>

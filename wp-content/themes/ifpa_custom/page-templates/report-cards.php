@@ -3,9 +3,11 @@
 <?php get_header(); ?>
 
 <main role="main">
-	<!-- header img -->
 	
-	<img src="<?php echo get_template_directory_uri(); ?>/img/headers/Reports.png"/>
+	<!-- header img -->
+	<?php while ( have_posts()) : the_post();
+		the_post_thumbnail('full');
+	endwhile; ?>
 	<!-- /header img -->
 	
 	<div style="width: 100%; height: 60px;"></div>

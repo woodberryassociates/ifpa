@@ -3,8 +3,11 @@
 <?php get_header(); ?>
 
 <main role="main">
+	
 	<!-- header img -->
-	<div style="margin-bottom: 20px; width: 100%; height: 300px; background-color: rgba(74, 152, 190, .7);"></div>
+	<?php while ( have_posts()) : the_post();
+		the_post_thumbnail('full');
+	endwhile; ?>
 	<!-- /header img -->
 
 	<!-- section -->
