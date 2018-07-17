@@ -13,6 +13,23 @@
 	<!-- article -->
 	<?php while ( have_posts()) : the_post(); ?>
 		<?php the_content(); ?>
+		<section id="split-page-main">
+			<section id="split-page-container" class="gray" style="margin: 30px auto; padding: 0 20px;">
+				<h1 class="page-header" style="text-transform: none; position: relative; right:  42%;">IfPA LEADERSHIP</h1>
+				<?php			
+					$custom_fields = get_post_custom();
+					$board_members = $custom_fields['board'];
+					// drop the divider for the last bio
+					$last_member = end($board_members);
+
+					foreach ( $board_members as $key => $value ) {
+						echo  $value;
+						if ($value != $last_member)
+							echo '<div class="divider" style="width: 100%; height: 1px;"></div>';
+					}
+				?>
+			</section>
+		</section>
 	<?php endwhile; ?>
 	<!-- /article -->
 
@@ -33,8 +50,6 @@
 
 				<p class="bio-text">Dr. Schim is Board certified in Neurology, and has certification in Headache Medicine by the United Council of Neurologic Subspecialties. He has published articles in Experimental Neurology, Current Medical Research and Opinion, Pain Practice, Headache and Neurology.</p>
 			</section>
-
-			<div class="divider" style="width: 100%; height: 1px;"></div>
 
 			<section class="bio">
 				<img src="<?php echo get_stylesheet_directory_uri(); ?>/img/profiles/Madelaine-Feldman.jpg">
