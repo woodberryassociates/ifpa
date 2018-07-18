@@ -14,12 +14,12 @@
 	<div id="split-page-main">
 		<div id="split-page-container">
 
-			<!-- recent report cards -->
+			<!-- analysis cards -->
 			<section id="split-page-left">
 				<h1 class="page-header">Latest</h1>
 				<section id="split-page-with-thumbnail">
 					<?php
-						$catObj = get_category_by_slug('studies'); 
+						$catObj = get_category_by_slug('analysis'); 
 						$catId = $catObj->term_id;
 						$recent_posts = new WP_Query('cat='.$catId.'&&posts_per_page=4');
 						while($recent_posts->have_posts()) : $recent_posts->the_post();
@@ -27,7 +27,6 @@
 						<section class="split-page-with-thumbnail-article">
 							<a href="<?php the_permalink(); ?>"><?php the_post_thumbnail(); ?></a>
 							<a class="thumbnail-article-title" href="<?php the_permalink(); ?>"><?php the_title(); ?></a>
-							<!--p class="thumbnail-article-author" href="<?php the_permalink(); ?>"><?php the_author(); ?></p-->
 							<p class="thumbnail-article-date" href="<?php the_permalink(); ?>"><?php the_time(get_option('date_format' /*accessible under Settings -> General */)); ?></p>
 							<div style="height: 50px"></div>
 						</section>
@@ -37,11 +36,11 @@
 					?>
 				</section>
 			</section>
-			<!-- /recent report cards -->
+			<!-- /analysis cards -->
 
 			<div class="divider divider-horizontal" style="margin: 100px 0 20px 0; width:1px; height: auto;"></div>
 
-			<!-- report cards archive -->
+			<!-- analysis archive -->
 			<section id="split-page-right">
 				<div style="width: inherit; height: 100px"></div>
 
@@ -49,7 +48,7 @@
 				<section class="years studies">
 					<?php
 						$years = array();
-						$catObj = get_category_by_slug('studies'); 
+						$catObj = get_category_by_slug('analysis'); 
 						$catId = $catObj->term_id;
 						$recent_posts = new WP_Query('cat='.$catId);
 
@@ -99,11 +98,12 @@
 					?>
 				</section>
 			</section>
-			<!-- /report cards archive -->
+			<!-- /analysis archive -->
 
 		</div>
 	</div>
 </main>
+
 <!--recent blog posts-->
 			<section id="recent-blog-posts">
 				<h1 style="padding-left: 6vw; font-weight: bold; text-transform: uppercase; color: white;">Recent Blog Posts</h1>
