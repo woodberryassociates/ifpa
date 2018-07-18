@@ -78,7 +78,7 @@
 				<section class="split-page-no-thumbnail studies">
 					<?php
 						$count = 0; //used to insert dividers b/w articles (TODO)
-						$catObj = get_category_by_slug('studies'); 
+						$catObj = get_category_by_slug('analysis'); 
 						$catId = $catObj->term_id;
 
 						foreach ($years as $year) :
