@@ -39,11 +39,11 @@
 
 	<!-- breaks between articles -->
 	<?php $articleCount++; ?>
-	<?php if($frontPage == true && $articleCount <= 4): //front page only has 5 articles, so hardcoding this ?>
-		<div class="divider" style="margin-bottom: 20px; height: 1px;"></div>
+	<?php if($frontPage && $articleCount <= 4): //front page only has 5 articles, so hardcoding this ?>
+		<div class="divider" style="margin-bottom: 20px; height: 1px; width: 100%;"></div>
 
 	<?php elseif($frontPage == false && $articleCount % get_option('posts_per_page') != 0 && $articleCount < $wp_query->found_posts): ?> 
-		<div class="divider" style="margin-bottom: 20px; height: 1px;"></div>
+		<div class="divider" style="margin-bottom: 20px; height: 1px; width: 100%;"></div>
 
 	<?php endif; ?>
 	<!-- /breaks between articles -->

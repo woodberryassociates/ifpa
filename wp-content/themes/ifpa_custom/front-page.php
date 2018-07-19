@@ -22,9 +22,14 @@
 				<h1 class="page-header" style="padding: 0;">What's New</h1>
 				<?php
 					$frontPage = true; //used to limit article dividers to 4
-					query_posts('posts_per_page=5'); //if this changes, don't forget to change the number of dividers in loop.php
-					include(locate_template('loop.php', false, false)); //necessary to pass frontPage variable to loop
-					//get_template_part('loop');
+					//query_posts('posts_per_page=5'); //if this changes, don't forget to change the number of dividers in loop.php
+					//include(locate_template('loop.php', false, false)); //necessary to pass frontPage variable to loop
+					$args = array(
+						'posts_per_page' => 5,
+						'frontPage' => true
+					);
+					$wp_query = new WP_Query($args);
+					get_template_part('loop');
 					wp_reset_postdata();
 					$frontPage = false; //reset variable
 				?>
