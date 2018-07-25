@@ -21,9 +21,6 @@
 			<section id="split-page-left">
 				<h1 class="page-header" style="padding: 0;">What's New</h1>
 				<?php
-					$frontPage = true; //used to limit article dividers to 4
-					//query_posts('posts_per_page=5'); //if this changes, don't forget to change the number of dividers in loop.php
-					//include(locate_template('loop.php', false, false)); //necessary to pass frontPage variable to loop
 					$args = array(
 						'posts_per_page' => 5,
 						'frontPage' => true
@@ -49,14 +46,9 @@
 					$recent_posts = new WP_Query('cat='.$catId.'&&posts_per_page=3');
 					while($recent_posts->have_posts()) :
 						$recent_posts->the_post();
-						//only insert divider if not the first article
-						/*if($count != 0) :
-						<?php endif; ?>*/
 				?>			
-						<section class="split-page-no-thumbnail-article" style="padding-left: 12%; margin: 10px 0 10px 0">
-							<!--div class="divider divider-multi" style="width: 310px; height: 1px; margin-bottom: 15px;"></div-->
+						<section class="split-page-no-thumbnail-article" style="padding: 0 12%; margin: 10px 0 10px 0">
 							<a class="no-thumbnail-article-title" href="<?php the_permalink(); ?>"><?php the_title(); ?></a>
-							<!--p class="no-thumbnail-article-author" href="<?php the_permalink(); ?>" style="font-size: .7em"><?php the_author(); ?></p-->
 							<p class="no-thumbnail-article-date" href="<?php the_permalink(); ?>" style="font-size: .7em; text-transform: uppercase;"><?php the_time(get_option('date_format')); ?></p>
 						</section>
 				<?php

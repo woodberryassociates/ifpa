@@ -19,12 +19,11 @@
 				<?php			
 					$custom_fields = get_post_custom();
 					$board_members = $custom_fields['board'];
-					// drop the divider for the last bio
-					$last_member = end($board_members);
+					$last_member = end($board_members); // used to drop the divider for the last bio
 
 					foreach ( $board_members as $key => $value ) {
 						echo  $value;
-						if ($value != $last_member)
+						if ($value != $last_member) // drop the divider for the last bio
 							echo '<div class="divider" style="width: 100%; height: 1px;"></div>';
 					}
 				?>
