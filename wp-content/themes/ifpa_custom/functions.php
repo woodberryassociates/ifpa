@@ -171,7 +171,7 @@ function add_slug_to_body_class($classes)
 }
 
 // If Dynamic Sidebar Exists
-if (function_exists('register_sidebar'))
+/*if (function_exists('register_sidebar'))
 {
     // Define Sidebar Widget Area 1
     register_sidebar(array(
@@ -194,7 +194,7 @@ if (function_exists('register_sidebar'))
         'before_title' => '<h3>',
         'after_title' => '</h3>'
     ));
-}
+}*/
 
 // Remove wp_head() injected Recent Comment styles
 function my_remove_recent_comments_style()
