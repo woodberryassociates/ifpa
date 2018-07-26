@@ -19,16 +19,20 @@
 		<div id="split-page-container" style="padding-bottom: 60px;">
 			
 			<section id="split-page-left">
-				<h1 class="page-header" style="padding: 0;">What's New</h1>
+				<h1 class="page-header" style="padding: 0;">What's New on the Blog</h1>
 				<?php
+					$catObj = get_category_by_slug('blog'); 
+					$catId = $catObj->term_id;
+
 					$args = array(
+						'cat' => $catId,
 						'posts_per_page' => 5,
 						'frontPage' => true
 					);
+
 					$wp_query = new WP_Query($args);
 					get_template_part('loop');
 					wp_reset_postdata();
-					$frontPage = false; //reset variable
 				?>
 			</section>
 

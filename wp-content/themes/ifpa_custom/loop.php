@@ -23,7 +23,13 @@
 
 		<!-- post date -->
 		<h1 class="thumbnail-article-date" style="display: flex; padding: 5px 0 0 10px; font-size: 1.2em; font-weight: 500">
-			<?php the_time(get_option('date_format')); ?>
+			<?php 
+				if ($frontPage) {
+					the_time('F j, Y');
+				} else {
+					the_time(get_option('date_format'));
+				}
+			?>
 		</h1>
 		<!-- /post date -->
 

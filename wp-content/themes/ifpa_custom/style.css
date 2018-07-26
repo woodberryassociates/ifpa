@@ -485,6 +485,7 @@ button[role=button] {
 
 .ab-carousel .caption {
 	text-transform: uppercase;
+	font-weight: 500;
 	color: #282f5d;
 }
 
