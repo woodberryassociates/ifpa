@@ -396,6 +396,14 @@ button[role=button] {
 
 }
 
+.blog_search {
+	float: right;
+}
+
+input[type="search"] {
+	border: 1px solid #353535;
+}
+
 .copyright {
 	text-align: right;
 

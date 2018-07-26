@@ -502,4 +502,16 @@ if ( function_exists('register_sidebar') )
     'after_title' => '</h3>',
   )
 );
+
+// additional widget for search bar on blog page
+if ( function_exists('register_sidebar') )
+  register_sidebar(array(
+    'name' => 'Blog Search',
+    'before_widget' => '<div class = "blog_search">',
+    'after_widget' => '</div>',
+    'before_title' => '<h3>',
+    'after_title' => '</h3>',
+  )
+);
+
 ?>
