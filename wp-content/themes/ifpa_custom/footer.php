@@ -7,7 +7,7 @@
 				<div style="min-width: 40%; text-align: left">
 					<img style="max-width: 40%" src="<?php echo get_stylesheet_directory_uri(); ?>/img/logo-white.png">
 					<!-- left footer widget -->
-					<?php if ( !function_exists('dynamic_sidebar') || !dynamic_sidebar("footer_widget_left") ) : ?>
+					<?php if ( !function_exists('dynamic_sidebar') || !dynamic_sidebar("Left Footer") ) : ?>
 					<?php endif;?>
 					<!-- /left footer widget -->
 					<!-- social links -->
@@ -23,7 +23,7 @@
 				<div style="align-self: stretch; display: flex; flex-direction: column; min-width: 40%; align-content: right">
 					<div id="footer-right">
 						<!-- right footer widget -->
-						<?php if ( !function_exists('dynamic_sidebar') || !dynamic_sidebar("footer_widget_right") ) : ?>
+						<?php if ( !function_exists('dynamic_sidebar') || !dynamic_sidebar("Right Footer") ) : ?>
 						<?php endif;?>
 						<!-- /right footer widget -->
 

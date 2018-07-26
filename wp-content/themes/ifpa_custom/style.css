@@ -717,6 +717,17 @@ button[role=button] {
 	color: #707070;
 }
 
+/* for the Twitter widget */
+.timeline-Header-title {
+	font-weight: 700;
+	line-height: 100px;
+	text-transform: uppercase;
+	text-align: left;
+	color: #282f5d;
+
+	
+}
+
 /***********ABOUT PAGE*********/
 
 .bio {
