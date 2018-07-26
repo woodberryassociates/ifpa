@@ -45,7 +45,7 @@
 				<div style="width: inherit; height: 100px"></div>
 
 				<!-- years -->
-				<section class="years studies">
+				<section class="years analysis">
 					<?php
 						$years = array();
 						$catObj = get_category_by_slug('analysis'); 
@@ -75,7 +75,7 @@
 				</section>
 				<!-- /years -->
 				
-				<section class="split-page-no-thumbnail studies">
+				<section class="split-page-no-thumbnail analysis">
 					<?php
 						$count = 0; //used to insert dividers b/w articles (TODO)
 						$catObj = get_category_by_slug('analysis'); 
@@ -86,7 +86,7 @@
 							while($recent_posts->have_posts()) :
 								$recent_posts->the_post();
 					?>			
-								<section class="split-page-no-thumbnail-article studies <?php echo $year ?>">
+								<section class="split-page-no-thumbnail-article analysis <?php echo $year ?>">
 									<a class="no-thumbnail-article-title" href="<?php the_permalink(); ?>"><?php the_title(); ?></a>
 									<p class="no-thumbnail-article-date" href="<?php the_permalink(); ?>" style="font-size: .7em; text-transform: uppercase;"><?php the_time(get_option('date_format')); ?></p>
 								</section>
