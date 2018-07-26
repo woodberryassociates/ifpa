@@ -531,10 +531,6 @@ button[role=button] {
 	padding: 0 !important;
 }
 
-#twitter-widget-0 {
-	margin: 10px auto !important;
-}
-
 .page-header {
 	padding: 0 0 0 3.6%;
 
@@ -717,15 +713,17 @@ button[role=button] {
 	color: #707070;
 }
 
-/* for the Twitter widget */
+/****** Twitter widget ********/
 .timeline-Header-title {
-	font-weight: 700;
-	line-height: 100px;
-	text-transform: uppercase;
-	text-align: left;
-	color: #282f5d;
+	display: none !important;
+}
 
-	
+.timeline-Body {
+	border-top: none !important;
+}
+
+#twitter-widget-0 {
+	margin: 10px auto !important;
 }
 
 /***********ABOUT PAGE*********/

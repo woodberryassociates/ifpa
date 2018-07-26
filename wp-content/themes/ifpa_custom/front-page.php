@@ -58,7 +58,9 @@
 				<!-- /policy papers -->
 
 				<!-- twitter widget -->
-				<a class="twitter-timeline" href="https://twitter.com/patientaccess"  data-width="260" data-tweet-limit="1">Tweets by Alliance for Patient Access</a> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script> 
+				<h2 class="page-header" style="padding: 0 12% 0 12%; line-height: 75px;">Twitter</h2>
+
+				<a class="twitter-timeline" href="https://twitter.com/patientaccess"  data-width="260" data-tweet-limit="1" data-chrome="nofooter noborders noheader transparent">Tweets by Alliance for Patient Access</a> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script> 
 				<!-- /twitter widget -->
 
 				<!-- summits -->
