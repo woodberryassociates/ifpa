@@ -12,14 +12,14 @@
 
 	<div style="width: 100%; height: 60px;"></div>
 
-	<!-- article -->
-	<?php while ( have_posts()) : the_post(); ?>
-		<?php the_content(); ?>
-	<?php endwhile; ?>
-	<!-- /article -->
-
 	<div id="split-page-main">
 		<div id="split-page-container">
+
+			<!-- article -->
+			<?php while ( have_posts()) : the_post(); ?>
+				<?php the_content(); ?>
+			<?php endwhile; ?>
+			<!-- /article -->
 
 			<!-- analysis cards -->
 			<section id="split-page-left">
