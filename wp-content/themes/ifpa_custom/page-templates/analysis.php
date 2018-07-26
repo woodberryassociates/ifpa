@@ -12,16 +12,11 @@
 
 	<div style="width: 100%; height: 60px;"></div>
 
-	<section>	
-	<?php the_post(); ?>
-
 	<!-- article -->
-	<article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
+	<?php while ( have_posts()) : the_post(); ?>
 		<?php the_content(); ?>
-	</article>
+	<?php endwhile; ?>
 	<!-- /article -->
-	
-	</section>
 
 	<div id="split-page-main">
 		<div id="split-page-container">
