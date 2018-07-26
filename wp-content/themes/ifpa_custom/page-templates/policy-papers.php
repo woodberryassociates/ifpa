@@ -13,6 +13,12 @@
 	<div id="split-page-main">
 		<div id="split-page-multi-container">
 
+			<!-- article -->
+			<?php while ( have_posts()) : the_post(); ?>
+				<?php the_content(); ?>
+			<?php endwhile; ?>
+			<!-- /article -->
+
 			<!-- POLICY BRIEFS -->
 			<div id="split-page-container">
 

@@ -12,6 +12,12 @@
 
 	<!-- section -->
 	<section class="single-full">
+		<!-- article -->
+		<?php while ( have_posts()) : the_post(); ?>
+			<?php the_content(); ?>
+		<?php endwhile; ?>
+		<!-- /article -->
+
 		<?php
 			$catObj = get_category_by_slug('summits'); 
 			$catId = $catObj->term_id;

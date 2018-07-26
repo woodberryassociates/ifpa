@@ -10,18 +10,15 @@
 	endwhile; ?>
 	<!-- /header img -->
 
-	<section>
-		<?php the_post(); ?>
-		<!-- article -->
-		<article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
-			<?php the_content(); ?>
-		</article>
-		<!-- /article -->
-
-	</section>
-
 	<section id="split-page-main">
 		<div id="split-page-container" class="search-page">
+
+			<!-- article -->
+			<?php while ( have_posts()) : the_post(); ?>
+				<?php the_content(); ?>
+			<?php endwhile; ?>
+			<!-- /article -->
+
 			<h1 class="page-header" style="padding: 0;">Recent Blog Posts</h1>
 			<?php
 				$catObj = get_category_by_slug('blog'); 
