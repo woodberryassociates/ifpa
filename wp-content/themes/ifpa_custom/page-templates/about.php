@@ -13,6 +13,7 @@
 	<!-- article -->
 	<?php while ( have_posts()) : the_post(); ?>
 		<?php the_content(); ?>
+		
 		<section id="split-page-main">
 			<section id="split-page-container" class="gray" style="margin: 30px auto; padding: 0 20px;">
 				<h1 class="page-header" style="text-transform: none; position: relative; right:  42%;">IfPA LEADERSHIP</h1>
