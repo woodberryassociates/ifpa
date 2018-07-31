@@ -1,9 +1,9 @@
-# [Institute for Patient Access Custom Theme](instituteforpatientaccess.org)
+# [Institute for Patient Access Custom Theme](https://instituteforpatientaccess.org)
 
 Using the [HTML5Blank](http://html5blank.com) shell template.
 
-* Website: [instituteforpatientaccess.org](instituteforpatientaccess.org)
-* Twitter: [@patientaccess](https://twitter.com/patientaccess)
+* Website: [instituteforpatientaccess.org](https://instituteforpatientaccess.org)
+* Twitter: [@patientaccess](http://twitter.com/patientaccess)
 * Author : [Avi Nerenberg](http://avinerenberg.com) // [@avinerenberg](http://twitter.com/avinerenberg)
 
 ## Setup
