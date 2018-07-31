@@ -102,4 +102,5 @@
 				?>
 			</section>
 			<!--/recent blog posts-->
+			
 <?php get_footer(); ?>

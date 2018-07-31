@@ -19,7 +19,9 @@
 		<div id="split-page-container" style="padding-bottom: 60px;">
 			
 			<section id="split-page-left">
+				
 				<h1 class="page-header" style="padding: 0;">What's New on the Blog</h1>
+
 				<?php
 					$catObj = get_category_by_slug('blog'); 
 					$catId = $catObj->term_id;
@@ -34,6 +36,7 @@
 					get_template_part('loop');
 					wp_reset_postdata();
 				?>
+
 			</section>
 
 			<section class="front-page" id="split-page-right">
