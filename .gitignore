@@ -2,11 +2,6 @@
 /*
 !wp-content/
 
-# Ignore everything in the "wp-content" directory, except the "plugins"
-# and "themes" directories.
+# Ignore everything in the "wp-content" directory, except the "themes" directory.
 wp-content/*
-!wp-content/plugins/
 !wp-content/themes/
-
-# Ignore everything in the "plugins" directory, except the plugins specified (none).
-wp-content/plugins/*
