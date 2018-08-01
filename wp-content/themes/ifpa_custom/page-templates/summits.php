@@ -29,6 +29,7 @@
 		<?php $articleCount = 0; ?>
 
 		<?php if (have_posts()): while (have_posts()) : the_post(); ?>
+
 			<!-- article -->
 			<article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
 				<article id="content">
@@ -67,12 +68,14 @@
 			<!-- /article -->
 
 			<!-- breaks between articles -->
-			<?php $articleCount++; ?>
 			<?php
-				/*posts_per_page set in admin under settings -> reading,
-				  get_category_by_slug('SLUG')->count is number of articles in specific category*/
-				if($articleCount < get_option('posts_per_page')  && $articleCount < get_category_by_slug('summits')->count): ?>
-					<div class="divider" style="margin-bottom: 20px; height: 1px;"></div>
+			/*	posts_per_page set in admin under settings -> reading,
+				get_category_by_slug('SLUG')->count is number of articles in specific category */
+
+			$articleCount++;
+
+			if($articleCount < get_option('posts_per_page')  && $articleCount < get_category_by_slug('summits')->count): ?>
+				<div class="divider" style="margin-bottom: 20px; height: 1px;"></div>		
 			<?php endif; ?>
 			<!-- /breaks between articles -->
 
@@ -86,8 +89,10 @@
 			<!-- /article -->
 
 		<?php endif; ?>
+
 	</section>
 	<!-- /section -->
+
 </main>
 
 <?php get_template_part('recent-posts'); ?>
