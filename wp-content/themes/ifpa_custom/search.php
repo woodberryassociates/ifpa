@@ -2,7 +2,7 @@
 
 	<main role="main">
 		<!-- header img -->
-		<img style="margin-bottom: 20px;" src="<?php echo get_template_directory_uri(); echo '/img/headers/tag-'; echo rand(1, 3); echo '.png'?>"/>
+		<img style="margin-bottom: 20px;" src="<?php echo get_template_directory_uri(); echo '/img/banners/tag-'; echo rand(1, 3); echo '.png'?>"/>
 		<!-- /header img -->
 
 		<!-- section -->

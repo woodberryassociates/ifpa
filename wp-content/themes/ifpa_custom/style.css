@@ -925,9 +925,9 @@ input[type="search"] {
 
 .loop-thumbnail > img {
 	max-width: 200px;
-	object-fit: cover;
+	object-fit: contain;
 
-	background-color: white;
+	/*background-color: white;*/
 }
 
 .summits-thumbnail {

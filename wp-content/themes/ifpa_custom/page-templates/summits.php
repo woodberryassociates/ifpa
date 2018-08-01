@@ -34,12 +34,6 @@
 			<article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
 				<article id="content">
 
-					<!-- post thumbnail -->
-					<a class="summits-thumbnail" href="<?php the_permalink(); ?>" title="<?php the_title(); ?>">
-						<?php the_post_thumbnail(); // Declare pixel size you need inside the array ?>
-					</a>
-					<!-- /post thumbnail -->
-
 					<!-- post title -->
 					<h1>
 						<a class="page-header no-padding" href="<?php the_permalink(); ?>" title="<?php the_title(); ?>"><?php the_title(); ?></a>
