@@ -35,7 +35,7 @@
 							<section class="split-page-with-thumbnail-article">
 								<a href="<?php the_permalink(); ?>"><?php the_post_thumbnail(); ?></a>
 								<a class="thumbnail-article-title" href="<?php the_permalink(); ?>"><?php the_title(); ?></a>
-								<p class="thumbnail-article-date" href="<?php the_permalink(); ?>"><?php the_time(get_option('date_format' /*accessible under Settings -> General */)); ?></p>
+								<p class="thumbnail-article-date" href="<?php the_permalink(); ?>"><?php the_time('F Y'); ?></p>
 							</section>
 						<?php
 							endwhile;
@@ -98,7 +98,7 @@
 
 										<a class="no-thumbnail-article-title" href="<?php the_permalink(); ?>"><?php the_title(); ?></a>
 										
-										<p class="no-thumbnail-article-date" href="<?php the_permalink(); ?>" style="font-size: .7em; text-transform: uppercase;"><?php the_time(get_option('date_format')); ?></p>
+										<p class="no-thumbnail-article-date" href="<?php the_permalink(); ?>" style="font-size: .7em; text-transform: uppercase;"><?php the_time('F Y'); ?></p>
 
 									</section>
 						<?php
@@ -133,7 +133,7 @@
 								<a href="<?php the_permalink(); ?>"><?php the_post_thumbnail(); ?></a>
 								<a class="thumbnail-article-title" href="<?php the_permalink(); ?>"><?php the_title(); ?></a>
 								<!--p class="thumbnail-article-author" href="<?php the_permalink(); ?>"><?php the_author(); ?></-->
-								<p class="thumbnail-article-date" href="<?php the_permalink(); ?>"><?php the_time(get_option('date_format' /*accessible under Settings -> General */)); ?></p>
+								<p class="thumbnail-article-date" href="<?php the_permalink(); ?>"><?php the_time('F Y'); ?></p>
 							</section>
 						<?php
 							endwhile;
@@ -195,7 +195,7 @@
 						?>
 									<section class="split-page-no-thumbnail-article white-papers <?php echo $year ?>">
 										<a class="no-thumbnail-article-title" href="<?php the_permalink(); ?>"><?php the_title(); ?></a>
-										<p class="no-thumbnail-article-date" href="<?php the_permalink(); ?>" style="font-size: .7em; text-transform: uppercase;"><?php the_time(get_option('date_format')); ?></p>
+										<p class="no-thumbnail-article-date" href="<?php the_permalink(); ?>" style="font-size: .7em; text-transform: uppercase;"><?php the_time('F Y'); ?></p>
 									</section>
 						<?php
 									$count++;
@@ -227,7 +227,7 @@
 								<a href="<?php the_permalink(); ?>"><?php the_post_thumbnail(); ?></a>
 								<a class="thumbnail-article-title" href="<?php the_permalink(); ?>"><?php the_title(); ?></a>
 								<!--p class="thumbnail-article-author" href="<?php the_permalink(); ?>"><?php the_author(); ?></p-->
-								<p class="thumbnail-article-date" href="<?php the_permalink(); ?>"><?php the_time(get_option('date_format' /*accessible under Settings -> General */)); ?></p>
+								<p class="thumbnail-article-date" href="<?php the_permalink(); ?>"><?php the_time('F Y'); ?></p>
 							</section>
 						<?php
 							endwhile;
@@ -292,7 +292,7 @@
 									<section class="split-page-no-thumbnail-article fast-facts <?php echo $year ?>">
 										<a class="no-thumbnail-article-title" href="<?php the_permalink(); ?>"><?php the_title(); ?></a>
 										<!--p class="no-thumbnail-article-author" href="<?php the_permalink(); ?>" style="font-size: .7em"><?php the_author(); ?></p-->
-										<p class="no-thumbnail-article-date" href="<?php the_permalink(); ?>" style="font-size: .7em; text-transform: uppercase;"><?php the_time(get_option('date_format')); ?></p>
+										<p class="no-thumbnail-article-date" href="<?php the_permalink(); ?>" style="font-size: .7em; text-transform: uppercase;"><?php the_time('F Y'); ?></p>
 									</section>
 						<?php
 									$count++;

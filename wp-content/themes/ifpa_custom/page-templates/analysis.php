@@ -34,7 +34,7 @@
 						<section class="split-page-with-thumbnail-article">
 							<a href="<?php the_permalink(); ?>"><?php the_post_thumbnail(); ?></a>
 							<a class="thumbnail-article-title" href="<?php the_permalink(); ?>"><?php the_title(); ?></a>
-							<p class="thumbnail-article-date" href="<?php the_permalink(); ?>"><?php the_time(get_option('date_format' /*accessible under Settings -> General */)); ?></p>
+							<p class="thumbnail-article-date" href="<?php the_permalink(); ?>"><?php the_time('F Y'); ?></p>
 							<div style="height: 50px"></div>
 						</section>
 					<?php
@@ -63,12 +63,12 @@
 							$recent_posts->the_post();
 
 							if(!in_array(get_the_date('Y'), $years)) {
-								array_push($years, get_the_date('Y'));
+								array_push($years, get_the_date('Y')); // if the year of the post isn't in the array, add it
 							}
 						}
 						wp_reset_postdata();
 
-						//print years
+						// print the array of years
 						foreach ($years as $year) :
 					?>
 						<h1 class="clickable year" id="a-<?php echo $year ?>" itemYear="<?php echo $year ?>" itemType="analysis"><?php echo $year ?></h1>
@@ -84,7 +84,7 @@
 				
 				<section class="split-page-no-thumbnail analysis">
 					<?php
-						$count = 0; //used to insert dividers b/w articles (TODO)
+						$count = 0; // used to insert dividers b/w articles (TODO)
 						$catObj = get_category_by_slug('analysis'); 
 						$catId = $catObj->term_id;
 
@@ -95,7 +95,7 @@
 					?>			
 								<section class="split-page-no-thumbnail-article analysis <?php echo $year ?>">
 									<a class="no-thumbnail-article-title" href="<?php the_permalink(); ?>"><?php the_title(); ?></a>
-									<p class="no-thumbnail-article-date" href="<?php the_permalink(); ?>" style="font-size: .7em; text-transform: uppercase;"><?php the_time(get_option('date_format')); ?></p>
+									<p class="no-thumbnail-article-date" href="<?php the_permalink(); ?>" style="font-size: .7em; text-transform: uppercase;"><?php the_time('F Y'); ?></p>
 								</section>
 					<?php
 								$count++;
@@ -113,10 +113,10 @@
 
 <?php get_template_part('recent-posts'); ?>
 
-			<script type="text/javascript">
-				jQuery(document).ready(function( $ ) {
-					$("#a-"+ayear).click();
-				});
-			</script>
+<script type="text/javascript">
+	jQuery(document).ready(function( $ ) {
+		$("#a-"+ayear).click();
+	});
+</script>
 
 <?php get_footer(); ?>

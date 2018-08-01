@@ -19,7 +19,7 @@
 		<div id="split-page-container" style="padding-bottom: 60px;">
 			
 			<section id="split-page-left">
-				
+
 				<h1 class="page-header" style="padding: 0;">What's New on the Blog</h1>
 
 				<?php
@@ -56,7 +56,7 @@
 				?>			
 						<section class="split-page-no-thumbnail-article" style="padding: 0 12%; margin: 10px 0 10px 0">
 							<a class="no-thumbnail-article-title" href="<?php the_permalink(); ?>"><?php the_title(); ?></a>
-							<p class="no-thumbnail-article-date" href="<?php the_permalink(); ?>" style="font-size: .7em; text-transform: uppercase;"><?php the_time(get_option('date_format')); ?></p>
+							<p class="no-thumbnail-article-date" href="<?php the_permalink(); ?>" style="font-size: .7em; text-transform: uppercase;"><?php the_time('F Y'); // locations hardcoded as 'F Y' only show month & year ?></p>
 						</section>
 				<?php
 					endwhile;
@@ -84,11 +84,11 @@
 				?>			
 						<section class="split-page-no-thumbnail-article" style="padding: 0 12%; margin: 10px 0 10px 0">
 							<a class="no-thumbnail-article-title" href="<?php the_permalink(); ?>"><?php the_title(); ?></a>
-							<p class="no-thumbnail-article-date" href="<?php the_permalink(); ?>" style="font-size: .7em; text-transform: uppercase;"><?php the_time(get_option('date_format')); ?></p>
+							<p class="no-thumbnail-article-date" href="<?php the_permalink(); ?>" style="font-size: .7em; text-transform: uppercase;"><?php the_time('F Y'); ?></p>
 						</section>
 				<?php
 					endwhile;
-					wp_reset_postdata();	
+					wp_reset_postdata();
 				?>
 				<!-- /summits -->
 

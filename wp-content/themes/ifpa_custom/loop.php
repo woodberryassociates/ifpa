@@ -1,10 +1,6 @@
 <?php $articleCount = 0; ?>
 
 <?php if (have_posts()): while (have_posts()) : the_post(); ?>
-	<!--if the post title contains no spaces AND isn't titled "infographic" (i.e. not content), skip it (hack to display content media)-->
-	<!--?php if (!strpos(the_title('','',false),' ') && strpos(the_title('','',false),"Infographic")) {
-		continue;
-	} ?-->
 
 	<!-- article -->
 	<article style="display: block; min-height: 220px" id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
@@ -28,18 +24,19 @@
 		<!-- /post date -->
 
 		<!-- excerpt, read more, edit post links -->
-		<?php echo "<h2 class='thumbnail-article-text'"; // dumb hack to correctly style the excerpt ?>
-		<?php html5wp_excerpt('html5wp_index'); // Build your custom callback length in functions.php ?>
+		<?php echo "<h2 class='thumbnail-article-text'"; // hack to correctly style the excerpt ?>
+		<?php html5wp_excerpt('html5wp_index'); ?>
 		<?php echo "</h2><a style='display: flex; padding: 0px 10px;'"; ?>
 		<?php edit_post_link(); ?>
 		<?php echo "</a>"; ?>
 		<!-- /excerpt, read more, edit post links -->
+		
 	</article>
 	<!-- /article -->
 
 	<!-- breaks between articles -->
 	<?php $articleCount++; ?>
-	<?php if($frontPage && $articleCount <= 4): //front page only has 5 articles, so hardcoding this ?>
+	<?php if($frontPage && $articleCount <= 4): // front page only has 5 articles, so hardcoding this ?>
 		<div class="divider" style="margin-bottom: 20px; height: 1px; width: 100%;"></div>
 
 	<?php elseif($frontPage == false && $articleCount % get_option('posts_per_page') != 0 && $articleCount < $wp_query->found_posts): ?> 
