@@ -170,9 +170,7 @@
 							
 							$args = array(
 								'cat' => $catId,
-								'posts_per_page'=> -1 // all posts
 							);
-
 							$recent_posts = new WP_Query($args);
 
 							while($recent_posts->have_posts()) {
@@ -206,7 +204,14 @@
 							$catId = $catObj->term_id;
 
 							foreach ($years as $year) :
-								$recent_posts = new WP_Query('cat='.$catId.'&&year='.$year);
+
+								$args = array(
+									'cat' => $catId,
+									'posts_per_page' => -1,	// display all posts matching parameters
+									'year' => $year
+								);
+								$recent_posts = new WP_Query($args);
+
 								while($recent_posts->have_posts()) :
 									$recent_posts->the_post();
 									
@@ -231,6 +236,7 @@
 
 			<!-- FAST FACTS -->
 			<div id="split-page-container">
+
 				<!-- recent fast facts -->
 				<section id="split-page-left">
 					<h1 class="page-header">Fast Facts</h1>
@@ -244,7 +250,6 @@
 							<section class="split-page-with-thumbnail-article">
 								<a href="<?php the_permalink(); ?>"><?php the_post_thumbnail(); ?></a>
 								<a class="thumbnail-article-title" href="<?php the_permalink(); ?>"><?php the_title(); ?></a>
-								<!--p class="thumbnail-article-author" href="<?php the_permalink(); ?>"><?php the_author(); ?></p-->
 								<p class="thumbnail-article-date" href="<?php the_permalink(); ?>"><?php the_time('F Y'); ?></p>
 							</section>
 						<?php
@@ -299,17 +304,23 @@
 							$catId = $catObj->term_id;
 
 							foreach ($years as $year) :
-								$recent_posts = new WP_Query('cat='.$catId.'&&year='.$year);
+
+								$args = array(
+									'cat' => $catId,
+									'posts_per_page' => -1,	// display all posts matching parameters
+									'year' => $year
+								);
+								$recent_posts = new WP_Query($args);
+
 								while($recent_posts->have_posts()) :
 									$recent_posts->the_post();
+
 									//only insert divider if not the first article
 									if($count != 0) :
 						?>
-										<!--div class="divider" style="width: 100%; height: 1px;"></div-->
 									<?php endif; ?>
 									<section class="split-page-no-thumbnail-article fast-facts <?php echo $year ?>">
 										<a class="no-thumbnail-article-title" href="<?php the_permalink(); ?>"><?php the_title(); ?></a>
-										<!--p class="no-thumbnail-article-author" href="<?php the_permalink(); ?>" style="font-size: .7em"><?php the_author(); ?></p-->
 										<p class="no-thumbnail-article-date" href="<?php the_permalink(); ?>" style="font-size: .7em; text-transform: uppercase;"><?php the_time('F Y'); ?></p>
 									</section>
 						<?php
@@ -321,6 +332,7 @@
 					</section>
 				</section>
 				<!-- /fast facts archive -->
+				
 			</div>
 			<!-- FAST FACTS -->
 
@@ -330,12 +342,12 @@
 
 <?php get_template_part('recent-posts'); ?>
 
-			<script type="text/javascript">
-				jQuery(document).ready(function( $ ) {
-					  $("#pb-"+pbyear).click();
-					  $("#wp-"+wpyear).click();
-					  $("#ff-"+ffyear).click();
-				});
-			</script>
+<script type="text/javascript">
+	jQuery(document).ready(function( $ ) {
+		  $("#pb-"+pbyear).click();
+		  $("#wp-"+wpyear).click();
+		  $("#ff-"+ffyear).click();
+	});
+</script>
 
 <?php get_footer(); ?>

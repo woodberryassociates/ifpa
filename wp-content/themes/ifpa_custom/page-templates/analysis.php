@@ -57,9 +57,9 @@
 						$years = array();
 						$catObj = get_category_by_slug('analysis'); 
 						$catId = $catObj->term_id;
+
 						$args = array(
 							'cat' => $catId,
-							'posts_per_page'=> -1 // all posts
 						);
 
 						$recent_posts = new WP_Query($args);
@@ -94,7 +94,14 @@
 						$catId = $catObj->term_id;
 
 						foreach ($years as $year) :
-							$recent_posts = new WP_Query('cat='.$catId.'&&year='.$year);
+							
+							$args = array(
+								'cat' => $catId,
+								'posts_per_page' => -1,	// display all posts matching parameters
+								'year' => $year
+							);
+							$recent_posts = new WP_Query($args);
+							
 							while($recent_posts->have_posts()) :
 								$recent_posts->the_post();
 					?>			
