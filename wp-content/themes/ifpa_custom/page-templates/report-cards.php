@@ -57,8 +57,15 @@
 						$years = array();
 						$catObj = get_category_by_slug('report-cards'); 
 						$catId = $catObj->term_id;
-						$recent_posts = new WP_Query('cat='.$catId);
 
+						$args = array(
+							'cat' => $catId,
+							'posts_per_page'=> -1 // all posts
+						);
+
+						$recent_posts = new WP_Query($args);
+
+						// add article publication years to an array
 						while($recent_posts->have_posts()) {
 							$recent_posts->the_post();
 
@@ -68,7 +75,7 @@
 						}
 						wp_reset_postdata();
 
-						//print years
+						// print years
 						foreach ($years as $year) :
 					?>
 						<h1 class="clickable year" id="rc-<?php echo $year ?>" itemYear="<?php echo $year ?>" itemType="report-cards"><?php echo $year ?></h1>

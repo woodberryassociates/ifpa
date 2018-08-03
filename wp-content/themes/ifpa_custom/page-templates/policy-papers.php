@@ -56,8 +56,14 @@
 						<?php
 							$years = array();
 							$catObj = get_category_by_slug('policy-briefs'); 
-							$catId = $catObj->term_id;
-							$recent_posts = new WP_Query('cat='.$catId);
+							$catId = $catObj->term_id; // save category ID
+
+							$args = array(
+								'cat' => $catId,
+								'posts_per_page'=> -1 // all posts
+							);
+
+							$recent_posts = new WP_Query($args);
 
 							while($recent_posts->have_posts()) {
 								$recent_posts->the_post();
@@ -87,7 +93,13 @@
 						<?php
 							$count = 0; //used to insert dividers b/w articles (TODO)
 							$catObj = get_category_by_slug('policy-briefs'); 
-							$catId = $catObj->term_id;
+							
+							$args = array(
+								'cat' => $catId,
+								'posts_per_page'=> -1 // all posts
+							);
+
+							$recent_posts = new WP_Query($args);
 
 							foreach ($years as $year) :
 								$recent_posts = new WP_Query('cat='.$catId.'&&year='.$year);
@@ -155,7 +167,13 @@
 							$years = array();
 							$catObj = get_category_by_slug('white-papers'); 
 							$catId = $catObj->term_id;
-							$recent_posts = new WP_Query('cat='.$catId);
+							
+							$args = array(
+								'cat' => $catId,
+								'posts_per_page'=> -1 // all posts
+							);
+
+							$recent_posts = new WP_Query($args);
 
 							while($recent_posts->have_posts()) {
 								$recent_posts->the_post();

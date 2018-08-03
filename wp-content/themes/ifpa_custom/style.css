@@ -612,6 +612,8 @@ input[type="search"] {
 
 	font-weight: 600;
 	color: #B5B5B5;
+
+	cursor: pointer; /* default is text selection */
 }
 
 #twenty-seventeen {
@@ -922,7 +924,7 @@ input[type="search"] {
 	height: 200px;
 	width: 200px;
 
-	object-fit: contain; /* for osme reason, remote site requires this here, too */
+	object-fit: contain; /* for some reason, remote site requires this here, too */
 }
 
 .loop-thumbnail > img {
