@@ -10,7 +10,6 @@
 	endwhile; ?>
 	<!-- /header img -->
 	
-	<div style="width: 100%; height: 60px;"></div>
 	<div id="split-page-main">
 
 		<!-- article -->
