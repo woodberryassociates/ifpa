@@ -12,13 +12,14 @@
 	
 	<div style="width: 100%; height: 60px;"></div>
 	<div id="split-page-main">
+
+		<!-- article -->
+		<?php while ( have_posts()) : the_post(); ?>
+			<?php the_content(); ?>
+		<?php endwhile; ?>
+		<!-- /article -->
+
 		<div id="split-page-container">
-			
-			<!-- article -->
-			<?php while ( have_posts()) : the_post(); ?>
-				<?php the_content(); ?>
-			<?php endwhile; ?>
-			<!-- /article -->
 
 			<!-- recent report cards -->
 			<section id="split-page-left">
@@ -33,8 +34,7 @@
 						<section class="split-page-with-thumbnail-article">
 							<a href="<?php the_permalink(); ?>"><?php the_post_thumbnail(); ?></a>
 							<a class="thumbnail-article-title" href="<?php the_permalink(); ?>"><?php the_title(); ?></a>
-							<!--p class="thumbnail-article-author" href="<?php the_permalink(); ?>"><?php the_author(); ?></p-->
-							<p class="thumbnail-article-date" href="<?php the_permalink(); ?>"><?php the_time(get_option('date_format' /*accessible under Settings -> General */)); ?></p>
+							<p class="thumbnail-article-date" href="<?php the_permalink(); ?>"><?php the_time(get_option('date_format')); /* accessible under Settings -> General in WP dashboard */ ?></p>
 							<div style="height: 50px"></div>
 						</section>
 					<?php
