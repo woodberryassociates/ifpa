@@ -1130,10 +1130,6 @@ p.attachment {
 	text-shadow:none;
 }
 
-/*------------------------------------*\
-    PAGE-SPECFIC TWEAKS
-\*------------------------------------*/
-
 /*hide page title of the home page*/
 #main > main > section > h1 {
 	display: none;
