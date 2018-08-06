@@ -12,7 +12,7 @@
 			<div id="split-page-container" class="search-page">
 
 				<!-- tag -->
-				<h1 class="page-header"><?php single_tag_title(); ?></h1>
+				<h1 class="page-header no-padding"><?php single_tag_title(); ?></h1>
 				<!-- /tag -->
 
 				<?php get_template_part('loop'); ?>
