@@ -1139,6 +1139,10 @@ p.attachment {
     WORDPRESS CORE
 \*------------------------------------*/
 
+.post-edit-link {
+	margin-left: 210px;
+}
+
 .alignnone {
 	margin:5px 20px 20px 0;
 }
