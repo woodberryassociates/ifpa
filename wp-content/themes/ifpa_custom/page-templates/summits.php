@@ -40,10 +40,6 @@
 					</h1>
 					<!-- /post title -->
 
-					<!-- post date -->
-					<h2 class="thumbnail-article-date no-padding" style="padding-top: 1em;"><?php the_time(get_option('date_format')); ?></h2>
-					<!-- /post date -->
-
 					<!-- post content -->
 					<?php the_content(); ?>
 					<!-- /post content -->
