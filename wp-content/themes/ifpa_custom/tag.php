@@ -2,8 +2,15 @@
 
 	<main role="main">
 
+		<?php
+			global $wp;
+			$url = home_url( $wp->request );
+			$results = explode ( '/', $url);
+			$tag_path = end($results);
+		?>
+
 		<!-- header img -->
-		<img style="margin-bottom: 20px;" src="<?php echo get_template_directory_uri(); echo '/img/banners/tag-'; echo rand(1, 3); echo '.png'?>"/>
+		<img style="margin-bottom: 20px;" src="<?php echo get_template_directory_uri(); echo '/img/banners/'.$tag_path.'-ifpa.png'?>"/>
 		<!-- /header img -->
 
 		<!-- section -->
