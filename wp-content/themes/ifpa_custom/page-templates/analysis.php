@@ -59,6 +59,7 @@
 
 						$args = array(
 							'cat' => $catId,
+							'posts_per_page'=> -1 // all posts
 						);
 
 						$recent_posts = new WP_Query($args);
@@ -80,7 +81,7 @@
 					<?php endforeach; ?>
 
 					<script type="text/javascript">
-						var ayear = "<?php echo $years[0] ?>"
+						var ayear = "<?php echo $years[0] ?>" // I'm not sure if this is used, so leaving it here
 					</script>
 
 				</section>
