@@ -59,6 +59,7 @@
 
 						$args = array(
 							'cat' => $catId,
+							'posts_per_page'=> -1 // all posts
 						);
 
 						$recent_posts = new WP_Query($args);
