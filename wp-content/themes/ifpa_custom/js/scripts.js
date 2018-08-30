@@ -18,7 +18,7 @@ jQuery(document).ready(function( $ ) {
 	});
 });
 
-/*** WARNING: Vanilla JS zone! (Yea, I know) ***/
+/*** WARNING: Vanilla JS zone! ***/
 
 // Dropdown menu
 var opened = false;
