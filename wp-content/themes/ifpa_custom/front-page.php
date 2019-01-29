@@ -60,7 +60,7 @@
 						</section>
 				<?php
 					endwhile;
-					wp_reset_postdata();	
+					wp_reset_postdata();
 				?>
 				<!-- /policy papers -->
 
@@ -92,9 +92,21 @@
 				?>
 				<!-- /summits -->
 
-				<!-- BAA Blog Link -->
-				<a style="padding-top: 25px !important;" href="<?php echo get_site_url(); echo '/tag/by-all-accounts/'; ?>"><img src="<?php echo get_template_directory_uri(); echo '/img/BAA-logo.png'; ?>"></a>
-				<!-- /BAA Blog Link -->
+				<!-- BAA Blog -->
+				<a href="<?php echo get_site_url(); echo '/tag/by-all-accounts/'; ?>"><img src="<?php echo get_template_directory_uri(); echo '/img/BAA-logo.png'; ?>"></a>
+
+				<?php	$recent_posts = new WP_Query( array( 'tag' => 'by-all-accounts' ).'&&posts_per_page=2' );
+				while($recent_posts->have_posts()) :
+					$recent_posts->the_post(); ?>	
+
+					<section class="split-page-no-thumbnail-article" style="padding: 0 12%; margin: 10px 0 10px 0">
+						<a class="no-thumbnail-article-title" href="<?php the_permalink(); ?>"><?php the_title(); ?></a>
+						<p class="no-thumbnail-article-date" href="<?php the_permalink(); ?>" style="font-size: .7em; text-transform: uppercase;"><?php the_time('F Y'); ?></p>
+					</section>
+
+				<?php	endwhile;
+				wp_reset_postdata(); ?>
+				<!-- /BAA Blog -->
 
 			</section>
 		</div>
