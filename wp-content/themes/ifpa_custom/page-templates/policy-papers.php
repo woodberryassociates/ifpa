@@ -344,6 +344,7 @@
 <?php get_template_part('recent-posts'); ?>
 
 <script type="text/javascript">
+	// activate (click) the most recent year on load
 	jQuery(document).ready(function( $ ) {
 		  $("#pb-"+pbyear).click();
 		  $("#wp-"+wpyear).click();
