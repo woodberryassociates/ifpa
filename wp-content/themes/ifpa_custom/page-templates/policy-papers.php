@@ -183,13 +183,9 @@
 							}							wp_reset_postdata();
 
 							//print years
-							foreach ($years as $year) :
-						?>
+							foreach ($years as $year) : ?>
 								<h1 class="clickable year" id="wp-<?php echo $year ?>" itemYear="<?php echo $year ?>" itemType="white-papers"><?php echo $year ?></h1>
-
-								
-
-						<?php endforeach; ?>
+							<?php endforeach; ?>
 
 						<script type="text/javascript">
 							var wpyear = "<?php echo $years[0] ?>";
