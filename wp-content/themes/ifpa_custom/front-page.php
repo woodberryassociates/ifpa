@@ -93,7 +93,7 @@
 				<!-- /summits -->
 
 				<!-- BAA Blog Link -->
-				<a href="<?php echo get_site_url(); echo '/tag/by-all-accounts/'; ?>"><img src="<?php echo get_template_directory_uri(); echo '/img/BAA-logo.png'; ?>"></a>
+				<a style="padding-top: 25px !important;" href="<?php echo get_site_url(); echo '/tag/by-all-accounts/'; ?>"><img src="<?php echo get_template_directory_uri(); echo '/img/BAA-logo.png'; ?>"></a>
 				<!-- /BAA Blog Link -->
 
 			</section>
