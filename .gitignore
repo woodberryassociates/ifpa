@@ -1,0 +1,8 @@
+*
+
+# Misc
+!.gitignore
+!README.md
+
+# Theme
+!wp-content/themes/ifpa_custom
