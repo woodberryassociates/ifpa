@@ -4,7 +4,9 @@
 
 <main role="main">
 	<!-- header ads -->
-	<?php if (function_exists('the_ad_group')) the_ad_group(50); ?>
+	<?php if (function_exists('the_ad_placement')) {
+		the_ad_placement('header');
+	} ?>
 	<!-- /header ads -->
 
 	<!-- header img -->
@@ -42,7 +44,9 @@
 	<!-- /content -->
 
 	<!-- footer ads -->
-	<?php if (function_exists('the_ad_group')) the_ad_group(51); ?>
+	<?php if (function_exists('the_ad_placement')) {
+		the_ad_placement('footer');
+	} ?>
 	<!-- /footer ads -->
 </main>
 
