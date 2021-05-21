@@ -1,4 +1,13 @@
-			<?php echo "</a>"; //this is necessary on the remote site ?>
+			<?php echo "</a>"; // ? an additional anchor tag is necessary on the remote site b/c an anchor earlier in the page doesn't close (unclear what's causing this)
+			?>
+
+			<!-- footer ads -->
+			<div style="padding: 2rem 0;">
+				<?php if (function_exists('the_ad_placement')) {
+					the_ad_placement('footer');
+				} ?>
+			</div>
+			<!-- /footer ads -->
 
 			<div style="height: 5px; background-color: #707070"></div>
 
@@ -9,8 +18,8 @@
 					<img style="max-width: 40%" src="<?php echo get_stylesheet_directory_uri(); ?>/img/logo-white.png">
 
 					<!-- left footer widget -->
-					<?php if ( !function_exists('dynamic_sidebar') || !dynamic_sidebar("Left Footer") ) : ?>
-					<?php endif;?>
+					<?php if (!function_exists('dynamic_sidebar') || !dynamic_sidebar("Left Footer")) : ?>
+					<?php endif; ?>
 					<!-- /left footer widget -->
 
 					<!-- social links -->
@@ -23,13 +32,13 @@
 					<!-- /social links -->
 
 				</div>
-				
+
 				<div style="align-self: stretch; display: flex; flex-direction: column; min-width: 40%; align-content: right">
 					<div id="footer-right">
 
 						<!-- right footer widget -->
-						<?php if ( !function_exists('dynamic_sidebar') || !dynamic_sidebar("Right Footer") ) : ?>
-						<?php endif;?>
+						<?php if (!function_exists('dynamic_sidebar') || !dynamic_sidebar("Right Footer")) : ?>
+						<?php endif; ?>
 						<!-- /right footer widget -->
 
 						<!-- copyright -->
@@ -43,19 +52,27 @@
 			</footer>
 			<!-- /footer -->
 
-		</div>
-		<!-- /wrapper -->
+			</div>
+			<!-- /wrapper -->
 
-		<?php wp_footer(); ?>
+			<?php wp_footer(); ?>
 
-		<!-- analytics -->
-		<script>
-			(function(f,i,r,e,s,h,l){i['GoogleAnalyticsObject']=s;f[s]=f[s]||function(){
-				(f[s].q=f[s].q||[]).push(arguments)},f[s].l=1*new Date();h=i.createElement(r),
-				l=i.getElementsByTagName(r)[0];h.async=1;h.src=e;l.parentNode.insertBefore(h,l)
-			})(window,document,'script','//www.google-analytics.com/analytics.js','ga');
-			ga('create', 'UA-XXXXXXXX-XX', 'yourdomain.com');
-			ga('send', 'pageview');
-		</script>
-	</body>
-</html>
+			<!-- analytics -->
+			<script>
+				(function(f, i, r, e, s, h, l) {
+					i['GoogleAnalyticsObject'] = s;
+					f[s] = f[s] || function() {
+						(f[s].q = f[s].q || []).push(arguments)
+					}, f[s].l = 1 * new Date();
+					h = i.createElement(r),
+						l = i.getElementsByTagName(r)[0];
+					h.async = 1;
+					h.src = e;
+					l.parentNode.insertBefore(h, l)
+				})(window, document, 'script', '//www.google-analytics.com/analytics.js', 'ga');
+				ga('create', 'UA-XXXXXXXX-XX', 'yourdomain.com');
+				ga('send', 'pageview');
+			</script>
+			</body>
+
+			</html>

@@ -1,5 +1,6 @@
 <!doctype html>
 <html <?php language_attributes(); ?> class="no-js">
+
 <head>
 	<link href="https://fonts.googleapis.com/css?family=Montserrat:300,400,500,600,700,800" rel="stylesheet">
 	<meta charset="<?php bloginfo('charset'); ?>">
@@ -14,11 +15,11 @@
 	<meta name="description" content="<?php bloginfo('description'); ?>">
 
 	<script>
-	var Globals = <?php echo json_encode(array(
-    	'active_user_id' => $active_user->id,
-	    'token' => $token,
-	    'hash' => $hash,
-		)); ?>;
+		var Globals = <?php echo json_encode(array(
+										'active_user_id' => $active_user->id,
+										'token' => $token,
+										'hash' => $hash,
+									)); ?>;
 	</script>
 
 	<?php wp_head(); ?>
@@ -50,6 +51,13 @@
 				<nav style="" role="navigation"><?php wp_nav_menu(array('theme_location' => 'header-menu')); ?></nav>
 			</div>
 			<!-- /nav -->
-			
 		</header>
 		<!-- /header -->
+
+		<!-- header ads -->
+		<div style="padding: 0 0 2rem 0;">
+			<?php if (function_exists('the_ad_placement')) {
+				the_ad_placement('header');
+			} ?>
+		</div>
+		<!-- /header ads -->

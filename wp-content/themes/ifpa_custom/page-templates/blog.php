@@ -3,11 +3,6 @@
 <?php get_header(); ?>
 
 <main role="main">
-	<!-- header ads -->
-	<?php if (function_exists('the_ad_placement')) {
-		the_ad_placement('header');
-	} ?>
-	<!-- /header ads -->
 
 	<!-- header img -->
 	<?php while (have_posts()) : the_post();
@@ -42,12 +37,6 @@
 		?>
 	</section>
 	<!-- /content -->
-
-	<!-- footer ads -->
-	<?php if (function_exists('the_ad_placement')) {
-		the_ad_placement('footer');
-	} ?>
-	<!-- /footer ads -->
 </main>
 
 <?php get_footer(); ?>
