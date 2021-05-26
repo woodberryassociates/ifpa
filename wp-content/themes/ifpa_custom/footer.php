@@ -1,14 +1,6 @@
 			<?php echo "</a>"; // ? an additional anchor tag is necessary on the remote site b/c an anchor earlier in the page doesn't close (unclear what's causing this)
 			?>
 
-			<!-- footer ads -->
-			<div style="padding: 2rem 0;">
-				<?php if (function_exists('the_ad_placement')) {
-					the_ad_placement('footer');
-				} ?>
-			</div>
-			<!-- /footer ads -->
-
 			<div style="height: 5px; background-color: #707070"></div>
 
 			<!-- footer -->

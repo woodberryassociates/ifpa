@@ -37,6 +37,14 @@
 		?>
 	</section>
 	<!-- /content -->
+
+	<!-- footer ads -->
+	<div style="padding: 2rem 0;">
+		<?php if (function_exists('the_ad_placement')) {
+			the_ad_placement('footer');
+		} ?>
+	</div>
+	<!-- /footer ads -->
 </main>
 
 <?php get_footer(); ?>
