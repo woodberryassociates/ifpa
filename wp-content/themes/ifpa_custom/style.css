@@ -1143,11 +1143,6 @@ p.attachment {
 	text-shadow: none;
 }
 
-/*hide page title of the home page*/
-#main > main > section > h1 {
-	display: none;
-}
-
 /*------------------------------------*\
     WORDPRESS CORE
 \*------------------------------------*/
