@@ -22,7 +22,7 @@
 
 				<?php
 				$custom_fields = get_post_custom();
-				$board_members = $custom_fields['speakers'];
+				$board_members = $custom_fields['speaker'];
 				$last_member = end($board_members); // used to drop the divider for the last bio
 
 				foreach ($board_members as $key => $value) {
