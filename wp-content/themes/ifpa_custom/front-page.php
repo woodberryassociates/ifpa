@@ -57,20 +57,14 @@
 				<!-- /summits -->
 			</section>
 
+			<!-- twitter widget -->
 			<section class="front-page" id="split-page-right">
-				<h1 class="page-header-inverted">Other Resources</h1>
+				<h1 class="page-header-inverted">Twitter</h1>
 
-				<!-- twitter widget -->
-				<h2 class="page-header" style="padding: 0 12% 0 12%; line-height: 75px;">Twitter</h2>
-
-				<a class="twitter-timeline" href="https://twitter.com/patientaccess" data-width="260" data-tweet-limit="1" data-chrome="nofooter noborders noheader transparent">Tweets by Alliance for Patient Access</a>
+				<a class="twitter-timeline" href="https://twitter.com/patientaccess" data-width="260" data-tweet-limit="3" data-chrome="nofooter noborders noheader transparent">Tweets by Alliance for Patient Access</a>
 				<script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
-				<!-- /twitter widget -->
-
-				<!-- BAA Blog -->
-				<a href="<?php echo get_site_url() . '/tag/by-all-accounts/'; ?>"><img src="<?php echo get_template_directory_uri() . '/img/BAA-logo.png'; ?>" alt="By All Accounts Blog"></a>
-				<!-- /BAA Blog -->
 			</section>
+			<!-- /twitter widget -->
 		</div>
 	</div>
 </main>
