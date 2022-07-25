@@ -43,6 +43,4 @@
 	<!-- /content -->
 </main>
 
-<?php get_template_part('recent-posts'); ?>
-
 <?php get_footer(); ?>
